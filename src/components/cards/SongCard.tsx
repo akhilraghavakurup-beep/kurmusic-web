@@ -1,20 +1,25 @@
 import React from 'react';
-import { Play, Pause, Heart, MoreVertical } from 'lucide-react';
+import { Play, Pause, Heart, Download, CheckCircle2, ListPlus } from 'lucide-react';
 import { Track } from '../../api/types';
 import { usePlayerStore } from '../../stores/player-store';
 import { useLibraryStore } from '../../stores/library-store';
+import { useDownloadStore } from '../../stores/download-store';
 
 interface SongCardProps {
   track: Track;
   queueContext?: Track[];
+  onAddToPlaylist?: (track: Track) => void;
 }
 
-export const SongCard: React.FC<SongCardProps> = ({ track, queueContext }) => {
+export const SongCard: React.FC<SongCardProps> = ({ track, queueContext, onAddToPlaylist }) => {
   const { currentTrack, isPlaying, playTrack, togglePlay } = usePlayerStore();
   const { isLiked, toggleLike } = useLibraryStore();
+  const { isDownloaded, downloadTrack, downloadingIds } = useDownloadStore();
 
   const isCurrent = currentTrack?.id === track.id;
   const liked = isLiked(track.id);
+  const downloaded = isDownloaded(track.id);
+  const downloading = downloadingIds.includes(track.id);
 
   const handlePlayClick = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -61,21 +66,48 @@ export const SongCard: React.FC<SongCardProps> = ({ track, queueContext }) => {
           </button>
         </div>
 
-        {/* Favorite heart button */}
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            toggleLike(track);
-          }}
-          aria-label={liked ? "Remove from favorites" : "Add to favorites"}
-          className={`absolute top-2 right-2 p-2 rounded-full backdrop-blur-md transition-all ${
-            liked
-              ? 'text-pink-500 bg-black/50 opacity-100'
-              : 'text-white/70 bg-black/40 opacity-0 group-hover:opacity-100 hover:text-pink-400'
-          }`}
-        >
-          <Heart className={`w-4 h-4 ${liked ? 'fill-current' : ''}`} />
-        </button>
+        {/* Action icons row */}
+        <div className="absolute top-2 right-2 flex items-center gap-1">
+          {/* Download button */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              if (!downloaded && !downloading) {
+                downloadTrack(track);
+              }
+            }}
+            title={downloaded ? 'Downloaded offline' : 'Download for offline playback'}
+            className={`p-1.5 rounded-full backdrop-blur-md transition-all ${
+              downloaded
+                ? 'text-emerald-400 bg-black/60 opacity-100'
+                : downloading
+                ? 'text-purple-400 bg-black/60 opacity-100 animate-spin'
+                : 'text-white/70 bg-black/40 opacity-0 group-hover:opacity-100 hover:text-white'
+            }`}
+          >
+            {downloaded ? (
+              <CheckCircle2 className="w-3.5 h-3.5" />
+            ) : (
+              <Download className="w-3.5 h-3.5" />
+            )}
+          </button>
+
+          {/* Favorite heart button */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              toggleLike(track);
+            }}
+            aria-label={liked ? "Remove from favorites" : "Add to favorites"}
+            className={`p-1.5 rounded-full backdrop-blur-md transition-all ${
+              liked
+                ? 'text-pink-500 bg-black/50 opacity-100'
+                : 'text-white/70 bg-black/40 opacity-0 group-hover:opacity-100 hover:text-pink-400'
+            }`}
+          >
+            <Heart className={`w-3.5 h-3.5 ${liked ? 'fill-current' : ''}`} />
+          </button>
+        </div>
       </div>
 
       <h4 className={`text-sm font-semibold truncate ${isCurrent ? 'text-purple-400' : 'text-white'}`}>

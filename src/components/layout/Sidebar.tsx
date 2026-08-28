@@ -5,16 +5,16 @@ import {
   Library, 
   Heart, 
   ListPlus, 
-  Radio, 
-  Sparkles, 
+  Download, 
   Settings, 
   Globe2, 
   Music2 
 } from 'lucide-react';
 import { useLibraryStore } from '../../stores/library-store';
 import { useSettingsStore } from '../../stores/settings-store';
+import { useDownloadStore } from '../../stores/download-store';
 
-export type ActiveTab = 'home' | 'search' | 'library' | 'liked' | 'album' | 'artist' | 'playlist';
+export type ActiveTab = 'home' | 'search' | 'library' | 'liked' | 'downloads' | 'album' | 'artist' | 'playlist';
 
 interface SidebarProps {
   activeTab: ActiveTab;
@@ -31,6 +31,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 }) => {
   const { likedTracks, playlists, createPlaylist } = useLibraryStore();
   const { languages, toggleLanguage } = useSettingsStore();
+  const { downloadedTracks } = useDownloadStore();
 
   const allAvailableLangs = [
     { id: 'hindi', label: 'Hindi' },
@@ -108,6 +109,25 @@ export const Sidebar: React.FC<SidebarProps> = ({
           <Library className="w-5 h-5" />
           <span>Your Library</span>
         </button>
+
+        <button
+          onClick={() => setActiveTab('downloads')}
+          className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl font-medium text-sm transition-all ${
+            activeTab === 'downloads'
+              ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30'
+              : 'text-slate-400 hover:text-white hover:bg-white/5'
+          }`}
+        >
+          <div className="flex items-center gap-3.5">
+            <Download className="w-5 h-5" />
+            <span>Downloads</span>
+          </div>
+          {downloadedTracks.length > 0 && (
+            <span className="text-[11px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono">
+              {downloadedTracks.length}
+            </span>
+          )}
+        </button>
       </div>
 
       {/* Playlists & Favorites Section */}
@@ -160,7 +180,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       <div className="p-4 border-t border-white/5 bg-black/20">
         <div className="flex items-center gap-1.5 text-xs text-slate-400 font-semibold mb-2.5">
           <Globe2 className="w-3.5 h-3.5 text-purple-400" />
-          <span>Content Languages</span>
+          <span>Language Feeds</span>
         </div>
         <div className="flex flex-wrap gap-1.5">
           {allAvailableLangs.map((lang) => {
@@ -189,7 +209,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           className="w-full flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-slate-400 hover:text-white hover:bg-white/5 transition-all"
         >
           <Settings className="w-4 h-4 text-purple-400" />
-          <span>App Settings & Audio Quality</span>
+          <span>Settings & Quality</span>
         </button>
       </div>
     </aside>

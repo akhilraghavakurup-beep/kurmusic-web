@@ -55,7 +55,7 @@ export interface HomeFeedSection {
   title: string;
   subtitle?: string;
   type: 'track' | 'album' | 'playlist' | 'mixed';
-  items: Array<Track | Album | Playlist>;
+  items: Array<Track | Album | Playlist | Artist>;
 }
 
 export interface SearchResults {

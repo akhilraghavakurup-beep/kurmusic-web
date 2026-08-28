@@ -11,9 +11,10 @@ import { AlbumView } from './components/views/AlbumView';
 import { ArtistView } from './components/views/ArtistView';
 import { PlaylistView } from './components/views/PlaylistView';
 import { LibraryView } from './components/views/LibraryView';
+import { DownloadsView } from './components/views/DownloadsView';
 import { SettingsModal } from './components/views/SettingsModal';
 import { usePlayerStore } from './stores/player-store';
-import { Home, Search, Library, SlidersHorizontal, Play, Pause, Heart } from 'lucide-react';
+import { Home, Search, Library, Download, SlidersHorizontal, Play, Pause, Heart } from 'lucide-react';
 import { useLibraryStore } from './stores/library-store';
 
 export const App: React.FC = () => {
@@ -146,6 +147,10 @@ export const App: React.FC = () => {
           {(activeTab === 'library' || activeTab === 'liked') && (
             <LibraryView onSelectPlaylist={handleSelectPlaylist} />
           )}
+
+          {activeTab === 'downloads' && (
+            <DownloadsView />
+          )}
         </main>
       </div>
 
@@ -231,6 +236,16 @@ export const App: React.FC = () => {
         >
           <Search className="w-5 h-5" />
           <span className="text-[10px] font-medium">Search</span>
+        </button>
+
+        <button
+          onClick={() => navigateTo('downloads')}
+          className={`flex flex-col items-center gap-1 p-2 ${
+            activeTab === 'downloads' ? 'text-purple-400' : 'text-slate-400'
+          }`}
+        >
+          <Download className="w-5 h-5" />
+          <span className="text-[10px] font-medium">Downloads</span>
         </button>
 
         <button

@@ -15,9 +15,12 @@ import {
   Maximize2,
   Heart,
   Loader2,
+  Download,
+  CheckCircle2,
 } from 'lucide-react';
 import { usePlayerStore } from '../../stores/player-store';
 import { useLibraryStore } from '../../stores/library-store';
+import { useDownloadStore } from '../../stores/download-store';
 
 export const BottomPlayer: React.FC = () => {
   const {
@@ -47,6 +50,7 @@ export const BottomPlayer: React.FC = () => {
   } = usePlayerStore();
 
   const { isLiked, toggleLike } = useLibraryStore();
+  const { isDownloaded, downloadTrack } = useDownloadStore();
 
   const formatTime = (secs: number) => {
     if (!secs || isNaN(secs)) return '0:00';
@@ -56,6 +60,7 @@ export const BottomPlayer: React.FC = () => {
   };
 
   const liked = currentTrack ? isLiked(currentTrack.id) : false;
+  const downloaded = currentTrack ? isDownloaded(currentTrack.id) : false;
 
   const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
     seek(parseFloat(e.target.value));
@@ -99,15 +104,33 @@ export const BottomPlayer: React.FC = () => {
             <p className="text-xs text-slate-400 truncate mt-0.5">{currentTrack.artist}</p>
           </div>
 
-          <button
-            onClick={() => toggleLike(currentTrack)}
-            aria-label={liked ? "Remove from favorites" : "Add to favorites"}
-            className={`p-2 rounded-full transition-colors ${
-              liked ? 'text-pink-500' : 'text-slate-400 hover:text-white'
-            }`}
-          >
-            <Heart className={`w-4 h-4 ${liked ? 'fill-current' : ''}`} />
-          </button>
+          <div className="flex items-center gap-1">
+            <button
+              onClick={() => toggleLike(currentTrack)}
+              aria-label={liked ? "Remove from favorites" : "Add to favorites"}
+              className={`p-2 rounded-full transition-colors ${
+                liked ? 'text-pink-500' : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              <Heart className={`w-4 h-4 ${liked ? 'fill-current' : ''}`} />
+            </button>
+
+            <button
+              onClick={() => {
+                if (!downloaded) downloadTrack(currentTrack);
+              }}
+              title={downloaded ? "Downloaded offline" : "Download offline"}
+              className={`p-2 rounded-full transition-colors ${
+                downloaded ? 'text-emerald-400' : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              {downloaded ? (
+                <CheckCircle2 className="w-4 h-4" />
+              ) : (
+                <Download className="w-4 h-4" />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Center: Controls & Scrubber */}

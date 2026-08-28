@@ -173,7 +173,22 @@ export class AudioManager {
     const quality = useSettingsStore.getState().audioQuality;
 
     let streamUrl = track.audioUrl;
-    if (track.encryptedMediaUrl) {
+
+    // Check offline CacheStorage first
+    try {
+      if ('caches' in window) {
+        const cache = await caches.open('kurmusic_offline_v1');
+        const cached = await cache.match(`/offline/${track.id}`);
+        if (cached) {
+          const blob = await cached.blob();
+          streamUrl = URL.createObjectURL(blob);
+        }
+      }
+    } catch (e) {
+      console.warn('Offline cache lookup error:', e);
+    }
+
+    if (!streamUrl && track.encryptedMediaUrl) {
       const decrypted = decryptMediaUrl(track.encryptedMediaUrl, quality);
       if (decrypted) {
         streamUrl = decrypted;
