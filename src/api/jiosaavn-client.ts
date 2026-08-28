@@ -38,7 +38,28 @@ export class JioSaavnClient {
       .replace(/^http:\/\//i, "https://");
   }
 
-  private async fetchApi<T>(params: Record<string, string | number>, timeoutMs = 2000): Promise<T> {
+  private async fetchApi<T>(params: Record<string, string | number>, timeoutMs = 2500): Promise<T> {
+    // 1. If hosted on Vercel with edge handler, use fast native backend
+    try {
+      if (typeof window !== "undefined" && window.location.hostname !== "localhost") {
+        const vercelUrl = new URL("/api/saavn", window.location.origin);
+        for (const [k, v] of Object.entries(params)) {
+          vercelUrl.searchParams.set(k, String(v));
+        }
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), timeoutMs);
+        const res = await fetch(vercelUrl.toString(), { signal: controller.signal });
+        clearTimeout(timer);
+        if (res.ok) {
+          const text = await res.text();
+          const jsonStart = text.indexOf("{");
+          if (jsonStart !== -1) {
+            return JSON.parse(text.slice(jsonStart)) as T;
+          }
+        }
+      }
+    } catch {}
+
     const url = new URL(DIRECT_API_URL);
     for (const [k, v] of Object.entries(params)) {
       url.searchParams.set(k, String(v));
