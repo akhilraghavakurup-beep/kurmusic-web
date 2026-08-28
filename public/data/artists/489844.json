@@ -1,0 +1,238 @@
+{
+  "id": "489844",
+  "name": "Kaithapram",
+  "image": "https://c.saavncdn.com/artists/Kaithapram_500x500.jpg",
+  "followerCount": "173419",
+  "bio": "[]",
+  "role": "Artist",
+  "topSongs": [
+    {
+      "id": "2DYykVUF",
+      "title": "Minnalvala",
+      "artist": "Sid Sriram, Sithara Krishnakumar, Jakes Bejoy",
+      "album": "Narivetta",
+      "albumId": "64849052",
+      "duration": 295,
+      "image": "https://c.saavncdn.com/591/Narivetta-Malayalam-2025-20250602184816-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyE+XLGLQ4L8ZUBdRef3P3HS07VuLiFAQeGGoSM5BUvXqOHosA9BP3Rhw7tS9a8Gtq",
+      "year": "2025",
+      "language": "malayalam",
+      "hasLyrics": false
+    },
+    {
+      "id": "m3AcIo1K",
+      "title": "Kaattuchembakam",
+      "artist": "Kaithapram, Jakes Bejoy, Vishal Mishra, Aavani Malhar",
+      "album": "Pallichattambi",
+      "albumId": "74549017",
+      "duration": 278,
+      "image": "https://c.saavncdn.com/776/Pallichattambi-Malayalam-2026-20260413214004-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy0Mf/82HU0OdkwUewjcZxeVojX937OwD9H5/eArMtHU0XL1uy9AMJBBw7tS9a8Gtq",
+      "year": "2026",
+      "language": "malayalam",
+      "hasLyrics": false
+    },
+    {
+      "id": "dWWKUNY2",
+      "title": "Poove Poove",
+      "artist": "Vidyasagar, P. Jayachandran, K. S. Chithra",
+      "album": "Devadoothan",
+      "albumId": "55448915",
+      "duration": 330,
+      "image": "https://c.saavncdn.com/134/Devadoothan-Malayalam-2024-20250403120015-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyO1d1avhxsAhU3DG7aLCO05uGbmad1xLkO6D3nvURedTUWdohCS+cXRw7tS9a8Gtq",
+      "year": "2024",
+      "language": "malayalam",
+      "hasLyrics": false
+    },
+    {
+      "id": "XunW2HAZ",
+      "title": "Sona Sona (Kalabhavan Mani)",
+      "artist": "Deepak Dev, Kalabhavan Mani, Suba",
+      "album": "Ben Johnson (Man Of The Track)",
+      "albumId": "1078271",
+      "duration": 288,
+      "image": "https://c.saavncdn.com/511/Ben-Johnson-Man-Of-The-Track-2005-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyJWoQqMmNJdqvJvgggDLoBab4H8Jt0KMSFttMHc4e9KxyFVkwqH+8Exw7tS9a8Gtq",
+      "year": "2005",
+      "language": "malayalam",
+      "hasLyrics": true
+    },
+    {
+      "id": "YAye7AeI",
+      "title": "Ente Thenkasi",
+      "artist": "Suresh Peters, K. S. Chithra, Kaithapram Damodaran Namboothiri",
+      "album": "Thenkasipattanam",
+      "albumId": "48624853",
+      "duration": 307,
+      "image": "https://c.saavncdn.com/162/Thenkasipattanam-Original-Motion-Picture-Soundtrack-Malayalam-2023-20230929191514-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy9VIHUTObGvUfi5y0jeNp01TcmXL/xkwFTJ6RL1HE6Xs24IVbGmE1xRw7tS9a8Gtq",
+      "year": "2023",
+      "language": "malayalam",
+      "hasLyrics": false
+    },
+    {
+      "id": "XD__kCYk",
+      "title": "Aaruparanju",
+      "artist": "Kaithapram, Berny-Ignatius, P. Jayachandran, K. S. Chithra",
+      "album": "Pulivaal Kalyanam",
+      "albumId": "55454280",
+      "duration": 260,
+      "image": "https://c.saavncdn.com/087/Pulivaal-Kalyanam-Malayalam-2024-20250425131018-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy30VfHxIO/euzHgT/7BZE/8MaRd6UdoyV3Vpp+h6k+BiSRgPG6c5Ojxw7tS9a8Gtq",
+      "year": "2024",
+      "language": "malayalam",
+      "hasLyrics": false
+    },
+    {
+      "id": "Zwy9spgc",
+      "title": "Ponnaambal Puzhayirambil (Version, 1)",
+      "artist": "Ouseppachan, K.J. Yesudas, K. S. Chithra",
+      "album": "Harikrishnans",
+      "albumId": "36458113",
+      "duration": 282,
+      "image": "https://c.saavncdn.com/410/Harikrishnans-Original-Motion-Picture-Soundtrack-Malayalam-2022-20220713235728-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy3jl7EssHlHtv7W31btERLsJAJ7ckzItt7or7FoYqg2zxQl7t2ijfixw7tS9a8Gtq",
+      "year": "2022",
+      "language": "malayalam",
+      "hasLyrics": false
+    },
+    {
+      "id": "3hFBqZeY",
+      "title": "Perilla Raajyathe",
+      "artist": "Ouseppachan, Karthik, Elizabeth Raju",
+      "album": "Bodyguard",
+      "albumId": "36473551",
+      "duration": 298,
+      "image": "https://c.saavncdn.com/124/Bodyguard-Malayalam-2022-20220713235703-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyJTfq18jLR9Rx2eWj1C53RyjwdWimCHF/DZZ9S0fCYIx0fZO0W8+l1Rw7tS9a8Gtq",
+      "year": "2022",
+      "language": "malayalam",
+      "hasLyrics": false
+    },
+    {
+      "id": "RXHc3xGx",
+      "title": "Neeyoru Puzhayayi",
+      "artist": "P. Jayachandran",
+      "album": "Thilakkam",
+      "albumId": "1264797",
+      "duration": 231,
+      "image": "https://c.saavncdn.com/095/Thilakkam-Malayalam-2002-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyPQDIZN+kL8zO5EC5ojOSDb+6DqXi9BwMtAbAup3FIqaD5t4it3heoxw7tS9a8Gtq",
+      "year": "2002",
+      "language": "malayalam",
+      "hasLyrics": true
+    },
+    {
+      "id": "dM4zegp2",
+      "title": "Walking In The Moonlight",
+      "artist": "Vidyasagar, Hariharan",
+      "album": "Sathyam Sivam Sundaram",
+      "albumId": "36461111",
+      "duration": 336,
+      "image": "https://c.saavncdn.com/308/Sathyam-Sivam-Sundaram-Original-Motion-Picture-Soundtrack-Malayalam-2022-20220713235450-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyuKXq0RWKnqpRtpI9mDh3G+JVfsGmhiQBzPnm+ZHcinGO7bbdcy/QQhw7tS9a8Gtq",
+      "year": "2022",
+      "language": "malayalam",
+      "hasLyrics": false
+    }
+  ],
+  "topAlbums": [
+    {
+      "id": "74549017",
+      "title": "Pallichattambi",
+      "artist": "Jakes Bejoy",
+      "image": "https://c.saavncdn.com/776/Pallichattambi-Malayalam-2026-20260413214004-500x500.jpg",
+      "year": "2026",
+      "songCount": 8
+    },
+    {
+      "id": "36460317",
+      "title": "Lion",
+      "artist": "Deepak Dev",
+      "image": "https://c.saavncdn.com/523/Lion-Malayalam-2022-20220713235522-500x500.jpg",
+      "year": "2022",
+      "songCount": 4
+    },
+    {
+      "id": "55448915",
+      "title": "Devadoothan",
+      "artist": "Vidyasagar, Tyaagaraaja",
+      "image": "https://c.saavncdn.com/134/Devadoothan-Malayalam-2024-20250403120015-500x500.jpg",
+      "year": "2024",
+      "songCount": 7
+    },
+    {
+      "id": "64849052",
+      "title": "Narivetta",
+      "artist": "Jakes Bejoy",
+      "image": "https://c.saavncdn.com/591/Narivetta-Malayalam-2025-20250602184816-500x500.jpg",
+      "year": "2025",
+      "songCount": 12
+    },
+    {
+      "id": "48624853",
+      "title": "Thenkasipattanam",
+      "artist": "Suresh Peters",
+      "image": "https://c.saavncdn.com/162/Thenkasipattanam-Original-Motion-Picture-Soundtrack-Malayalam-2023-20230929191514-500x500.jpg",
+      "year": "2023",
+      "songCount": 8
+    },
+    {
+      "id": "1220588",
+      "title": "Bicycle Thieves",
+      "artist": "Deepak Dev",
+      "image": "https://c.saavncdn.com/152/Bicycle-Thieves-Malayalam-2013-500x500.jpg",
+      "year": "2013",
+      "songCount": 3
+    },
+    {
+      "id": "69969089",
+      "title": "Adwaitham (Original Motion Picture Soundtrack)",
+      "artist": "M.G. Sreekumar, Sujatha Mohan, K. S. Chithra, M. G. Radhakrishnan",
+      "image": "https://c.saavncdn.com/969/Adwaitham-Original-Motion-Picture-Soundtrack-Malayalam-1991-20251121083531-500x500.jpg",
+      "year": "2025",
+      "songCount": 4
+    },
+    {
+      "id": "36473551",
+      "title": "Bodyguard",
+      "artist": "Ouseppachan",
+      "image": "https://c.saavncdn.com/124/Bodyguard-Malayalam-2022-20220713235703-500x500.jpg",
+      "year": "2022",
+      "songCount": 6
+    },
+    {
+      "id": "1078350",
+      "title": "Amrutham",
+      "artist": "M. Jayachandran",
+      "image": "https://c.saavncdn.com/593/Amrutham-2004-500x500.jpg",
+      "year": "2004",
+      "songCount": 6
+    },
+    {
+      "id": "1078328",
+      "title": "Urumi",
+      "artist": "Deepak Dev",
+      "image": "https://c.saavncdn.com/579/Urumi-2011-500x500.jpg",
+      "year": "2011",
+      "songCount": 9
+    },
+    {
+      "id": "36856481",
+      "title": "Indraprastham",
+      "artist": "Vidyasagar",
+      "image": "https://c.saavncdn.com/790/Indraprastham-Malayalam-1996-20250314133135-500x500.jpg",
+      "year": "1996",
+      "songCount": 6
+    },
+    {
+      "id": "1078242",
+      "title": "Naran",
+      "artist": "Various Artists",
+      "image": "https://c.saavncdn.com/478/Naran-2005-500x500.jpg",
+      "year": "2005",
+      "songCount": 9
+    }
+  ]
+}

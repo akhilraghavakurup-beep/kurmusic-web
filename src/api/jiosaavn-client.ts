@@ -428,28 +428,26 @@ export class JioSaavnClient {
       }
     } catch {}
 
-    if (this.customProxy) {
-      try {
-        const data = await this.fetchApi<any>({
-          __call: "content.getAlbumDetails",
-          albumid: albumId
-        }, 2500);
+    try {
+      const data = await this.fetchApi<any>({
+        __call: "content.getAlbumDetails",
+        albumid: albumId
+      }, 3000);
 
-        if (data && (data.id || data.title)) {
-          const songs: Track[] = (data.songs || data.list || []).map((s: any) => this.formatTrack(s));
-          return {
-            id: String(data.id || albumId),
-            title: this.cleanText(data.title || data.name),
-            artist: this.cleanText(data.primary_artists || data.artist || "Various Artists"),
-            artistId: data.primary_artists_id,
-            image: this.upgradeImage(data.image),
-            year: data.year,
-            songCount: songs.length,
-            songs
-          };
-        }
-      } catch {}
-    }
+      if (data && (data.id || data.title)) {
+        const songs: Track[] = (data.songs || data.list || []).map((s: any) => this.formatTrack(s));
+        return {
+          id: String(data.id || albumId),
+          title: this.cleanText(data.title || data.name),
+          artist: this.cleanText(data.primary_artists || data.artist || "Various Artists"),
+          artistId: data.primary_artists_id,
+          image: this.upgradeImage(data.image),
+          year: data.year,
+          songCount: songs.length,
+          songs
+        };
+      }
+    } catch {}
 
     return null;
   }
@@ -464,30 +462,28 @@ export class JioSaavnClient {
       }
     } catch {}
 
-    if (this.customProxy) {
-      try {
-        const data = await this.fetchApi<any>({
-          __call: "artist.getArtistPageDetails",
-          artistId,
-          artist_id: artistId
-        }, 2500);
+    try {
+      const data = await this.fetchApi<any>({
+        __call: "artist.getArtistPageDetails",
+        artistId,
+        artist_id: artistId
+      }, 3000);
 
-        if (data) {
-          const topSongs: Track[] = (data.topSongs || []).map((s: any) => this.formatTrack(s));
-          const topAlbums: Album[] = (data.topAlbums || []).map((a: any) => this.formatAlbum(a));
-          return {
-            id: String(data.artistId || artistId),
-            name: this.cleanText(data.name),
-            image: this.upgradeImage(data.image),
-            followerCount: data.follower_count || data.fan_count,
-            bio: this.cleanText(data.bio?.[0]?.text || data.bio),
-            role: data.role || "Artist",
-            topSongs,
-            topAlbums
-          };
-        }
-      } catch {}
-    }
+      if (data) {
+        const topSongs: Track[] = (data.topSongs || []).map((s: any) => this.formatTrack(s));
+        const topAlbums: Album[] = (data.topAlbums || []).map((a: any) => this.formatAlbum(a));
+        return {
+          id: String(data.artistId || artistId),
+          name: this.cleanText(data.name),
+          image: this.upgradeImage(data.image),
+          followerCount: data.follower_count || data.fan_count,
+          bio: this.cleanText(data.bio?.[0]?.text || data.bio),
+          role: data.role || "Artist",
+          topSongs,
+          topAlbums
+        };
+      }
+    } catch {}
 
     return null;
   }
@@ -523,44 +519,53 @@ export class JioSaavnClient {
       }
     } catch {}
 
-    // Check curated seeds
-    if (playlistId.includes("malayalam") || playlistId.includes("top50") || playlistId.includes("melodies")) {
+    // Check curated seeds if it matches exactly
+    if (playlistId === "malayalam_top50" || playlistId === "malayalam_melodies") {
       const curated = this.getCuratedFeedForLanguage("malayalam");
       const found = curated.flatMap(s => s.items).find(i => i.id === playlistId);
       if (found && "songs" in found && found.songs) {
         return found as Playlist;
       }
-      const tracks = curated.flatMap(s => s.items.filter((i): i is Track => "duration" in i));
-      return {
-        id: playlistId,
-        title: "Malayalam Chartbusters",
-        subtitle: "Aavesham, Manjummel Boys and viral hits",
-        image: "https://c.saavncdn.com/202/Aavesham-Original-Motion-Picture-Soundtrack-Malayalam-2024-20250910150630-500x500.jpg",
-        songCount: tracks.length,
-        songs: tracks
-      };
     }
 
-    if (this.customProxy) {
-      try {
-        const data = await this.fetchApi<any>({
-          __call: "playlist.getDetails",
-          listid: playlistId
-        }, 2500);
+    try {
+      const data = await this.fetchApi<any>({
+        __call: "playlist.getDetails",
+        listid: playlistId
+      }, 3000);
 
-        if (data) {
-          const songs: Track[] = (data.songs || data.list || []).map((s: any) => this.formatTrack(s));
-          return {
-            id: String(data.id || playlistId),
-            title: this.cleanText(data.title || data.listname),
-            subtitle: this.cleanText(data.subtitle || data.description),
-            image: this.upgradeImage(data.image),
-            songCount: songs.length,
-            songs
-          };
-        }
-      } catch {}
-    }
+      if (data && (data.songs || data.list)) {
+        const songs: Track[] = (data.songs || data.list || []).map((s: any) => this.formatTrack(s));
+        return {
+          id: String(data.id || playlistId),
+          title: this.cleanText(data.title || data.listname),
+          subtitle: this.cleanText(data.subtitle || data.description),
+          image: this.upgradeImage(data.image),
+          songCount: songs.length,
+          songs
+        };
+      }
+    } catch {}
+
+    // Try as an album on live API
+    try {
+      const albData = await this.fetchApi<any>({
+        __call: "content.getAlbumDetails",
+        albumid: playlistId
+      }, 3000);
+
+      if (albData && (albData.songs || albData.list)) {
+        const songs: Track[] = (albData.songs || albData.list || []).map((s: any) => this.formatTrack(s));
+        return {
+          id: String(albData.id || playlistId),
+          title: this.cleanText(albData.title || albData.name),
+          subtitle: this.cleanText(albData.primary_artists || albData.artist),
+          image: this.upgradeImage(albData.image),
+          songCount: songs.length,
+          songs
+        };
+      }
+    } catch {}
 
     return null;
   }

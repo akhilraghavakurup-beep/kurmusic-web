@@ -1,0 +1,238 @@
+{
+  "id": "2056418",
+  "name": "Ghibran",
+  "image": "https://c.saavncdn.com/artists/Ghibran_500x500.jpg",
+  "followerCount": "113906",
+  "bio": "[]",
+  "role": "Artist",
+  "topSongs": [
+    {
+      "id": "SMXfEkjW",
+      "title": "Thaarame Thaarame",
+      "artist": "Ghibran, Sid Sriram",
+      "album": "Kadaram Kondan",
+      "albumId": "15778688",
+      "duration": 228,
+      "image": "https://c.saavncdn.com/640/Kadaram-Kondan-Tamil-2019-20190717173037-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDygj4JI9Kt6wbNgKh/0JAIoaukXCoDowxXgI8OaF/P6kdnmzgKCJeKjRw7tS9a8Gtq",
+      "year": "2019",
+      "language": "tamil",
+      "hasLyrics": true
+    },
+    {
+      "id": "605Po4CO",
+      "title": "Chilla Chilla",
+      "artist": "Ghibran, Anirudh Ravichander, Vaisagh",
+      "album": "Thunivu",
+      "albumId": "40673842",
+      "duration": 222,
+      "image": "https://c.saavncdn.com/blob/842/Thunivu-Tamil-2022-20230217151809-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyRx6gsWLbg7iQjKezLrRTTuf5PLhp8fEXwXBmmVVgdpe1SNjYVjn9sxw7tS9a8Gtq",
+      "year": "2022",
+      "language": "tamil",
+      "hasLyrics": true
+    },
+    {
+      "id": "ZBYCsII7",
+      "title": "Yaar Azhaippadhu",
+      "artist": "Ghibran, Sid Sriram",
+      "album": "Maara (Original Motion Picture Soundtrack)",
+      "albumId": "23215639",
+      "duration": 250,
+      "image": "https://c.saavncdn.com/633/Maara-Original-Motion-Picture-Soundtrack-Tamil-2021-20251026074558-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyAUkVOGQ8iKSL2jGVplExt4HW9UPqgEoDSoFr8bUu88DQleEHt2WU7Bw7tS9a8Gtq",
+      "year": "2021",
+      "language": "tamil",
+      "hasLyrics": true
+    },
+    {
+      "id": "DujMPM2f",
+      "title": "Laali Laali",
+      "artist": "Sathyaprakash D, Pragathi Guruprasad",
+      "album": "Theeran Adhigaaram Ondru",
+      "albumId": "11776806",
+      "duration": 231,
+      "image": "https://c.saavncdn.com/227/Theeran-Adhigaaram-Ondru-Tamil-2017-20171109-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyQz1v9XNVyroJxD16PE7y+HDh6WGaXcv5kiLJN4ErCYv9bffQGMmmWxw7tS9a8Gtq",
+      "year": "2017",
+      "language": "tamil",
+      "hasLyrics": true
+    },
+    {
+      "id": "o_PYrpMr",
+      "title": "Poraney Poraney",
+      "artist": "Ranjith",
+      "album": "Vaagai Sooda Vaa",
+      "albumId": "49063323",
+      "duration": 315,
+      "image": "https://c.saavncdn.com/826/Vaagai-Sooda-Vaa-Tamil-2011-20240814120605-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyCBP7hdhk859V5b/DB1KMm2gYB5GPN/Nm4+4+mGoJepgVL86vNaDO4hw7tS9a8Gtq",
+      "year": "2011",
+      "language": "tamil",
+      "hasLyrics": true
+    },
+    {
+      "id": "brAMBCbw",
+      "title": "Champ Has Arrived",
+      "artist": "Ghibran",
+      "album": "BIKER - OST",
+      "albumId": "74353339",
+      "duration": 84,
+      "image": "https://c.saavncdn.com/387/BIKER-OST-Telugu-2026-20260408165619-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyHtZ+9O3JeqI3LtmrMm8Q8rCQahhmDm1n+r9vqIa/k4OENu3XzZYdtRw7tS9a8Gtq",
+      "year": "2026",
+      "language": "telugu",
+      "hasLyrics": false
+    },
+    {
+      "id": "DNM4JuxB",
+      "title": "Yeya En Kottikkaaraa",
+      "artist": "Sundar Narayana Rao, Malavika Anilkumar",
+      "album": "Papanasam (Original Motion Picture Soundtrack)",
+      "albumId": "1265147",
+      "duration": 308,
+      "image": "https://c.saavncdn.com/254/Papanasam-Original-Motion-Picture-Soundtrack-Tamil-2015-20250910161134-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyKYhIZti+iYXVeeK5wOct50WJPHtIr7XWS5VjtOtxwY1KLB7RNN/Ldhw7tS9a8Gtq",
+      "year": "2015",
+      "language": "tamil",
+      "hasLyrics": true
+    },
+    {
+      "id": "eUq7Okyt",
+      "title": "Sara Sara",
+      "artist": "Chinmayi",
+      "album": "Vaagai Sooda Vaa",
+      "albumId": "49063323",
+      "duration": 299,
+      "image": "https://c.saavncdn.com/826/Vaagai-Sooda-Vaa-Tamil-2011-20240814120605-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy4EmCBZRyLlbHgdWAZ+TM/NSU1htrmfIPRKT5frmfJgECgDl7ed/AZRw7tS9a8Gtq",
+      "year": "2011",
+      "language": "tamil",
+      "hasLyrics": true
+    },
+    {
+      "id": "sw5EyJG_",
+      "title": "The Revelation (Interval BGM)",
+      "artist": "Ghibran",
+      "album": "Saaho, Vol. 1 (Original Background Score)",
+      "albumId": "18434588",
+      "duration": 86,
+      "image": "https://c.saavncdn.com/552/Saaho-Vol-1-Original-Background-Score--English-2019-20191230071647-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyHx7wRGUA10auOLbE9B5YS0Ovf+UXglUxrxzflo7v893RwPdT0xqZ2hw7tS9a8Gtq",
+      "year": "2019",
+      "language": "tamil",
+      "hasLyrics": false
+    },
+    {
+      "id": "ZV_Ct0Pb",
+      "title": "Sevatha Pulla",
+      "artist": "K.G. Ranjith",
+      "album": "Theeran Adhigaaram Ondru",
+      "albumId": "11776806",
+      "duration": 234,
+      "image": "https://c.saavncdn.com/227/Theeran-Adhigaaram-Ondru-Tamil-2017-20171109-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyNIyiA+ypeBrkkpKTYzXlR5l85AFlArnyJTiv++nYrADySrYZ7FX+xRw7tS9a8Gtq",
+      "year": "2017",
+      "language": "tamil",
+      "hasLyrics": true
+    }
+  ],
+  "topAlbums": [
+    {
+      "id": "15778688",
+      "title": "Kadaram Kondan",
+      "artist": "Ghibran",
+      "image": "https://c.saavncdn.com/640/Kadaram-Kondan-Tamil-2019-20190717173037-500x500.jpg",
+      "year": "2019",
+      "songCount": 3
+    },
+    {
+      "id": "40673842",
+      "title": "Thunivu",
+      "artist": "Ghibran",
+      "image": "https://c.saavncdn.com/blob/842/Thunivu-Tamil-2022-20230217151809-500x500.jpg",
+      "year": "2022",
+      "songCount": 3
+    },
+    {
+      "id": "23215639",
+      "title": "Maara (Original Motion Picture Soundtrack)",
+      "artist": "Ghibran",
+      "image": "https://c.saavncdn.com/633/Maara-Original-Motion-Picture-Soundtrack-Tamil-2021-20251026074558-500x500.jpg",
+      "year": "2021",
+      "songCount": 11
+    },
+    {
+      "id": "49063323",
+      "title": "Vaagai Sooda Vaa",
+      "artist": "Anitha Karthikeyan, Rita, Jaya Murthy, Ranjith, Neha Bhasin, Chinmayi",
+      "image": "https://c.saavncdn.com/826/Vaagai-Sooda-Vaa-Tamil-2011-20240814120605-500x500.jpg",
+      "year": "2011",
+      "songCount": 3
+    },
+    {
+      "id": "1215983",
+      "title": "Vaagai Sooda Vaa (Original Motion Picture Soundtrack)",
+      "artist": "M. Ghibran",
+      "image": "https://c.saavncdn.com/847/Vaagai-Sooda-Vaa-Original-Motion-Picture-Soundtrack-Tamil-2011-20250910162237-500x500.jpg",
+      "year": "2011",
+      "songCount": 7
+    },
+    {
+      "id": "11776806",
+      "title": "Theeran Adhigaaram Ondru",
+      "artist": "Ghibran",
+      "image": "https://c.saavncdn.com/227/Theeran-Adhigaaram-Ondru-Tamil-2017-20171109-500x500.jpg",
+      "year": "2017",
+      "songCount": 7
+    },
+    {
+      "id": "74353339",
+      "title": "BIKER - OST",
+      "artist": "Ghibran",
+      "image": "https://c.saavncdn.com/387/BIKER-OST-Telugu-2026-20260408165619-500x500.jpg",
+      "year": "2026",
+      "songCount": 16
+    },
+    {
+      "id": "1162584",
+      "title": "Amarakaaviyam",
+      "artist": "Ghibran",
+      "image": "https://c.saavncdn.com/721/Amarakaaviyam-Tamil-2014-20190914115625-500x500.jpg",
+      "year": "2014",
+      "songCount": 10
+    },
+    {
+      "id": "1164217",
+      "title": "Thirumanam Enum Nikkah (Original Motion Picture Soundtrack)",
+      "artist": "M. Ghibran",
+      "image": "https://c.saavncdn.com/547/Thirumanam-Enum-Nikkah-Original-Motion-Picture-Soundtrack-Tamil-2013-20250910162013-500x500.jpg",
+      "year": "2013",
+      "songCount": 7
+    },
+    {
+      "id": "14055740",
+      "title": "Neeyum Naanum (Original Motion Picture Soundtrack)",
+      "artist": "Kabilan, Na. Muthu Kumar, R. Thiyagarajan, Mohanraj, Madhan Karky, Sakthi, Muthamizh, Parvathy, Yugabharathi, Annamalai, Pa. Vijay, Hiphop Tamizha, G.V. Prakash Kumar, Nivas K. Prasanna, Simon K. King, Arrora, Ghibran, D. Imman, Vijay Antony, Vidyasagar",
+      "image": "https://c.saavncdn.com/250/Neeyum-Naanum-Original-Motion-Picture-Soundtrack-Tamil-2018-20251024173032-500x500.jpg",
+      "year": "2018",
+      "songCount": 10
+    },
+    {
+      "id": "18434588",
+      "title": "Saaho, Vol. 1 (Original Background Score)",
+      "artist": "Ghibran",
+      "image": "https://c.saavncdn.com/552/Saaho-Vol-1-Original-Background-Score--English-2019-20191230071647-500x500.jpg",
+      "year": "2019",
+      "songCount": 10
+    },
+    {
+      "id": "64763085",
+      "title": "Naiyaandi (Original Motion Picture Soundtrack)",
+      "artist": "Viveka, Arivumathi, K Madhiyalagan, VE Ramasamy, Karthik Netha, Devendra Kumar Sharma, Ghibran",
+      "image": "https://c.saavncdn.com/587/Naiyaandi-Original-Motion-Picture-Soundtrack-Tamil-2025-20250520193239-500x500.jpg",
+      "year": "2025",
+      "songCount": 6
+    }
+  ]
+}

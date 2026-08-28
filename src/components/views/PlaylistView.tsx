@@ -62,31 +62,12 @@ export const PlaylistView: React.FC<PlaylistViewProps> = ({ playlistId }) => {
           return;
         }
 
-        // Resilient fallback: load curated tracks so screen is NEVER broken
-        const fallback = jioSaavnClient.getCuratedFeedForLanguage('malayalam');
-        const tracks = fallback.flatMap((s) => s.items.filter((i): i is Track => 'duration' in i));
-        setPlaylist({
-          id: playlistId,
-          title: 'Top Hits Playlist',
-          subtitle: 'Trending chartbusters and viral hits',
-          image: tracks[0]?.image || 'https://placehold.co/500x500/161129/9333EA?text=Kur+Music',
-          songCount: tracks.length,
-          songs: tracks,
-        });
+        setPlaylist(null);
         setLoading(false);
       })
       .catch(() => {
         if (!mounted) return;
-        const fallback = jioSaavnClient.getCuratedFeedForLanguage('malayalam');
-        const tracks = fallback.flatMap((s) => s.items.filter((i): i is Track => 'duration' in i));
-        setPlaylist({
-          id: playlistId,
-          title: 'Top Hits Playlist',
-          subtitle: 'Trending chartbusters and viral hits',
-          image: tracks[0]?.image || 'https://placehold.co/500x500/161129/9333EA?text=Kur+Music',
-          songCount: tracks.length,
-          songs: tracks,
-        });
+        setPlaylist(null);
         setLoading(false);
       });
 

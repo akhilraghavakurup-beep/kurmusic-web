@@ -1,0 +1,238 @@
+{
+  "id": "458088",
+  "name": "Jassie Gift",
+  "image": "https://c.saavncdn.com/artists/Jassie_Gift_000_20210303130936_500x500.jpg",
+  "followerCount": "72398",
+  "bio": "[]",
+  "role": "Artist",
+  "topSongs": [
+    {
+      "id": "hvzqUSpg",
+      "title": "Lajjavathiye",
+      "artist": "Jassie Gift, Kaithapram, Raju George",
+      "album": "4 The People",
+      "albumId": "36458124",
+      "duration": 277,
+      "image": "https://c.saavncdn.com/213/4-The-People-Malayalam-2022-20220713235112-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyI/0are1KxPWDg8brLn1EjkLgVuM4nbotqJF+g+sbTXl0X0qZo2Y6jxw7tS9a8Gtq",
+      "year": "2022",
+      "language": "malayalam",
+      "hasLyrics": false
+    },
+    {
+      "id": "y4iGTkb_",
+      "title": "Themma Themma Themmadikkatte (Version, 01)",
+      "artist": "Jassie Gift, Jyotsna Radhakrishnan, Karthika, Kaithapram",
+      "album": "Rain Rain Come Again",
+      "albumId": "36457916",
+      "duration": 274,
+      "image": "https://c.saavncdn.com/421/Rain-Rain-Come-Again-Malayalam-2022-20220713235013-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyxzC2fDwNXN1TaaWLkIujxLInwEYKpIxyVjWGwMkBFU55iaa5QnjqnBw7tS9a8Gtq",
+      "year": "2022",
+      "language": "malayalam",
+      "hasLyrics": false
+    },
+    {
+      "id": "MKQMw3V3",
+      "title": "Chirichu Konchunna",
+      "artist": "Jassie Gift, Sangeetha, Siju Thuravoor, Yuvan Shankar Raja",
+      "album": "Happy Be Happy (Original Motion Picture Soundtrack)",
+      "albumId": "67386836",
+      "duration": 215,
+      "image": "https://c.saavncdn.com/256/Happy-Be-Happy-Original-Motion-Picture-Soundtrack-Malayalam-2007-20250820191221-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyebMQ0KPp51uLQrDGWEGv9Ui1Av2+VJvn0bgXRDEh/l+C+WC5OU2M+Rw7tS9a8Gtq",
+      "year": "2007",
+      "language": "malayalam",
+      "hasLyrics": false
+    },
+    {
+      "id": "uXVnzocx",
+      "title": "Mathappoove",
+      "artist": "Jassie Gift, Anwar Sadath, Afsal, Rimi Tomy, Girish",
+      "album": "Balram vs. Tharadas (Original Motion Picture Soundtrack)",
+      "albumId": "69880850",
+      "duration": 247,
+      "image": "https://c.saavncdn.com/461/Balram-vs-Tharadas-Original-Motion-Picture-Soundtrack-Malayalam-2019-20251118045842-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDysCAH2PsuY+azRIW8zAHaxIOLvCio5OcxrkzAA7E0K2Do9B3r8y3G/hw7tS9a8Gtq",
+      "year": "2025",
+      "language": "malayalam",
+      "hasLyrics": true
+    },
+    {
+      "id": "Y7zopsUJ",
+      "title": "Kettilee Kettilee",
+      "artist": "Vijay Yesudas, Anwar, Rijiya",
+      "album": "Pokkiriraja",
+      "albumId": "1264692",
+      "duration": 205,
+      "image": "https://c.saavncdn.com/606/Pokkiriraja-Malayalam-2010-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy/jgmfh6KUOyqtdigJtjZpZ+7gqLs2AgrZ+68HCWZpopPCgY+6FfwNRw7tS9a8Gtq",
+      "year": "2010",
+      "language": "malayalam",
+      "hasLyrics": true
+    },
+    {
+      "id": "1cnROWa0",
+      "title": "Thattum Muttum",
+      "artist": "Deepak Dev, Jassie Gift, Sindhuja Rajaram, Kaithapram",
+      "album": "Puthiyamugham",
+      "albumId": "55449987",
+      "duration": 312,
+      "image": "https://c.saavncdn.com/566/Puthiyamugham-Malayalam-2024-20250425140903-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyLEMwkQkvRohAQ4FbQxS3xuepLYh4d/hS4yyzeD/eATny+i9LggBLpBw7tS9a8Gtq",
+      "year": "2024",
+      "language": "malayalam",
+      "hasLyrics": false
+    },
+    {
+      "id": "fNiiyIG9",
+      "title": "Innu Penninu",
+      "artist": "Jassie Gift, Manjari, Rajalakshmi",
+      "album": "China Town",
+      "albumId": "55470072",
+      "duration": 326,
+      "image": "https://c.saavncdn.com/228/China-Town-Malayalam-2024-20250403210019-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy8Obpd2128ErHAt1mW8pYhtD81hSDOlDIBCET90oKAWSsW1ytm14UFRw7tS9a8Gtq",
+      "year": "2024",
+      "language": "malayalam",
+      "hasLyrics": false
+    },
+    {
+      "id": "oJYYm9dx",
+      "title": "Andangakka",
+      "artist": "Harris Jayaraj, Jessie Gift, Kay Kay, Saindhavi, Vairamuthu, Shreya Ghoshal",
+      "album": "Anniyan",
+      "albumId": "38211294",
+      "duration": 336,
+      "image": "https://c.saavncdn.com/184/Anniyan-Tamil-2005-20251230133307-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyWrdoJWzGC5S7T43eUaTzWbxFv9Sj74wQt5tNZTggPp8w3kpLweZtMxw7tS9a8Gtq",
+      "year": "2005",
+      "language": "tamil",
+      "hasLyrics": true
+    },
+    {
+      "id": "ZWW5QWma",
+      "title": "Manikinavin Kothumbuvallam",
+      "artist": "K.J. Yesudas, Sujatha Mohan",
+      "album": "Pokkiriraja",
+      "albumId": "1264692",
+      "duration": 298,
+      "image": "https://c.saavncdn.com/606/Pokkiriraja-Malayalam-2010-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyxVvPYCi+QUTviTltW4+9iFJzmPoCSzbxjjtuJ/eahxytTDKxq+/Buhw7tS9a8Gtq",
+      "year": "2010",
+      "language": "malayalam",
+      "hasLyrics": true
+    },
+    {
+      "id": "-ijtpEtf",
+      "title": "Lajjavathiye",
+      "artist": "Jassey Gift",
+      "album": "4 Students",
+      "albumId": "1133674",
+      "duration": 271,
+      "image": "https://c.saavncdn.com/674/4-Students-Tamil-2004-20220111124730-500x500.jpg",
+      "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyI6zhb3KiowFVqCsrQX3pnHs0Mwg+vy3KN0fJaA0z4avIzXpNFSDp6Bw7tS9a8Gtq",
+      "year": "2004",
+      "language": "tamil",
+      "hasLyrics": true
+    }
+  ],
+  "topAlbums": [
+    {
+      "id": "67386836",
+      "title": "Happy Be Happy (Original Motion Picture Soundtrack)",
+      "artist": "Siju Thuravoor, Joffy Tharakan, Yuvan Shankar Raja",
+      "image": "https://c.saavncdn.com/256/Happy-Be-Happy-Original-Motion-Picture-Soundtrack-Malayalam-2007-20250820191221-500x500.jpg",
+      "year": "2007",
+      "songCount": 6
+    },
+    {
+      "id": "34770153",
+      "title": "Krishna",
+      "artist": "Mani Sharma",
+      "image": "https://c.saavncdn.com/892/Krishna-Malayalam-2020-20220506213838-500x500.jpg",
+      "year": "2020",
+      "songCount": 6
+    },
+    {
+      "id": "55455949",
+      "title": "Speed Track",
+      "artist": "Deepak Dev",
+      "image": "https://c.saavncdn.com/336/Speed-Track-Malayalam-2024-20250425144353-500x500.jpg",
+      "year": "2024",
+      "songCount": 6
+    },
+    {
+      "id": "36458124",
+      "title": "4 The People",
+      "artist": "Jassie Gift",
+      "image": "https://c.saavncdn.com/213/4-The-People-Malayalam-2022-20220713235112-500x500.jpg",
+      "year": "2022",
+      "songCount": 7
+    },
+    {
+      "id": "1264692",
+      "title": "Pokkiriraja",
+      "artist": "Jassie Gift",
+      "image": "https://c.saavncdn.com/606/Pokkiriraja-Malayalam-2010-500x500.jpg",
+      "year": "2010",
+      "songCount": 5
+    },
+    {
+      "id": "36458032",
+      "title": "Aarya",
+      "artist": "Devi Sri Prasad",
+      "image": "https://c.saavncdn.com/179/Aarya-Malayalam-2022-20220713235705-500x500.jpg",
+      "year": "2022",
+      "songCount": 8
+    },
+    {
+      "id": "55449987",
+      "title": "Puthiyamugham",
+      "artist": "Deepak Dev",
+      "image": "https://c.saavncdn.com/566/Puthiyamugham-Malayalam-2024-20250425140903-500x500.jpg",
+      "year": "2024",
+      "songCount": 7
+    },
+    {
+      "id": "69880850",
+      "title": "Balram vs. Tharadas (Original Motion Picture Soundtrack)",
+      "artist": "Jassie Gift, Anwar Sadath, Afsal, Rimi Tomy, Girish, Delsy Ninan, K.J. Yesudas",
+      "image": "https://c.saavncdn.com/461/Balram-vs-Tharadas-Original-Motion-Picture-Soundtrack-Malayalam-2019-20251118045842-500x500.jpg",
+      "year": "2025",
+      "songCount": 3
+    },
+    {
+      "id": "1134856",
+      "title": "Annan Thampi",
+      "artist": "Rahul Raj",
+      "image": "https://c.saavncdn.com/000/default-album-500x500.jpg",
+      "year": "2008",
+      "songCount": 3
+    },
+    {
+      "id": "40611323",
+      "title": "Gajapokkiri",
+      "artist": "Devi Sri Prasad",
+      "image": "https://c.saavncdn.com/947/Gajapokkiri-Malayalam-2022-20221207212901-500x500.jpg",
+      "year": "2012",
+      "songCount": 6
+    },
+    {
+      "id": "25572382",
+      "title": "Member Rameshan 9aam Ward",
+      "artist": "Kailas Menon",
+      "image": "https://c.saavncdn.com/827/Member-Rameshan-9aam-Ward-Malayalam-2021-20220224161937-500x500.jpg",
+      "year": "2021",
+      "songCount": 4
+    },
+    {
+      "id": "55470072",
+      "title": "China Town",
+      "artist": "Jassie Gift",
+      "image": "https://c.saavncdn.com/228/China-Town-Malayalam-2024-20250403210019-500x500.jpg",
+      "year": "2024",
+      "songCount": 5
+    }
+  ]
+}
