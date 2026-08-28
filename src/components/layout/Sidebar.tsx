@@ -7,11 +7,9 @@ import {
   ListPlus, 
   Download, 
   Settings, 
-  Globe2, 
   Music2 
 } from 'lucide-react';
 import { useLibraryStore } from '../../stores/library-store';
-import { useSettingsStore } from '../../stores/settings-store';
 import { useDownloadStore } from '../../stores/download-store';
 
 export type ActiveTab = 'home' | 'search' | 'library' | 'liked' | 'downloads' | 'album' | 'artist' | 'playlist';
@@ -30,17 +28,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   onSelectPlaylist,
 }) => {
   const { likedTracks, playlists, createPlaylist } = useLibraryStore();
-  const { languages, toggleLanguage } = useSettingsStore();
   const { downloadedTracks } = useDownloadStore();
-
-  const allAvailableLangs = [
-    { id: 'hindi', label: 'Hindi' },
-    { id: 'english', label: 'English' },
-    { id: 'malayalam', label: 'Malayalam' },
-    { id: 'tamil', label: 'Tamil' },
-    { id: 'telugu', label: 'Telugu' },
-    { id: 'punjabi', label: 'Punjabi' },
-  ];
 
   const handleCreatePlaylist = () => {
     const name = prompt('Enter playlist name:');
@@ -173,32 +161,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
               <span className="truncate flex-1">{pl.name}</span>
             </button>
           ))}
-        </div>
-      </div>
-
-      {/* Language Preferences */}
-      <div className="p-4 border-t border-white/5 bg-black/20">
-        <div className="flex items-center gap-1.5 text-xs text-slate-400 font-semibold mb-2.5">
-          <Globe2 className="w-3.5 h-3.5 text-purple-400" />
-          <span>Language Feeds</span>
-        </div>
-        <div className="flex flex-wrap gap-1.5">
-          {allAvailableLangs.map((lang) => {
-            const isSelected = languages.includes(lang.id);
-            return (
-              <button
-                key={lang.id}
-                onClick={() => toggleLanguage(lang.id)}
-                className={`text-[11px] px-2.5 py-1 rounded-full border transition-all ${
-                  isSelected
-                    ? 'bg-purple-600/30 border-purple-500/60 text-purple-200 font-medium'
-                    : 'bg-white/5 border-white/10 text-slate-400 hover:text-slate-200'
-                }`}
-              >
-                {lang.label}
-              </button>
-            );
-          })}
         </div>
       </div>
 
