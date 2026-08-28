@@ -91,20 +91,11 @@ export class AudioManager {
       // seekto not supported on some older browsers
     }
 
+    // Explicitly do NOT register seekbackward or seekforward so iPhone / iOS Lock Screen
+    // displays Previous Track (|◀) and Next Track (▶|) buttons instead of 10s seek buttons.
     try {
-      nav.setActionHandler('seekbackward', (details) => {
-        const offset = details.seekOffset || 10;
-        this.seek(Math.max(0, this.audio.currentTime - offset));
-      });
-    } catch {
-      // ignore
-    }
-
-    try {
-      nav.setActionHandler('seekforward', (details) => {
-        const offset = details.seekOffset || 10;
-        this.seek(Math.min(this.audio.duration || 0, this.audio.currentTime + offset));
-      });
+      nav.setActionHandler('seekbackward', null);
+      nav.setActionHandler('seekforward', null);
     } catch {
       // ignore
     }
