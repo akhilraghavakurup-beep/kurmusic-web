@@ -5,6 +5,7 @@ import { jioSaavnClient } from '../../api/jiosaavn-client';
 import { useSettingsStore } from '../../stores/settings-store';
 import { usePlayerStore } from '../../stores/player-store';
 import { HorizontalSection } from '../home/HorizontalSection';
+import { SongCard } from '../cards/SongCard';
 
 interface HomeViewProps {
   onSelectAlbum: (id: string) => void;
@@ -153,23 +154,23 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
       {/* Horizontal Quick Picks Shelf */}
       {quickPicks.length > 0 && (
-        <section className="space-y-3 relative group/quick">
+        <section className="space-y-3 relative group/shelf">
           <div className="flex items-center justify-between">
-            <h3 className="text-lg font-bold text-white font-display">
+            <h3 className="text-lg sm:text-xl font-bold text-white tracking-tight font-display">
               Quick Picks
             </h3>
-            <div className="flex items-center gap-1.5 opacity-90 sm:opacity-0 sm:group-hover/quick:opacity-100 transition-opacity">
+            <div className="flex items-center gap-1.5 opacity-90 sm:opacity-0 sm:group-hover/shelf:opacity-100 transition-opacity">
               <button
                 onClick={() => scrollContainer(quickPicksRef, 'left')}
                 aria-label="Scroll left"
-                className="w-7 h-7 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all backdrop-blur-md cursor-pointer"
+                className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all backdrop-blur-md cursor-pointer"
               >
                 <ChevronLeft className="w-4 h-4" />
               </button>
               <button
                 onClick={() => scrollContainer(quickPicksRef, 'right')}
                 aria-label="Scroll right"
-                className="w-7 h-7 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all backdrop-blur-md cursor-pointer"
+                className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all backdrop-blur-md cursor-pointer"
               >
                 <ChevronRight className="w-4 h-4" />
               </button>
@@ -178,48 +179,16 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
           <div
             ref={quickPicksRef}
-            className="flex gap-3 overflow-x-auto pb-3 pt-1 scrollbar-none snap-x snap-mandatory scroll-smooth -mx-2 px-2 cursor-grab active:cursor-grabbing select-none"
+            className="flex gap-4 overflow-x-auto pb-4 pt-1 scrollbar-none snap-x snap-mandatory scroll-smooth -mx-2 px-2 cursor-grab active:cursor-grabbing select-none"
           >
-            {quickPicks.map((track) => {
-              const isCurrent = currentTrack?.id === track.id;
-              return (
-                <div
-                  key={track.id}
-                  onClick={() => playTrack(track, quickPicks)}
-                  className="w-[72vw] max-w-[280px] sm:w-72 shrink-0 snap-start group flex items-center gap-3 p-2 bg-white/5 hover:bg-white/10 rounded-xl cursor-pointer border border-white/5 transition-all shadow-sm"
-                >
-                  <img
-                    src={track.image}
-                    alt={track.title}
-                    className="w-13 h-13 rounded-lg object-cover bg-slate-900 shadow shrink-0"
-                  />
-                  <div className="min-w-0 flex-1">
-                    <h4 className="text-sm font-semibold text-white truncate">
-                      {track.title}
-                    </h4>
-                    <p className="text-xs text-slate-400 truncate">{track.artist}</p>
-                  </div>
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      if (isCurrent) togglePlay();
-                      else playTrack(track, quickPicks);
-                    }}
-                    className={`mr-2 w-8 h-8 rounded-full bg-purple-600 text-white flex items-center justify-center shadow-md shadow-purple-600/40 transition-all ${
-                      isCurrent
-                        ? 'opacity-100'
-                        : 'opacity-100 sm:opacity-0 sm:group-hover:opacity-100 hover:scale-105'
-                    }`}
-                  >
-                    {isCurrent && isPlaying ? (
-                      <Pause className="w-3.5 h-3.5 fill-current" />
-                    ) : (
-                      <Play className="w-3.5 h-3.5 fill-current translate-x-0.5" />
-                    )}
-                  </button>
-                </div>
-              );
-            })}
+            {quickPicks.map((track) => (
+              <div
+                key={track.id}
+                className="w-36 sm:w-44 md:w-48 shrink-0 snap-start select-none"
+              >
+                <SongCard track={track} queueContext={quickPicks} />
+              </div>
+            ))}
           </div>
         </section>
       )}
