@@ -211,6 +211,66 @@ export class JioSaavnClient {
     return this.getCuratedFeedForLanguage(lang);
   }
 
+  async getMultiLanguageHomeFeed(languages: string[]): Promise<HomeFeedSection[]> {
+    const langs = languages && languages.length > 0 ? languages : ["malayalam"];
+    if (langs.length === 1) {
+      return this.getHomeFeed(langs[0]);
+    }
+
+    const feeds = await Promise.all(langs.map((l) => this.getHomeFeed(l)));
+    const combined: HomeFeedSection[] = [];
+    const maxSections = Math.max(...feeds.map((f) => f.length));
+
+    for (let i = 0; i < maxSections; i++) {
+      for (let j = 0; j < feeds.length; j++) {
+        const section = feeds[j][i];
+        if (section) {
+          const langName = langs[j].charAt(0).toUpperCase() + langs[j].slice(1);
+          const hasLangInTitle = section.title.toLowerCase().includes(langs[j].toLowerCase());
+          const displayTitle = hasLangInTitle ? section.title : `${section.title} (${langName})`;
+
+          combined.push({
+            ...section,
+            id: `${langs[j]}-${section.id}-${i}`,
+            title: displayTitle,
+          });
+        }
+      }
+    }
+
+    return combined;
+  }
+
+  getCuratedMultiLanguageFeed(languages: string[]): HomeFeedSection[] {
+    const langs = languages && languages.length > 0 ? languages : ["malayalam"];
+    if (langs.length === 1) {
+      return this.getCuratedFeedForLanguage(langs[0]);
+    }
+
+    const feeds = langs.map((l) => this.getCuratedFeedForLanguage(l));
+    const combined: HomeFeedSection[] = [];
+    const maxSections = Math.max(...feeds.map((f) => f.length));
+
+    for (let i = 0; i < maxSections; i++) {
+      for (let j = 0; j < feeds.length; j++) {
+        const section = feeds[j][i];
+        if (section) {
+          const langName = langs[j].charAt(0).toUpperCase() + langs[j].slice(1);
+          const hasLangInTitle = section.title.toLowerCase().includes(langs[j].toLowerCase());
+          const displayTitle = hasLangInTitle ? section.title : `${section.title} (${langName})`;
+
+          combined.push({
+            ...section,
+            id: `curated-${langs[j]}-${section.id}-${i}`,
+            title: displayTitle,
+          });
+        }
+      }
+    }
+
+    return combined;
+  }
+
   async search(query: string): Promise<SearchResults> {
     if (!query.trim()) {
       return { tracks: [], albums: [], artists: [], playlists: [] };
