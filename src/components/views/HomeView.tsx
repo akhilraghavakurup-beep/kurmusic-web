@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { Play, Pause, Globe, Check } from 'lucide-react';
+import React, { useEffect, useState, useRef } from 'react';
+import { Play, Pause, Globe, Check, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 import { HomeFeedSection, Track } from '../../api/types';
 import { jioSaavnClient } from '../../api/jiosaavn-client';
 import { useSettingsStore } from '../../stores/settings-store';
 import { usePlayerStore } from '../../stores/player-store';
+import { useLibraryStore } from '../../stores/library-store';
 import { HorizontalSection } from '../home/HorizontalSection';
+import { SongCard } from '../cards/SongCard';
 
 interface HomeViewProps {
   onSelectAlbum: (id: string) => void;
@@ -28,6 +30,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
 }) => {
   const { languages, setLanguages } = useSettingsStore();
   const { currentTrack, isPlaying, playTrack, togglePlay } = usePlayerStore();
+  const { getTopPlayedTracks, totalMinutesListened } = useLibraryStore();
+
+  const quickPicksRef = useRef<HTMLDivElement>(null);
+  const rewindRef = useRef<HTMLDivElement>(null);
 
   // Multi-language selection state initialized from store (defaults to Malayalam & Tamil)
   const [selectedLanguages, setSelectedLanguages] = useState<string[]>(() => {
@@ -35,7 +41,9 @@ export const HomeView: React.FC<HomeViewProps> = ({
   });
 
   const [sections, setSections] = useState<HomeFeedSection[]>(() => {
-    return jioSaavnClient.getCuratedMultiLanguageFeed(languages && languages.length > 0 ? languages : ['malayalam', 'tamil']);
+    return jioSaavnClient.getCuratedMultiLanguageFeed(
+      languages && languages.length > 0 ? languages : ['malayalam', 'tamil']
+    );
   });
 
   useEffect(() => {
@@ -78,24 +86,31 @@ export const HomeView: React.FC<HomeViewProps> = ({
   const handleToggleLanguage = (langId: string) => {
     let next: string[];
     if (selectedLanguages.includes(langId)) {
-      // If already selected, deselect it
       next = selectedLanguages.filter((id) => id !== langId);
-      // If none selected, default to this one so the feed is never empty
       if (next.length === 0) {
         next = [langId];
       }
     } else {
-      // If not selected, add it
       next = [...selectedLanguages, langId];
     }
     setSelectedLanguages(next);
     setLanguages(next);
   };
 
+  const scrollContainer = (ref: React.RefObject<HTMLDivElement | null>, direction: 'left' | 'right') => {
+    if (ref.current) {
+      const scrollAmount = direction === 'left' ? -400 : 400;
+      ref.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
+
   // Collect quick picks across all selected languages
   const quickPicks: Track[] = sections
     .flatMap((s) => s.items.filter((i): i is Track => 'duration' in i))
-    .slice(0, 6);
+    .slice(0, 10);
+
+  // Top played tracks from Kur Rewind
+  const topPlayed = getTopPlayedTracks(10);
 
   const selectedLabels = AVAILABLE_LANGUAGES
     .filter((l) => selectedLanguages.includes(l.id))
@@ -148,20 +163,42 @@ export const HomeView: React.FC<HomeViewProps> = ({
         </div>
       </div>
 
-      {/* Quick Play 6-Grid */}
+      {/* Horizontal Quick Picks Shelf */}
       {quickPicks.length > 0 && (
-        <div className="space-y-3">
-          <h3 className="text-lg font-bold text-white font-display">
-            Quick Picks {selectedLabels ? `(${selectedLabels})` : ''}
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <section className="space-y-3 relative group/quick">
+          <div className="flex items-center justify-between">
+            <h3 className="text-lg font-bold text-white font-display">
+              Quick Picks {selectedLabels ? `(${selectedLabels})` : ''}
+            </h3>
+            <div className="flex items-center gap-1.5 opacity-90 sm:opacity-0 sm:group-hover/quick:opacity-100 transition-opacity">
+              <button
+                onClick={() => scrollContainer(quickPicksRef, 'left')}
+                aria-label="Scroll left"
+                className="w-7 h-7 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all backdrop-blur-md cursor-pointer"
+              >
+                <ChevronLeft className="w-4 h-4" />
+              </button>
+              <button
+                onClick={() => scrollContainer(quickPicksRef, 'right')}
+                aria-label="Scroll right"
+                className="w-7 h-7 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all backdrop-blur-md cursor-pointer"
+              >
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+
+          <div
+            ref={quickPicksRef}
+            className="flex gap-3 overflow-x-auto pb-3 pt-1 scrollbar-none snap-x snap-mandatory scroll-smooth -mx-2 px-2 cursor-grab active:cursor-grabbing select-none"
+          >
             {quickPicks.map((track) => {
               const isCurrent = currentTrack?.id === track.id;
               return (
                 <div
                   key={track.id}
                   onClick={() => playTrack(track, quickPicks)}
-                  className="group flex items-center gap-3 p-2 bg-white/5 hover:bg-white/10 rounded-xl cursor-pointer border border-white/5 transition-all"
+                  className="w-64 sm:w-72 shrink-0 snap-start group flex items-center gap-3 p-2 bg-white/5 hover:bg-white/10 rounded-xl cursor-pointer border border-white/5 transition-all shadow-sm"
                 >
                   <img
                     src={track.image}
@@ -180,23 +217,87 @@ export const HomeView: React.FC<HomeViewProps> = ({
                       if (isCurrent) togglePlay();
                       else playTrack(track, quickPicks);
                     }}
-                    className={`mr-2 w-10 h-10 rounded-full bg-purple-600 text-white flex items-center justify-center shadow-lg shadow-purple-600/40 transition-all ${
+                    className={`mr-2 w-9 h-9 rounded-full bg-purple-600 text-white flex items-center justify-center shadow-lg shadow-purple-600/40 transition-all ${
                       isCurrent
                         ? 'opacity-100'
                         : 'opacity-0 group-hover:opacity-100 hover:scale-105'
                     }`}
                   >
                     {isCurrent && isPlaying ? (
-                      <Pause className="w-5 h-5 fill-current" />
+                      <Pause className="w-4 h-4 fill-current" />
                     ) : (
-                      <Play className="w-5 h-5 fill-current translate-x-0.5" />
+                      <Play className="w-4 h-4 fill-current translate-x-0.5" />
                     )}
                   </button>
                 </div>
               );
             })}
           </div>
-        </div>
+        </section>
+      )}
+
+      {/* Most Played • Kur Rewind Horizontal Carousel */}
+      {topPlayed.length > 0 && (
+        <section className="space-y-3 relative group/rewind">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-[11px] font-bold text-white uppercase tracking-wider flex items-center gap-1 shadow-sm">
+                  <Sparkles className="w-3 h-3" /> Kur Rewind
+                </span>
+                <h3 className="text-lg sm:text-xl font-bold text-white tracking-tight font-display">
+                  Most Played
+                </h3>
+              </div>
+              <p className="text-xs text-slate-400 mt-1">
+                Your personal favorites • {totalMinutesListened} minutes of music listened
+              </p>
+            </div>
+
+            <div className="flex items-center gap-2 self-start sm:self-auto">
+              <button
+                onClick={() => playTrack(topPlayed[0], topPlayed)}
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-purple-600 hover:bg-purple-500 text-white text-xs font-semibold shadow-md shadow-purple-600/30 transition-all"
+              >
+                <Play className="w-3.5 h-3.5 fill-current" />
+                <span>Play Daily Mix</span>
+              </button>
+              <div className="hidden sm:flex items-center gap-1 opacity-90 sm:opacity-0 sm:group-hover/rewind:opacity-100 transition-opacity">
+                <button
+                  onClick={() => scrollContainer(rewindRef, 'left')}
+                  aria-label="Scroll left"
+                  className="w-7 h-7 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all backdrop-blur-md cursor-pointer"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={() => scrollContainer(rewindRef, 'right')}
+                  aria-label="Scroll right"
+                  className="w-7 h-7 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all backdrop-blur-md cursor-pointer"
+                >
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            ref={rewindRef}
+            className="flex gap-4 overflow-x-auto pb-4 pt-1 scrollbar-none snap-x snap-mandatory scroll-smooth -mx-2 px-2 cursor-grab active:cursor-grabbing select-none"
+          >
+            {topPlayed.map((track, idx) => (
+              <div
+                key={`rewind-${track.id}-${idx}`}
+                className="w-36 sm:w-44 md:w-48 shrink-0 snap-start relative group/card"
+              >
+                <div className="absolute top-2 left-2 z-20 px-2 py-0.5 rounded-md bg-black/70 backdrop-blur-md text-[11px] font-extrabold text-purple-300 border border-purple-500/30 shadow-md">
+                  #{idx + 1}
+                </div>
+                <SongCard track={track} queueContext={topPlayed} />
+              </div>
+            ))}
+          </div>
+        </section>
       )}
 
       {/* Horizontal Shelves / Carousels */}

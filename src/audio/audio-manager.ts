@@ -1,6 +1,7 @@
 import { Track } from '../api/types';
 import { usePlayerStore } from '../stores/player-store';
 import { useSettingsStore } from '../stores/settings-store';
+import { useLibraryStore } from '../stores/library-store';
 import { decryptMediaUrl } from '../api/decrypt';
 
 export class AudioManager {
@@ -208,6 +209,7 @@ export class AudioManager {
       this.audio.volume = usePlayerStore.getState().isMuted ? 0 : usePlayerStore.getState().volume;
       this.audio.load();
       await this.audio.play();
+      useLibraryStore.getState().recordPlay(track);
     } catch (error) {
       console.error('Audio playback failed to start:', error);
       usePlayerStore.getState()._setIsBuffering(false);
