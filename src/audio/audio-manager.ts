@@ -12,13 +12,11 @@ export class AudioManager {
     this.audio = new Audio();
     this.audio.preload = 'auto';
 
-    // Attach audio element to DOM so Android Chrome and mobile OS power managers
-    // recognize it as an active media element and maintain lock screen media notifications
     if (typeof document !== 'undefined') {
-      this.audio.id = 'kurmusic-audio-element';
-      this.audio.style.display = 'none';
-      if (!document.getElementById('kurmusic-audio-element')) {
-        document.body.appendChild(this.audio);
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => this.ensureAudioInDom());
+      } else {
+        this.ensureAudioInDom();
       }
     }
 
@@ -26,11 +24,32 @@ export class AudioManager {
     this.setupMediaSession();
   }
 
+  private ensureAudioInDom() {
+    if (typeof document !== 'undefined' && document.body) {
+      if (!document.getElementById('kurmusic-audio-element')) {
+        this.audio.id = 'kurmusic-audio-element';
+        this.audio.style.display = 'none';
+        document.body.appendChild(this.audio);
+      }
+    }
+  }
+
   private setupListeners() {
     this.audio.addEventListener('play', () => {
       usePlayerStore.getState()._setIsPlaying(true);
       usePlayerStore.getState()._setIsBuffering(false);
       this.updateMediaSessionState('playing');
+      if (this.currentTrack) {
+        this.updateMediaSessionMetadata(this.currentTrack);
+      }
+    });
+
+    this.audio.addEventListener('playing', () => {
+      usePlayerStore.getState()._setIsBuffering(false);
+      this.updateMediaSessionState('playing');
+      if (this.currentTrack) {
+        this.updateMediaSessionMetadata(this.currentTrack);
+      }
     });
 
     this.audio.addEventListener('pause', () => {
@@ -40,11 +59,6 @@ export class AudioManager {
 
     this.audio.addEventListener('waiting', () => {
       usePlayerStore.getState()._setIsBuffering(true);
-    });
-
-    this.audio.addEventListener('playing', () => {
-      usePlayerStore.getState()._setIsBuffering(false);
-      this.updateMediaSessionState('playing');
     });
 
     this.audio.addEventListener('timeupdate', () => {
@@ -108,13 +122,6 @@ export class AudioManager {
       });
     } catch {}
 
-    // Explicitly do NOT register seekbackward or seekforward so iPhone / iOS Lock Screen
-    // displays Previous Track (|◀) and Next Track (▶|) buttons instead of 10s seek buttons.
-    try {
-      nav.setActionHandler('seekbackward', null);
-      nav.setActionHandler('seekforward', null);
-    } catch {}
-
     try {
       nav.setActionHandler('stop', () => {
         this.pause();
@@ -122,28 +129,50 @@ export class AudioManager {
     } catch {}
   }
 
+  private decodeHtmlEntities(str: string): string {
+    return str
+      .replace(/&amp;/g, '&')
+      .replace(/&quot;/g, '"')
+      .replace(/&#039;/g, "'")
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>');
+  }
+
   private updateMediaSessionMetadata(track: Track) {
     if (!('mediaSession' in navigator) || typeof MediaMetadata === 'undefined') return;
 
     try {
+      const cleanTitle = this.decodeHtmlEntities(track.title || 'Kur Music');
+      const cleanArtist = this.decodeHtmlEntities(track.artist || 'Kur Music');
+      const cleanAlbum = this.decodeHtmlEntities(track.album || 'Kur Music');
+
       const img = track.image;
-      const absoluteImg = img.startsWith('http')
+      const absoluteImg = img && img.startsWith('http')
         ? img
         : typeof window !== 'undefined'
-        ? new URL(img, window.location.href).href
-        : img;
+        ? new URL(img || '/icon-512.png', window.location.href).href
+        : '';
+
+      const fallback512 = typeof window !== 'undefined' ? `${window.location.origin}/icon-512.png` : '';
+      const fallback192 = typeof window !== 'undefined' ? `${window.location.origin}/icon-192.png` : '';
 
       navigator.mediaSession.metadata = new MediaMetadata({
-        title: track.title,
-        artist: track.artist,
-        album: track.album || 'Kur Music',
+        title: cleanTitle,
+        artist: cleanArtist,
+        album: cleanAlbum,
         artwork: [
-          { src: absoluteImg, sizes: '96x96' },
-          { src: absoluteImg, sizes: '128x128' },
-          { src: absoluteImg, sizes: '192x192' },
-          { src: absoluteImg, sizes: '256x256' },
-          { src: absoluteImg, sizes: '384x384' },
-          { src: absoluteImg, sizes: '512x512' },
+          ...(absoluteImg
+            ? [
+                { src: absoluteImg, sizes: '96x96' },
+                { src: absoluteImg, sizes: '128x128' },
+                { src: absoluteImg, sizes: '192x192' },
+                { src: absoluteImg, sizes: '256x256' },
+                { src: absoluteImg, sizes: '384x384' },
+                { src: absoluteImg, sizes: '512x512' },
+              ]
+            : []),
+          ...(fallback512 ? [{ src: fallback512, sizes: '512x512', type: 'image/png' }] : []),
+          ...(fallback192 ? [{ src: fallback192, sizes: '192x192', type: 'image/png' }] : []),
         ],
       });
       navigator.mediaSession.playbackState = 'playing';
@@ -211,19 +240,22 @@ export class AudioManager {
       return;
     }
 
-    this.updateMediaSessionMetadata(track);
+    this.ensureAudioInDom();
     usePlayerStore.getState()._setIsBuffering(true);
 
     try {
       this.audio.src = streamUrl;
       this.audio.volume = usePlayerStore.getState().isMuted ? 0 : usePlayerStore.getState().volume;
-      this.audio.load();
       await this.audio.play();
+      this.updateMediaSessionMetadata(track);
+      this.updateMediaSessionState('playing');
+      this.updateMediaSessionPosition();
       useLibraryStore.getState().recordPlay(track);
     } catch (error) {
       console.error('Audio playback failed to start:', error);
       usePlayerStore.getState()._setIsBuffering(false);
       usePlayerStore.getState()._setIsPlaying(false);
+      this.updateMediaSessionState('none');
     }
   }
 
