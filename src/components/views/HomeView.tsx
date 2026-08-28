@@ -41,23 +41,36 @@ export const HomeView: React.FC<HomeViewProps> = ({
   useEffect(() => {
     let mounted = true;
 
+    const refreshFeed = () => {
+      jioSaavnClient
+        .getMultiLanguageHomeFeed(selectedLanguages)
+        .then((data) => {
+          if (mounted && data && data.length > 0) {
+            setSections(data);
+          }
+        })
+        .catch(() => {});
+    };
+
     // Instant local curated feed
     setSections(jioSaavnClient.getCuratedMultiLanguageFeed(selectedLanguages));
+    refreshFeed();
 
-    // Background load full real API feeds
-    jioSaavnClient
-      .getMultiLanguageHomeFeed(selectedLanguages)
-      .then((data) => {
-        if (mounted && data && data.length > 0) {
-          setSections(data);
-        }
-      })
-      .catch(() => {
-        // Fallback already active
-      });
+    // Auto-refresh feed periodically every 3 minutes for new releases
+    const interval = setInterval(refreshFeed, 180000);
+
+    // Auto-refresh when tab gains focus
+    const handleVisibility = () => {
+      if (document.visibilityState === 'visible') {
+        refreshFeed();
+      }
+    };
+    document.addEventListener('visibilitychange', handleVisibility);
 
     return () => {
       mounted = false;
+      clearInterval(interval);
+      document.removeEventListener('visibilitychange', handleVisibility);
     };
   }, [selectedLanguages]);
 

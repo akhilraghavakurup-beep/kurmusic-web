@@ -384,9 +384,48 @@ export class JioSaavnClient {
       const cleanBase = base.endsWith("/") ? base : base + "/";
       const res = await fetch(`${cleanBase}data/playlists/${playlistId}.json`);
       if (res.ok) {
-        return (await res.json()) as Playlist;
+        const data = await res.json();
+        if (data && data.title) return data as Playlist;
       }
     } catch {}
+
+    // Check if it was saved under albums
+    try {
+      const base = (import.meta as any).env?.BASE_URL || "./";
+      const cleanBase = base.endsWith("/") ? base : base + "/";
+      const res = await fetch(`${cleanBase}data/albums/${playlistId}.json`);
+      if (res.ok) {
+        const alb = await res.json();
+        if (alb && alb.title) {
+          return {
+            id: alb.id,
+            title: alb.title,
+            subtitle: alb.artist,
+            image: alb.image,
+            songCount: alb.songCount || alb.songs?.length || 0,
+            songs: alb.songs
+          };
+        }
+      }
+    } catch {}
+
+    // Check curated seeds
+    if (playlistId.includes("malayalam") || playlistId.includes("top50") || playlistId.includes("melodies")) {
+      const curated = this.getCuratedFeedForLanguage("malayalam");
+      const found = curated.flatMap(s => s.items).find(i => i.id === playlistId);
+      if (found && "songs" in found && found.songs) {
+        return found as Playlist;
+      }
+      const tracks = curated.flatMap(s => s.items.filter((i): i is Track => "duration" in i));
+      return {
+        id: playlistId,
+        title: "Malayalam Chartbusters",
+        subtitle: "Aavesham, Manjummel Boys and viral hits",
+        image: "https://c.saavncdn.com/202/Aavesham-Original-Motion-Picture-Soundtrack-Malayalam-2024-20250910150630-500x500.jpg",
+        songCount: tracks.length,
+        songs: tracks
+      };
+    }
 
     if (this.customProxy) {
       try {
