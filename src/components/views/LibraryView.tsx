@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Heart, ListMusic, History, Plus, Play, Sparkles, ChevronLeft, ChevronRight, Headphones } from 'lucide-react';
+import { Heart, ListMusic, History, Plus, Play, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLibraryStore } from '../../stores/library-store';
 import { usePlayerStore } from '../../stores/player-store';
 import { SongCard } from '../cards/SongCard';
@@ -9,15 +9,12 @@ interface LibraryViewProps {
 }
 
 export const LibraryView: React.FC<LibraryViewProps> = ({ onSelectPlaylist }) => {
-  const { likedTracks, playlists, recentTracks, createPlaylist, getTopPlayedTracks, totalMinutesListened } = useLibraryStore();
+  const { likedTracks, playlists, recentTracks, createPlaylist } = useLibraryStore();
   const { playTrack } = usePlayerStore();
 
   const likedRef = useRef<HTMLDivElement>(null);
   const playlistsRef = useRef<HTMLDivElement>(null);
-  const rewindRef = useRef<HTMLDivElement>(null);
   const recentRef = useRef<HTMLDivElement>(null);
-
-  const topPlayed = getTopPlayedTracks(12);
 
   const scrollContainer = (ref: React.RefObject<HTMLDivElement | null>, direction: 'left' | 'right') => {
     if (ref.current) {
@@ -35,104 +32,28 @@ export const LibraryView: React.FC<LibraryViewProps> = ({ onSelectPlaylist }) =>
   };
 
   return (
-    <div className="p-6 sm:p-8 space-y-10 pb-28 select-none">
-      {/* Top Banner with Kur Rewind Stats */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 p-6 rounded-3xl bg-gradient-to-br from-purple-900/40 via-purple-950/20 to-slate-900 border border-purple-500/20 backdrop-blur-xl shadow-xl">
-        <div className="space-y-2">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-500/20 border border-purple-500/30 text-purple-300 text-xs font-bold uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Kur Rewind Stats</span>
-          </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white font-display">
-            Your Personal Music Hub
+    <div className="p-4 sm:p-8 space-y-10 pb-36 sm:pb-28 max-w-7xl mx-auto select-none">
+      {/* Clean User Library Header */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
+        <div>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white font-display">
+            Your Library
           </h2>
-          <p className="text-xs sm:text-sm text-slate-300">
-            Track your favorite songs, curated playlists, and personal listening history.
+          <p className="text-sm text-slate-400 mt-1">
+            Your liked songs, custom playlists, and listening history.
           </p>
         </div>
 
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-3 px-5 py-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
-            <Headphones className="w-8 h-8 text-purple-400 shrink-0" />
-            <div>
-              <p className="text-2xl font-extrabold text-white leading-tight font-display">
-                {totalMinutesListened}
-              </p>
-              <p className="text-[11px] text-slate-400 font-medium">
-                Minutes Listened
-              </p>
-            </div>
-          </div>
-
-          <button
-            onClick={handleCreate}
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-purple-600 hover:bg-purple-500 text-white text-sm font-semibold shadow-lg shadow-purple-600/30 transition-all shrink-0 cursor-pointer"
-          >
-            <Plus className="w-4 h-4" />
-            <span>New Playlist</span>
-          </button>
-        </div>
+        <button
+          onClick={handleCreate}
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-purple-600 hover:bg-purple-500 text-white text-sm font-semibold shadow-lg shadow-purple-600/30 transition-all shrink-0 cursor-pointer self-start sm:self-auto"
+        >
+          <Plus className="w-4 h-4" />
+          <span>New Playlist</span>
+        </button>
       </div>
 
-      {/* 1. Kur Rewind • Most Played (Horizontal Scrollable) */}
-      {topPlayed.length > 0 && (
-        <section className="space-y-4 relative group/shelf">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 animate-pulse" />
-              <h3 className="text-xl font-bold text-white font-display">
-                Most Played • Kur Rewind
-              </h3>
-              <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300">
-                {topPlayed.length} tracks
-              </span>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => playTrack(topPlayed[0], topPlayed)}
-                className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-600/80 hover:bg-purple-600 text-white text-xs font-semibold shadow-sm transition-all"
-              >
-                <Play className="w-3 h-3 fill-current" />
-                <span>Play All</span>
-              </button>
-              <div className="flex items-center gap-1 opacity-90 sm:opacity-0 sm:group-hover/shelf:opacity-100 transition-opacity">
-                <button
-                  onClick={() => scrollContainer(rewindRef, 'left')}
-                  className="w-7 h-7 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all backdrop-blur-md cursor-pointer"
-                >
-                  <ChevronLeft className="w-4 h-4" />
-                </button>
-                <button
-                  onClick={() => scrollContainer(rewindRef, 'right')}
-                  className="w-7 h-7 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all backdrop-blur-md cursor-pointer"
-                >
-                  <ChevronRight className="w-4 h-4" />
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div
-            ref={rewindRef}
-            className="flex gap-4 overflow-x-auto pb-4 pt-1 scrollbar-none snap-x snap-mandatory scroll-smooth -mx-2 px-2 cursor-grab active:cursor-grabbing select-none"
-          >
-            {topPlayed.map((track, idx) => (
-              <div
-                key={`lib-rewind-${track.id}-${idx}`}
-                className="w-36 sm:w-44 md:w-48 shrink-0 snap-start relative group/card"
-              >
-                <div className="absolute top-2 left-2 z-20 px-2 py-0.5 rounded-md bg-black/70 backdrop-blur-md text-[11px] font-extrabold text-purple-300 border border-purple-500/30 shadow-md">
-                  #{idx + 1}
-                </div>
-                <SongCard track={track} queueContext={topPlayed} />
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* 2. Liked Songs (Horizontal Scrollable) */}
+      {/* 1. Liked Songs */}
       <section className="space-y-4 relative group/shelf">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -149,7 +70,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({ onSelectPlaylist }) =>
             <div className="flex items-center gap-2">
               <button
                 onClick={() => playTrack(likedTracks[0], likedTracks)}
-                className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-pink-600/80 hover:bg-pink-600 text-white text-xs font-semibold shadow-sm transition-all"
+                className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-pink-600/80 hover:bg-pink-600 text-white text-xs font-semibold shadow-sm transition-all cursor-pointer"
               >
                 <Play className="w-3 h-3 fill-current" />
                 <span>Play All</span>
@@ -176,7 +97,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({ onSelectPlaylist }) =>
           <div className="p-8 rounded-2xl bg-white/5 border border-white/5 text-center text-slate-400 space-y-2">
             <Heart className="w-8 h-8 text-slate-600 mx-auto" />
             <p className="text-sm font-semibold text-slate-300">No liked songs yet</p>
-            <p className="text-xs">Click the heart icon on any track to save it here.</p>
+            <p className="text-xs">Click the heart icon on any track to save it to your library.</p>
           </div>
         ) : (
           <div
@@ -192,7 +113,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({ onSelectPlaylist }) =>
         )}
       </section>
 
-      {/* 3. Custom Playlists (Horizontal Scrollable) */}
+      {/* 2. Custom Playlists */}
       <section className="space-y-4 relative group/shelf">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -221,31 +142,39 @@ export const LibraryView: React.FC<LibraryViewProps> = ({ onSelectPlaylist }) =>
           </div>
         </div>
 
-        <div
-          ref={playlistsRef}
-          className="flex gap-4 overflow-x-auto pb-4 pt-1 scrollbar-none snap-x snap-mandatory scroll-smooth -mx-2 px-2 cursor-grab active:cursor-grabbing select-none"
-        >
-          {playlists.map((pl) => (
-            <div
-              key={pl.id}
-              onClick={() => onSelectPlaylist(pl.id)}
-              className="w-36 sm:w-44 md:w-48 shrink-0 snap-start p-3.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/5 cursor-pointer group transition-all"
-            >
-              <div className="aspect-square w-full rounded-xl bg-slate-900 mb-3 flex items-center justify-center text-purple-400 group-hover:scale-105 transition-transform overflow-hidden shadow-md">
-                {pl.coverImage ? (
-                  <img src={pl.coverImage} alt={pl.name} className="w-full h-full object-cover" />
-                ) : (
-                  <ListMusic className="w-10 h-10" />
-                )}
+        {playlists.length === 0 ? (
+          <div className="p-8 rounded-2xl bg-white/5 border border-white/5 text-center text-slate-400 space-y-2">
+            <ListMusic className="w-8 h-8 text-slate-600 mx-auto" />
+            <p className="text-sm font-semibold text-slate-300">No playlists created</p>
+            <p className="text-xs">Click "New Playlist" above to create your own playlist collection.</p>
+          </div>
+        ) : (
+          <div
+            ref={playlistsRef}
+            className="flex gap-4 overflow-x-auto pb-4 pt-1 scrollbar-none snap-x snap-mandatory scroll-smooth -mx-2 px-2 cursor-grab active:cursor-grabbing select-none"
+          >
+            {playlists.map((pl) => (
+              <div
+                key={pl.id}
+                onClick={() => onSelectPlaylist(pl.id)}
+                className="w-36 sm:w-44 md:w-48 shrink-0 snap-start p-3.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/5 cursor-pointer group transition-all"
+              >
+                <div className="aspect-square w-full rounded-xl bg-slate-900 mb-3 flex items-center justify-center text-purple-400 group-hover:scale-105 transition-transform overflow-hidden shadow-md">
+                  {pl.coverImage ? (
+                    <img src={pl.coverImage} alt={pl.name} className="w-full h-full object-cover" />
+                  ) : (
+                    <ListMusic className="w-10 h-10" />
+                  )}
+                </div>
+                <h4 className="text-sm font-semibold text-white truncate">{pl.name}</h4>
+                <p className="text-xs text-slate-400 mt-0.5">{pl.tracks.length} tracks</p>
               </div>
-              <h4 className="text-sm font-semibold text-white truncate">{pl.name}</h4>
-              <p className="text-xs text-slate-400 mt-0.5">{pl.tracks.length} tracks</p>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
       </section>
 
-      {/* 4. Recently Played (Horizontal Scrollable) */}
+      {/* 3. Recently Played */}
       {recentTracks.length > 0 && (
         <section className="space-y-4 relative group/shelf">
           <div className="flex items-center justify-between">

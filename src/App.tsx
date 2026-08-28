@@ -128,6 +128,7 @@ export const App: React.FC = () => {
           {activeTab === 'search' && (
             <SearchView
               query={searchQuery}
+              onSearchSelect={setSearchQuery}
               onSelectAlbum={handleSelectAlbum}
               onSelectPlaylist={handleSelectPlaylist}
               onSelectArtist={handleSelectArtist}

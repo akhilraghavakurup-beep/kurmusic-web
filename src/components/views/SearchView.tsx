@@ -1,5 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { Search as SearchIcon, Loader2, Music2, Disc, User, ListMusic, Play, Pause, Clock, Heart } from 'lucide-react';
+import React, { useState, useEffect, useCallback } from 'react';
+import { 
+  Search as SearchIcon, 
+  Loader2, 
+  Music2, 
+  Disc, 
+  User, 
+  ListMusic, 
+  Play, 
+  Pause, 
+  Clock, 
+  Heart, 
+  History, 
+  X, 
+  Trash2 
+} from 'lucide-react';
 import { SearchResults, Track } from '../../api/types';
 import { jioSaavnClient } from '../../api/jiosaavn-client';
 import { usePlayerStore } from '../../stores/player-store';
@@ -10,6 +24,7 @@ import { PlaylistCard } from '../cards/PlaylistCard';
 
 interface SearchViewProps {
   query: string;
+  onSearchSelect?: (query: string) => void;
   onSelectAlbum: (id: string) => void;
   onSelectPlaylist: (id: string) => void;
   onSelectArtist: (id: string) => void;
@@ -17,8 +32,11 @@ interface SearchViewProps {
 
 type FilterCategory = 'all' | 'songs' | 'albums' | 'artists' | 'playlists';
 
+const RECENT_SEARCHES_KEY = 'kurmusic_recent_searches';
+
 export const SearchView: React.FC<SearchViewProps> = ({
   query,
+  onSearchSelect,
   onSelectAlbum,
   onSelectPlaylist,
   onSelectArtist,
@@ -32,8 +50,59 @@ export const SearchView: React.FC<SearchViewProps> = ({
   const [loading, setLoading] = useState(false);
   const [filter, setFilter] = useState<FilterCategory>('all');
 
+  // Load previous searches from localStorage
+  const [recentSearches, setRecentSearches] = useState<string[]>(() => {
+    try {
+      const saved = localStorage.getItem(RECENT_SEARCHES_KEY);
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
+
   const { currentTrack, isPlaying, playTrack, togglePlay } = usePlayerStore();
   const { isLiked, toggleLike } = useLibraryStore();
+
+  const saveRecentSearch = useCallback((term: string) => {
+    const clean = term.trim();
+    if (!clean || clean.length < 2) return;
+    setRecentSearches((prev) => {
+      const filtered = prev.filter((s) => s.toLowerCase() !== clean.toLowerCase());
+      const updated = [clean, ...filtered].slice(0, 15);
+      try {
+        localStorage.setItem(RECENT_SEARCHES_KEY, JSON.stringify(updated));
+      } catch {}
+      return updated;
+    });
+  }, []);
+
+  const removeRecentSearch = (term: string) => {
+    setRecentSearches((prev) => {
+      const updated = prev.filter((s) => s !== term);
+      try {
+        localStorage.setItem(RECENT_SEARCHES_KEY, JSON.stringify(updated));
+      } catch {}
+      return updated;
+    });
+  };
+
+  const clearAllRecentSearches = () => {
+    setRecentSearches([]);
+    try {
+      localStorage.removeItem(RECENT_SEARCHES_KEY);
+    } catch {}
+  };
+
+  const handleSelectRecentSearch = (term: string) => {
+    if (onSearchSelect) {
+      onSearchSelect(term);
+    }
+    const input = document.querySelector('input[placeholder*="Search"]') as HTMLInputElement;
+    if (input) {
+      input.value = term;
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+    }
+  };
 
   useEffect(() => {
     if (!query.trim()) {
@@ -52,6 +121,15 @@ export const SearchView: React.FC<SearchViewProps> = ({
           if (mounted) {
             setResults(data);
             setLoading(false);
+            // Save successful search query to previous searches
+            if (
+              data.tracks.length > 0 ||
+              data.albums.length > 0 ||
+              data.artists.length > 0 ||
+              data.playlists.length > 0
+            ) {
+              saveRecentSearch(query);
+            }
           }
         })
         .catch(() => {
@@ -63,7 +141,7 @@ export const SearchView: React.FC<SearchViewProps> = ({
       mounted = false;
       clearTimeout(timer);
     };
-  }, [query]);
+  }, [query, saveRecentSearch]);
 
   const categories: { id: FilterCategory; label: string }[] = [
     { id: 'all', label: 'All' },
@@ -71,18 +149,6 @@ export const SearchView: React.FC<SearchViewProps> = ({
     { id: 'albums', label: `Albums (${results.albums.length})` },
     { id: 'artists', label: `Artists (${results.artists.length})` },
     { id: 'playlists', label: `Playlists (${results.playlists.length})` },
-  ];
-
-  const quickSearches = [
-    'Aavesham',
-    'Manjummel Boys',
-    'Premalu',
-    'Anirudh Ravichander',
-    'Sushin Shyam',
-    'Leo',
-    'Jailer',
-    'Illuminati',
-    'Kuthanthram',
   ];
 
   const hasAnyResults =
@@ -98,7 +164,7 @@ export const SearchView: React.FC<SearchViewProps> = ({
   };
 
   return (
-    <div className="p-6 sm:p-8 space-y-8 pb-28 select-none max-w-7xl mx-auto">
+    <div className="p-4 sm:p-8 space-y-8 pb-36 sm:pb-28 select-none max-w-7xl mx-auto">
       {/* Category Filter Pills */}
       {query.trim() && (
         <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
@@ -124,26 +190,55 @@ export const SearchView: React.FC<SearchViewProps> = ({
           <p className="text-sm font-medium text-slate-400">Searching Kur Music catalog...</p>
         </div>
       ) : !query.trim() ? (
-        <div className="space-y-4">
-          <h3 className="text-xl font-bold text-white font-display">Popular Searches</h3>
-          <div className="flex flex-wrap gap-2.5">
-            {quickSearches.map((s) => (
+        /* Previous Searches Section */
+        recentSearches.length > 0 ? (
+          <div className="space-y-4">
+            <div className="flex items-center justify-between border-b border-white/10 pb-3">
+              <h3 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2 font-display">
+                <History className="w-5 h-5 text-purple-400" />
+                <span>Previous Searches</span>
+              </h3>
               <button
-                key={s}
-                onClick={() => {
-                  const input = document.querySelector('input[type="text"]') as HTMLInputElement;
-                  if (input) {
-                    input.value = s;
-                    input.dispatchEvent(new Event('input', { bubbles: true }));
-                  }
-                }}
-                className="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-sm text-slate-300 hover:text-white border border-white/5 transition-all cursor-pointer"
+                onClick={clearAllRecentSearches}
+                className="text-xs text-slate-400 hover:text-rose-400 flex items-center gap-1.5 transition-colors px-2.5 py-1 rounded-lg hover:bg-white/5 cursor-pointer"
               >
-                {s}
+                <Trash2 className="w-3.5 h-3.5" />
+                <span>Clear All</span>
               </button>
-            ))}
+            </div>
+
+            <div className="flex flex-wrap gap-2.5">
+              {recentSearches.map((term) => (
+                <div
+                  key={term}
+                  onClick={() => handleSelectRecentSearch(term)}
+                  className="group inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/5 hover:bg-white/10 text-sm text-slate-200 hover:text-white border border-white/10 hover:border-purple-500/40 transition-all cursor-pointer shadow-sm"
+                >
+                  <Clock className="w-3.5 h-3.5 text-purple-400/80 shrink-0" />
+                  <span className="font-medium">{term}</span>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      removeRecentSearch(term);
+                    }}
+                    title="Remove from history"
+                    className="p-0.5 rounded-full hover:bg-white/20 text-slate-500 hover:text-white transition-colors cursor-pointer"
+                  >
+                    <X className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="text-center py-20 text-slate-400 space-y-3">
+            <SearchIcon className="w-12 h-12 text-slate-600 mx-auto" />
+            <h4 className="text-lg font-bold text-slate-200 font-display">Search Kur Music</h4>
+            <p className="text-xs text-slate-400 max-w-sm mx-auto">
+              Search for your favorite songs, artists, albums, or playlists. Your previous searches will appear here.
+            </p>
+          </div>
+        )
       ) : !hasAnyResults ? (
         <div className="text-center py-24 text-slate-400 space-y-2">
           <SearchIcon className="w-12 h-12 text-slate-600 mx-auto mb-2" />
@@ -225,7 +320,7 @@ export const SearchView: React.FC<SearchViewProps> = ({
                             e.stopPropagation();
                             toggleLike(track);
                           }}
-                          className={`p-1.5 rounded-full hover:bg-white/10 transition-colors ${
+                          className={`p-1.5 rounded-full hover:bg-white/10 transition-colors cursor-pointer ${
                             liked ? 'text-pink-500' : 'text-slate-500 hover:text-slate-300'
                           }`}
                         >
