@@ -11,7 +11,16 @@ export class AudioManager {
   constructor() {
     this.audio = new Audio();
     this.audio.preload = 'auto';
-    this.audio.crossOrigin = 'anonymous';
+
+    // Attach audio element to DOM so Android Chrome and mobile OS power managers
+    // recognize it as an active media element and maintain lock screen media notifications
+    if (typeof document !== 'undefined') {
+      this.audio.id = 'kurmusic-audio-element';
+      this.audio.style.display = 'none';
+      if (!document.getElementById('kurmusic-audio-element')) {
+        document.body.appendChild(this.audio);
+      }
+    }
 
     this.setupListeners();
     this.setupMediaSession();
@@ -35,6 +44,7 @@ export class AudioManager {
 
     this.audio.addEventListener('playing', () => {
       usePlayerStore.getState()._setIsBuffering(false);
+      this.updateMediaSessionState('playing');
     });
 
     this.audio.addEventListener('timeupdate', () => {
@@ -57,6 +67,7 @@ export class AudioManager {
       console.warn('Audio playback error encountered:', e, this.audio.error);
       usePlayerStore.getState()._setIsBuffering(false);
       usePlayerStore.getState()._setIsPlaying(false);
+      this.updateMediaSessionState('none');
     });
   }
 
@@ -65,21 +76,29 @@ export class AudioManager {
 
     const nav = navigator.mediaSession;
 
-    nav.setActionHandler('play', () => {
-      this.play();
-    });
+    try {
+      nav.setActionHandler('play', () => {
+        this.play();
+      });
+    } catch {}
 
-    nav.setActionHandler('pause', () => {
-      this.pause();
-    });
+    try {
+      nav.setActionHandler('pause', () => {
+        this.pause();
+      });
+    } catch {}
 
-    nav.setActionHandler('previoustrack', () => {
-      usePlayerStore.getState().playPrevious();
-    });
+    try {
+      nav.setActionHandler('previoustrack', () => {
+        usePlayerStore.getState().playPrevious();
+      });
+    } catch {}
 
-    nav.setActionHandler('nexttrack', () => {
-      usePlayerStore.getState().playNext();
-    });
+    try {
+      nav.setActionHandler('nexttrack', () => {
+        usePlayerStore.getState().playNext();
+      });
+    } catch {}
 
     try {
       nav.setActionHandler('seekto', (details) => {
@@ -87,45 +106,47 @@ export class AudioManager {
           this.seek(details.seekTime);
         }
       });
-    } catch {
-      // seekto not supported on some older browsers
-    }
+    } catch {}
 
     // Explicitly do NOT register seekbackward or seekforward so iPhone / iOS Lock Screen
     // displays Previous Track (|◀) and Next Track (▶|) buttons instead of 10s seek buttons.
     try {
       nav.setActionHandler('seekbackward', null);
       nav.setActionHandler('seekforward', null);
-    } catch {
-      // ignore
-    }
+    } catch {}
 
     try {
       nav.setActionHandler('stop', () => {
         this.pause();
       });
-    } catch {
-      // ignore
-    }
+    } catch {}
   }
 
   private updateMediaSessionMetadata(track: Track) {
-    if (!('mediaSession' in navigator)) return;
+    if (!('mediaSession' in navigator) || typeof MediaMetadata === 'undefined') return;
 
     try {
+      const img = track.image;
+      const absoluteImg = img.startsWith('http')
+        ? img
+        : typeof window !== 'undefined'
+        ? new URL(img, window.location.href).href
+        : img;
+
       navigator.mediaSession.metadata = new MediaMetadata({
         title: track.title,
         artist: track.artist,
         album: track.album || 'Kur Music',
         artwork: [
-          { src: track.image, sizes: '96x96', type: 'image/jpeg' },
-          { src: track.image, sizes: '128x128', type: 'image/jpeg' },
-          { src: track.image, sizes: '192x192', type: 'image/jpeg' },
-          { src: track.image, sizes: '256x256', type: 'image/jpeg' },
-          { src: track.image, sizes: '384x384', type: 'image/jpeg' },
-          { src: track.image, sizes: '512x512', type: 'image/jpeg' },
+          { src: absoluteImg, sizes: '96x96' },
+          { src: absoluteImg, sizes: '128x128' },
+          { src: absoluteImg, sizes: '192x192' },
+          { src: absoluteImg, sizes: '256x256' },
+          { src: absoluteImg, sizes: '384x384' },
+          { src: absoluteImg, sizes: '512x512' },
         ],
       });
+      navigator.mediaSession.playbackState = 'playing';
     } catch (e) {
       console.warn('Failed to update MediaSession metadata:', e);
     }
@@ -135,9 +156,7 @@ export class AudioManager {
     if (!('mediaSession' in navigator)) return;
     try {
       navigator.mediaSession.playbackState = state;
-    } catch {
-      // ignore
-    }
+    } catch {}
   }
 
   private updateMediaSessionPosition() {
