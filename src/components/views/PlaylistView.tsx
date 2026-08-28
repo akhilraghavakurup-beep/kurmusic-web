@@ -4,6 +4,7 @@ import { Playlist, Track } from '../../api/types';
 import { jioSaavnClient } from '../../api/jiosaavn-client';
 import { usePlayerStore } from '../../stores/player-store';
 import { useLibraryStore } from '../../stores/library-store';
+import { TrackRowActions } from '../common/TrackRowActions';
 
 interface PlaylistViewProps {
   playlistId: string;
@@ -189,16 +190,8 @@ export const PlaylistView: React.FC<PlaylistViewProps> = ({ playlistId }) => {
                 <p className="text-xs text-slate-400 truncate">{track.artist}</p>
               </div>
 
-              <div className="col-span-4 sm:col-span-3 flex items-center justify-end gap-3 text-xs font-mono text-slate-400">
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    toggleLike(track);
-                  }}
-                  className={`p-1 text-slate-400 hover:text-white ${liked ? 'text-pink-500' : ''}`}
-                >
-                  <Heart className={`w-4 h-4 ${liked ? 'fill-current' : ''}`} />
-                </button>
+              <div className="col-span-4 sm:col-span-3 flex items-center justify-end gap-2 sm:gap-3 text-xs font-mono text-slate-400">
+                <TrackRowActions track={track} />
                 {isCustom && (
                   <button
                     onClick={(e) => {
@@ -206,12 +199,12 @@ export const PlaylistView: React.FC<PlaylistViewProps> = ({ playlistId }) => {
                       removeFromPlaylist(playlistId, track.id);
                     }}
                     title="Remove from playlist"
-                    className="opacity-0 group-hover:opacity-100 p-1 text-slate-500 hover:text-red-400 transition-opacity"
+                    className="p-1 text-slate-500 hover:text-red-400 transition-colors cursor-pointer"
                   >
                     <Trash2 className="w-4 h-4" />
                   </button>
                 )}
-                <span>{formatDuration(track.duration)}</span>
+                <span className="w-10 text-right">{formatDuration(track.duration)}</span>
               </div>
             </div>
           );

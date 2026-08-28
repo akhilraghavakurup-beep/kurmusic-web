@@ -21,6 +21,7 @@ import { useLibraryStore } from '../../stores/library-store';
 import { AlbumCard } from '../cards/AlbumCard';
 import { ArtistCard } from '../cards/ArtistCard';
 import { PlaylistCard } from '../cards/PlaylistCard';
+import { TrackRowActions } from '../common/TrackRowActions';
 
 interface SearchViewProps {
   query: string;
@@ -315,17 +316,7 @@ export const SearchView: React.FC<SearchViewProps> = ({
                           {track.album}
                         </span>
 
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            toggleLike(track);
-                          }}
-                          className={`p-1.5 rounded-full hover:bg-white/10 transition-colors cursor-pointer ${
-                            liked ? 'text-pink-500' : 'text-slate-500 hover:text-slate-300'
-                          }`}
-                        >
-                          <Heart className={`w-4 h-4 ${liked ? 'fill-current' : ''}`} />
-                        </button>
+                        <TrackRowActions track={track} />
 
                         <span className="text-xs text-slate-400 font-mono w-10 text-right">
                           {formatDuration(track.duration)}

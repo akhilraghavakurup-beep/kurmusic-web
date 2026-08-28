@@ -4,6 +4,7 @@ import { Album, Track } from '../../api/types';
 import { jioSaavnClient } from '../../api/jiosaavn-client';
 import { usePlayerStore } from '../../stores/player-store';
 import { useLibraryStore } from '../../stores/library-store';
+import { TrackRowActions } from '../common/TrackRowActions';
 
 interface AlbumViewProps {
   albumId: string;
@@ -154,17 +155,9 @@ export const AlbumView: React.FC<AlbumViewProps> = ({ albumId, onSelectArtist })
                 <p className="text-xs text-slate-400 truncate">{track.artist}</p>
               </div>
 
-              <div className="col-span-4 sm:col-span-3 flex items-center justify-end gap-3 text-xs font-mono text-slate-400">
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    toggleLike(track);
-                  }}
-                  className={`p-1 text-slate-400 hover:text-white ${liked ? 'text-pink-500' : ''}`}
-                >
-                  <Heart className={`w-4 h-4 ${liked ? 'fill-current' : ''}`} />
-                </button>
-                <span>{formatDuration(track.duration)}</span>
+              <div className="col-span-4 sm:col-span-3 flex items-center justify-end gap-2 sm:gap-3 text-xs font-mono text-slate-400">
+                <TrackRowActions track={track} />
+                <span className="w-10 text-right">{formatDuration(track.duration)}</span>
               </div>
             </div>
           );
