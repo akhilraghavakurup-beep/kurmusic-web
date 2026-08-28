@@ -225,63 +225,55 @@ export const App: React.FC = () => {
       )}
 
       {/* Mobile Bottom Navigation Bar */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-[#0a0717]/95 border-t border-white/10 backdrop-blur-2xl z-40 flex items-center justify-around px-2 select-none">
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-[#0a0717]/95 border-t border-white/10 backdrop-blur-2xl z-40 flex items-center justify-between px-1 select-none">
         <button
           onClick={() => navigateTo('home')}
-          className={`flex flex-col items-center gap-1 p-2 ${
-            activeTab === 'home' ? 'text-purple-400' : 'text-slate-400'
+          className={`flex-1 flex flex-col items-center justify-center py-1 gap-1 min-w-0 transition-colors ${
+            activeTab === 'home' ? 'text-purple-400 font-bold' : 'text-slate-400 hover:text-slate-200'
           }`}
         >
-          <Home className="w-5 h-5" />
-          <span className="text-[10px] font-medium">Home</span>
+          <Home className="w-5 h-5 shrink-0" />
+          <span className="text-[10px] truncate max-w-full">Home</span>
         </button>
 
         <button
           onClick={() => navigateTo('rewind')}
-          className={`flex flex-col items-center gap-1 p-2 ${
-            activeTab === 'rewind' ? 'text-pink-400 font-bold' : 'text-slate-400'
+          className={`flex-1 flex flex-col items-center justify-center py-1 gap-1 min-w-0 transition-colors ${
+            activeTab === 'rewind' ? 'text-pink-400 font-bold' : 'text-slate-400 hover:text-slate-200'
           }`}
         >
-          <Sparkles className="w-5 h-5" />
-          <span className="text-[10px] font-medium">Rewind</span>
+          <Sparkles className="w-5 h-5 shrink-0" />
+          <span className="text-[10px] truncate max-w-full">Rewind</span>
         </button>
 
         <button
           onClick={() => navigateTo('search')}
-          className={`flex flex-col items-center gap-1 p-2 ${
-            activeTab === 'search' ? 'text-purple-400' : 'text-slate-400'
+          className={`flex-1 flex flex-col items-center justify-center py-1 gap-1 min-w-0 transition-colors ${
+            activeTab === 'search' ? 'text-purple-400 font-bold' : 'text-slate-400 hover:text-slate-200'
           }`}
         >
-          <Search className="w-5 h-5" />
-          <span className="text-[10px] font-medium">Search</span>
-        </button>
-
-        <button
-          onClick={() => navigateTo('downloads')}
-          className={`flex flex-col items-center gap-1 p-2 ${
-            activeTab === 'downloads' ? 'text-purple-400' : 'text-slate-400'
-          }`}
-        >
-          <Download className="w-5 h-5" />
-          <span className="text-[10px] font-medium">Downloads</span>
+          <Search className="w-5 h-5 shrink-0" />
+          <span className="text-[10px] truncate max-w-full">Search</span>
         </button>
 
         <button
           onClick={() => navigateTo('library')}
-          className={`flex flex-col items-center gap-1 p-2 ${
-            activeTab === 'library' || activeTab === 'liked' ? 'text-purple-400' : 'text-slate-400'
+          className={`flex-1 flex flex-col items-center justify-center py-1 gap-1 min-w-0 transition-colors ${
+            activeTab === 'library' || activeTab === 'liked' ? 'text-purple-400 font-bold' : 'text-slate-400 hover:text-slate-200'
           }`}
         >
-          <Library className="w-5 h-5" />
-          <span className="text-[10px] font-medium">Library</span>
+          <Library className="w-5 h-5 shrink-0" />
+          <span className="text-[10px] truncate max-w-full">Library</span>
         </button>
 
         <button
-          onClick={() => setIsSettingsOpen(true)}
-          className="flex flex-col items-center gap-1 p-2 text-slate-400"
+          onClick={() => navigateTo('downloads')}
+          className={`flex-1 flex flex-col items-center justify-center py-1 gap-1 min-w-0 transition-colors ${
+            activeTab === 'downloads' ? 'text-purple-400 font-bold' : 'text-slate-400 hover:text-slate-200'
+          }`}
         >
-          <SlidersHorizontal className="w-5 h-5" />
-          <span className="text-[10px] font-medium">Settings</span>
+          <Download className="w-5 h-5 shrink-0" />
+          <span className="text-[10px] truncate max-w-full">Downloads</span>
         </button>
       </nav>
 
