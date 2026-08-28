@@ -306,77 +306,110 @@ export class JioSaavnClient {
 
   async getAlbum(albumId: string): Promise<Album | null> {
     try {
-      const data = await this.fetchApi<any>({
-        __call: "content.getAlbumDetails",
-        albumid: albumId
-      }, 2500);
+      const base = (import.meta as any).env?.BASE_URL || "./";
+      const cleanBase = base.endsWith("/") ? base : base + "/";
+      const res = await fetch(`${cleanBase}data/albums/${albumId}.json`);
+      if (res.ok) {
+        return (await res.json()) as Album;
+      }
+    } catch {}
 
-      if (!data || (!data.id && !data.title)) return null;
-      const songs: Track[] = (data.songs || data.list || []).map((s: any) => this.formatTrack(s));
+    if (this.customProxy) {
+      try {
+        const data = await this.fetchApi<any>({
+          __call: "content.getAlbumDetails",
+          albumid: albumId
+        }, 2500);
 
-      return {
-        id: String(data.id || albumId),
-        title: this.cleanText(data.title || data.name),
-        artist: this.cleanText(data.primary_artists || data.artist || "Various Artists"),
-        artistId: data.primary_artists_id,
-        image: this.upgradeImage(data.image),
-        year: data.year,
-        songCount: songs.length,
-        songs
-      };
-    } catch {
-      return null;
+        if (data && (data.id || data.title)) {
+          const songs: Track[] = (data.songs || data.list || []).map((s: any) => this.formatTrack(s));
+          return {
+            id: String(data.id || albumId),
+            title: this.cleanText(data.title || data.name),
+            artist: this.cleanText(data.primary_artists || data.artist || "Various Artists"),
+            artistId: data.primary_artists_id,
+            image: this.upgradeImage(data.image),
+            year: data.year,
+            songCount: songs.length,
+            songs
+          };
+        }
+      } catch {}
     }
+
+    return null;
   }
 
   async getArtist(artistId: string): Promise<Artist | null> {
     try {
-      const data = await this.fetchApi<any>({
-        __call: "artist.getArtistPageDetails",
-        artistId,
-        artist_id: artistId
-      }, 2500);
+      const base = (import.meta as any).env?.BASE_URL || "./";
+      const cleanBase = base.endsWith("/") ? base : base + "/";
+      const res = await fetch(`${cleanBase}data/artists/${artistId}.json`);
+      if (res.ok) {
+        return (await res.json()) as Artist;
+      }
+    } catch {}
 
-      if (!data) return null;
-      const topSongs: Track[] = (data.topSongs || []).map((s: any) => this.formatTrack(s));
-      const topAlbums: Album[] = (data.topAlbums || []).map((a: any) => this.formatAlbum(a));
+    if (this.customProxy) {
+      try {
+        const data = await this.fetchApi<any>({
+          __call: "artist.getArtistPageDetails",
+          artistId,
+          artist_id: artistId
+        }, 2500);
 
-      return {
-        id: String(data.artistId || artistId),
-        name: this.cleanText(data.name),
-        image: this.upgradeImage(data.image),
-        followerCount: data.follower_count || data.fan_count,
-        bio: this.cleanText(data.bio?.[0]?.text || data.bio),
-        role: data.role || "Artist",
-        topSongs,
-        topAlbums
-      };
-    } catch {
-      return null;
+        if (data) {
+          const topSongs: Track[] = (data.topSongs || []).map((s: any) => this.formatTrack(s));
+          const topAlbums: Album[] = (data.topAlbums || []).map((a: any) => this.formatAlbum(a));
+          return {
+            id: String(data.artistId || artistId),
+            name: this.cleanText(data.name),
+            image: this.upgradeImage(data.image),
+            followerCount: data.follower_count || data.fan_count,
+            bio: this.cleanText(data.bio?.[0]?.text || data.bio),
+            role: data.role || "Artist",
+            topSongs,
+            topAlbums
+          };
+        }
+      } catch {}
     }
+
+    return null;
   }
 
   async getPlaylist(playlistId: string): Promise<Playlist | null> {
     try {
-      const data = await this.fetchApi<any>({
-        __call: "playlist.getDetails",
-        listid: playlistId
-      }, 2500);
+      const base = (import.meta as any).env?.BASE_URL || "./";
+      const cleanBase = base.endsWith("/") ? base : base + "/";
+      const res = await fetch(`${cleanBase}data/playlists/${playlistId}.json`);
+      if (res.ok) {
+        return (await res.json()) as Playlist;
+      }
+    } catch {}
 
-      if (!data) return null;
-      const songs: Track[] = (data.songs || data.list || []).map((s: any) => this.formatTrack(s));
+    if (this.customProxy) {
+      try {
+        const data = await this.fetchApi<any>({
+          __call: "playlist.getDetails",
+          listid: playlistId
+        }, 2500);
 
-      return {
-        id: String(data.id || playlistId),
-        title: this.cleanText(data.title || data.listname),
-        subtitle: this.cleanText(data.subtitle || data.description),
-        image: this.upgradeImage(data.image),
-        songCount: songs.length,
-        songs
-      };
-    } catch {
-      return null;
+        if (data) {
+          const songs: Track[] = (data.songs || data.list || []).map((s: any) => this.formatTrack(s));
+          return {
+            id: String(data.id || playlistId),
+            title: this.cleanText(data.title || data.listname),
+            subtitle: this.cleanText(data.subtitle || data.description),
+            image: this.upgradeImage(data.image),
+            songCount: songs.length,
+            songs
+          };
+        }
+      } catch {}
     }
+
+    return null;
   }
 
   async getLyrics(songId: string): Promise<string | null> {

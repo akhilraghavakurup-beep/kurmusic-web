@@ -29,13 +29,13 @@ export const HomeView: React.FC<HomeViewProps> = ({
   const { languages, setLanguages } = useSettingsStore();
   const { currentTrack, isPlaying, playTrack, togglePlay } = usePlayerStore();
 
-  // Multi-language selection state initialized from store (defaults to Malayalam)
+  // Multi-language selection state initialized from store (defaults to Malayalam & Tamil)
   const [selectedLanguages, setSelectedLanguages] = useState<string[]>(() => {
-    return languages.length > 0 ? languages : ['malayalam'];
+    return languages && languages.length > 0 ? languages : ['malayalam', 'tamil'];
   });
 
   const [sections, setSections] = useState<HomeFeedSection[]>(() => {
-    return jioSaavnClient.getCuratedMultiLanguageFeed(languages.length > 0 ? languages : ['malayalam']);
+    return jioSaavnClient.getCuratedMultiLanguageFeed(languages && languages.length > 0 ? languages : ['malayalam', 'tamil']);
   });
 
   useEffect(() => {
