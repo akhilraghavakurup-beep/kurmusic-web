@@ -44,9 +44,9 @@ export const TopNav: React.FC<TopNavProps> = ({
   };
 
   return (
-    <header className="h-16 px-6 flex items-center justify-between border-b border-white/5 bg-[#0a0717]/60 backdrop-blur-md sticky top-0 z-30 shrink-0">
+    <header className="h-16 px-3 sm:px-6 flex items-center justify-between border-b border-white/5 bg-[#0a0717]/60 backdrop-blur-md sticky top-0 z-30 shrink-0">
       {/* Navigation history arrows */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1.5 sm:gap-2">
         <button
           onClick={onGoBack}
           disabled={!canGoBack}
@@ -62,7 +62,7 @@ export const TopNav: React.FC<TopNavProps> = ({
       </div>
 
       {/* Global Interactive Search Input */}
-      <div className="flex-1 max-w-md mx-6">
+      <div className="flex-1 max-w-md mx-2 sm:mx-6">
         <div className="relative flex items-center">
           <Search className="w-4 h-4 text-slate-400 absolute left-3.5 pointer-events-none" />
           <input

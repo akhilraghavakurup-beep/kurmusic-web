@@ -75,28 +75,39 @@ export const AlbumView: React.FC<AlbumViewProps> = ({ albumId, onSelectArtist })
   };
 
   return (
-    <div className="p-6 sm:p-8 space-y-8 pb-28">
+    <div className="p-4 sm:p-8 space-y-8 pb-36 sm:pb-28 max-w-7xl mx-auto select-none">
       {/* Header Banner */}
       <div className="flex flex-col sm:flex-row items-center sm:items-end gap-6 sm:gap-8">
-        <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-3xl overflow-hidden shadow-2xl bg-slate-900 shrink-0 border border-white/10">
+        <div className="w-48 h-48 sm:w-60 sm:h-60 rounded-3xl overflow-hidden shadow-2xl bg-slate-900 shrink-0 border border-white/10">
           <img src={album.image} alt={album.title} className="w-full h-full object-cover" />
         </div>
 
-        <div className="space-y-3 text-center sm:text-left min-w-0">
-          <p className="text-xs uppercase tracking-widest text-purple-400 font-bold">Album</p>
-          <h1 className="text-2xl sm:text-4xl font-extrabold text-white font-display">
+        <div className="space-y-3 text-center sm:text-left min-w-0 flex-1">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-600/20 text-xs font-semibold text-purple-300 border border-purple-500/30">
+            <Disc className="w-3.5 h-3.5" />
+            <span>Album</span>
+          </div>
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight font-display break-words">
             {album.title}
           </h1>
-          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 text-xs sm:text-sm text-slate-300">
-            <span className="font-semibold text-white">{album.artist}</span>
-            {album.year && <span>• {album.year}</span>}
-            <span>• {album.songCount} songs</span>
+          <p
+            onClick={() => album.artistId && onSelectArtist?.(album.artistId)}
+            className={`text-sm sm:text-base text-slate-300 font-medium ${
+              album.artistId ? 'hover:text-purple-400 cursor-pointer underline-offset-4 hover:underline' : ''
+            }`}
+          >
+            {album.artist}
+          </p>
+          <div className="flex items-center justify-center sm:justify-start gap-2 text-xs text-slate-400">
+            <span>{album.year || '2024'}</span>
+            <span>•</span>
+            <span>{album.songCount || album.songs?.length || 0} songs</span>
           </div>
 
           <div className="pt-2">
             <button
               onClick={handlePlayAlbum}
-              className="inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-semibold shadow-xl shadow-purple-600/40 transform hover:scale-105 active:scale-95 transition-all"
+              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-semibold shadow-xl shadow-purple-600/40 transform hover:scale-105 active:scale-95 transition-all cursor-pointer"
             >
               {isCurrentAlbumPlaying ? (
                 <>
@@ -115,49 +126,53 @@ export const AlbumView: React.FC<AlbumViewProps> = ({ albumId, onSelectArtist })
       </div>
 
       {/* Tracklist Table */}
-      <div className="space-y-2">
-        <div className="grid grid-cols-12 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-white/10">
-          <span className="col-span-1">#</span>
-          <span className="col-span-7 sm:col-span-8">Title</span>
-          <span className="col-span-4 sm:col-span-3 text-right">
-            <Clock className="w-4 h-4 ml-auto" />
-          </span>
+      <div className="space-y-1.5">
+        <div className="flex items-center justify-between px-3 sm:px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400 border-b border-white/10 mb-2">
+          <div className="flex items-center gap-3 sm:gap-4">
+            <span className="w-5 sm:w-6 text-center">#</span>
+            <span>Title</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="hidden sm:inline text-right mr-16">Actions</span>
+            <Clock className="w-4 h-4 mr-1" />
+          </div>
         </div>
 
         {album.songs?.map((track, idx) => {
           const isCurrent = currentTrack?.id === track.id;
-          const liked = isLiked(track.id);
 
           return (
             <div
               key={track.id}
               onClick={() => playTrack(track, album.songs)}
-              className={`group grid grid-cols-12 items-center px-4 py-3 rounded-2xl cursor-pointer transition-all ${
+              className={`group flex items-center justify-between p-2.5 sm:p-3 rounded-2xl cursor-pointer transition-all ${
                 isCurrent
-                  ? 'bg-purple-900/30 text-purple-300 border border-purple-500/20'
-                  : 'hover:bg-white/5 text-slate-300'
+                  ? 'bg-purple-900/30 text-purple-300 border border-purple-500/20 shadow-sm'
+                  : 'hover:bg-white/5 text-slate-300 border border-transparent'
               }`}
             >
-              <div className="col-span-1 text-sm font-mono text-slate-500">
-                {isCurrent && isPlaying ? (
-                  <div className="w-4 h-4 flex items-center justify-center text-purple-400">
-                    <Music2 className="w-4 h-4 animate-bounce" />
-                  </div>
-                ) : (
-                  idx + 1
-                )}
+              <div className="flex items-center gap-3 sm:gap-4 min-w-0 flex-1 pr-2">
+                <span className="w-5 sm:w-6 text-center text-xs sm:text-sm font-mono text-slate-500 shrink-0">
+                  {isCurrent && isPlaying ? (
+                    <Music2 className="w-4 h-4 text-purple-400 animate-bounce mx-auto" />
+                  ) : (
+                    idx + 1
+                  )}
+                </span>
+
+                <div className="min-w-0 flex-1">
+                  <h4 className={`text-sm font-semibold truncate ${isCurrent ? 'text-purple-300' : 'text-white'}`}>
+                    {track.title}
+                  </h4>
+                  <p className="text-xs text-slate-400 truncate mt-0.5">{track.artist}</p>
+                </div>
               </div>
 
-              <div className="col-span-7 sm:col-span-8 min-w-0 pr-2">
-                <h4 className={`text-sm font-semibold truncate ${isCurrent ? 'text-purple-300' : 'text-white'}`}>
-                  {track.title}
-                </h4>
-                <p className="text-xs text-slate-400 truncate">{track.artist}</p>
-              </div>
-
-              <div className="col-span-4 sm:col-span-3 flex items-center justify-end gap-2 sm:gap-3 text-xs font-mono text-slate-400">
+              <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
                 <TrackRowActions track={track} />
-                <span className="w-10 text-right">{formatDuration(track.duration)}</span>
+                <span className="text-xs text-slate-400 font-mono w-10 text-right shrink-0">
+                  {formatDuration(track.duration)}
+                </span>
               </div>
             </div>
           );
