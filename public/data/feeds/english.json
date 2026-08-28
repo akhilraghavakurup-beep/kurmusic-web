@@ -1,5 +1,218 @@
 [
   {
+    "id": "new_albums",
+    "title": "New Releases",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "79204350",
+        "title": "WILD",
+        "artist": "",
+        "image": "https://c.saavncdn.com/706/WILD-English-2026-20260814063732-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "78714983",
+        "title": "petal",
+        "artist": "",
+        "image": "https://c.saavncdn.com/830/petal-English-2026-20260731103520-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "VMLCIhiv",
+        "title": "Less than a Lover",
+        "artist": "Jennie",
+        "album": "Less than a Lover",
+        "albumId": "78421246",
+        "duration": 145,
+        "image": "https://c.saavncdn.com/281/Less-than-a-Lover-English-2026-20260724085207-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyM4A+VAmNFhXaSAUtyNkHxI3A3G/JksiqKbg3Xqbb7gbmFAmKKNd13hw7tS9a8Gtq",
+        "year": "2026",
+        "language": "english",
+        "hasLyrics": false
+      },
+      {
+        "id": "76779840",
+        "title": "you seem pretty sad for a girl so in love",
+        "artist": "",
+        "image": "https://c.saavncdn.com/361/you-seem-pretty-sad-for-a-girl-so-in-love-English-2026-20260612063606-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "79204345",
+        "title": "Starrgirl",
+        "artist": "",
+        "image": "https://c.saavncdn.com/657/Starrgirl-English-2026-20260814063541-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "lTL17P6t",
+        "title": "MORNING DEW (DONK)",
+        "artist": "Beyoncé",
+        "album": "MORNING DEW (DONK)",
+        "albumId": "77649389",
+        "duration": 243,
+        "image": "https://c.saavncdn.com/721/MORNING-DEW-DONK-English-2026-20260704202751-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyV/pHZSh5fI374vfcGZVzlAG5f3O8HfHIybuEIlI3Foiuj+NIjgpsPxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "english",
+        "hasLyrics": false
+      },
+      {
+        "id": "78283270",
+        "title": "A*POP",
+        "artist": "",
+        "image": "https://c.saavncdn.com/595/A-POP-English-2026-20260805030631-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "79455755",
+        "title": "Hazel Eyes",
+        "artist": "",
+        "image": "https://c.saavncdn.com/712/Hazel-Eyes-English-2026-20260821123522-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "78861069",
+        "title": "Blue Island",
+        "artist": "",
+        "image": "https://c.saavncdn.com/187/Blue-Island-English-2026-20260806044534-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "78388005",
+        "title": "Music, Fashion, Film",
+        "artist": "",
+        "image": "https://c.saavncdn.com/858/Music-Fashion-Film-English-2026-20260724015815-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "bvGuzl8d",
+        "title": "AH HA",
+        "artist": "AH HA",
+        "album": "AH HA",
+        "albumId": "78701452",
+        "duration": 175,
+        "image": "https://c.saavncdn.com/944/AH-HA-English-2026-20260731030825-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyjGspUw1YftPmvYUcCeWZVTfPBFQrxk1b5WkBY4zMwKCoVWfBFmAKoxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "english",
+        "hasLyrics": false
+      },
+      {
+        "id": "78005838",
+        "title": "The Odyssey (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/897/The-Odyssey-Original-Motion-Picture-Soundtrack-Unknown-2026-20260714070531-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "XJfz-45b",
+        "title": "I Knew It, I Knew You (From \"Toy Story 5\")",
+        "artist": "Taylor Swift",
+        "album": "I Knew It, I Knew You (From \"Toy Story 5\")",
+        "albumId": "76500207",
+        "duration": 178,
+        "image": "https://c.saavncdn.com/570/I-Knew-It-I-Knew-You-English-2026-20260605103518-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy0LYjksIKqmL+0ygvABtWbnMccBjMxvAGpQ1OvRKShFOnawlc5qOoYBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "english",
+        "hasLyrics": false
+      },
+      {
+        "id": "YiWcjwp4",
+        "title": "Come Over",
+        "artist": "Come Over",
+        "album": "Come Over",
+        "albumId": "76788669",
+        "duration": 178,
+        "image": "https://c.saavncdn.com/715/Come-Over-Korean-2026-20260612094405-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyIj658hYEvu/1J0vo4l48KcDvBkc0PMRird9U+QqqVvfpaI5QceP+3Rw7tS9a8Gtq",
+        "year": "2026",
+        "language": "korean",
+        "hasLyrics": false
+      },
+      {
+        "id": "OE8j-qej",
+        "title": "Face Card",
+        "artist": "Face Card",
+        "album": "Face Card",
+        "albumId": "78576186",
+        "duration": 130,
+        "image": "https://c.saavncdn.com/044/Face-Card-English-2026-20260814043258-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyPLBaGh2Zw6lzHHmAA9VS6EMXqoBM7B0yOaf2+Ev6Fa5VrIOpVml1gBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "english",
+        "hasLyrics": false
+      },
+      {
+        "id": "78982880",
+        "title": "NO ME ARREPIENTO DE SENTIR TANTO",
+        "artist": "",
+        "image": "https://c.saavncdn.com/846/NO-ME-ARREPIENTO-DE-SENTIR-TANTO-Spanish-2026-20260807103515-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "cq6C7rC2",
+        "title": "Privacy",
+        "artist": "Jason Derulo",
+        "album": "Privacy",
+        "albumId": "78036814",
+        "duration": 194,
+        "image": "https://c.saavncdn.com/526/Privacy-English-2026-20260716190917-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy+osyjgDM/FAMqY2DnUvn8Pc73Pm1vbQObyMk1OoIYatD9S1yhnBaaRw7tS9a8Gtq",
+        "year": "2026",
+        "language": "english",
+        "hasLyrics": false
+      },
+      {
+        "id": "77557330",
+        "title": "CONFESSIONS II",
+        "artist": "",
+        "image": "https://c.saavncdn.com/288/CONFESSIONS-II-English-2026-20260702073233-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "ChVQ2Wgk",
+        "title": "FATE",
+        "artist": "Alan Walker, Ava Max",
+        "album": "FATE",
+        "albumId": "76464179",
+        "duration": 188,
+        "image": "https://c.saavncdn.com/276/FATE-English-2026-20260703195016-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyEzUpcTvXESCGHSUgZgkNYaEOsdgMEZFe98EW9iEJWh2BiFot5o4/Axw7tS9a8Gtq",
+        "year": "2026",
+        "language": "english",
+        "hasLyrics": false
+      },
+      {
+        "id": "_KmApK3G",
+        "title": "Fireflies",
+        "artist": "Fireflies",
+        "album": "Fireflies",
+        "albumId": "77875316",
+        "duration": 263,
+        "image": "https://c.saavncdn.com/752/Fireflies-English-2026-20260718010211-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyohschCymRs9dGVD0XMBsJ3bKYAkc1M5/LwlDFHTqVvfPqDLkTxqjgBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "english",
+        "hasLyrics": false
+      }
+    ]
+  },
+  {
     "id": "new_trending",
     "title": "Trending Now",
     "subtitle": "",
@@ -331,219 +544,6 @@
     ]
   },
   {
-    "id": "new_albums",
-    "title": "New Releases",
-    "subtitle": "",
-    "type": "mixed",
-    "items": [
-      {
-        "id": "79204350",
-        "title": "WILD",
-        "artist": "",
-        "image": "https://c.saavncdn.com/706/WILD-English-2026-20260814063732-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "78714983",
-        "title": "petal",
-        "artist": "",
-        "image": "https://c.saavncdn.com/830/petal-English-2026-20260731103520-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "VMLCIhiv",
-        "title": "Less than a Lover",
-        "artist": "Jennie",
-        "album": "Less than a Lover",
-        "albumId": "78421246",
-        "duration": 145,
-        "image": "https://c.saavncdn.com/281/Less-than-a-Lover-English-2026-20260724085207-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyM4A+VAmNFhXaSAUtyNkHxI3A3G/JksiqKbg3Xqbb7gbmFAmKKNd13hw7tS9a8Gtq",
-        "year": "2026",
-        "language": "english",
-        "hasLyrics": false
-      },
-      {
-        "id": "76779840",
-        "title": "you seem pretty sad for a girl so in love",
-        "artist": "",
-        "image": "https://c.saavncdn.com/361/you-seem-pretty-sad-for-a-girl-so-in-love-English-2026-20260612063606-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "79204345",
-        "title": "Starrgirl",
-        "artist": "",
-        "image": "https://c.saavncdn.com/657/Starrgirl-English-2026-20260814063541-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "lTL17P6t",
-        "title": "MORNING DEW (DONK)",
-        "artist": "Beyoncé",
-        "album": "MORNING DEW (DONK)",
-        "albumId": "77649389",
-        "duration": 243,
-        "image": "https://c.saavncdn.com/721/MORNING-DEW-DONK-English-2026-20260704202751-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyV/pHZSh5fI374vfcGZVzlAG5f3O8HfHIybuEIlI3Foiuj+NIjgpsPxw7tS9a8Gtq",
-        "year": "2026",
-        "language": "english",
-        "hasLyrics": false
-      },
-      {
-        "id": "78283270",
-        "title": "A*POP",
-        "artist": "",
-        "image": "https://c.saavncdn.com/595/A-POP-English-2026-20260805030631-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "79455755",
-        "title": "Hazel Eyes",
-        "artist": "",
-        "image": "https://c.saavncdn.com/712/Hazel-Eyes-English-2026-20260821123522-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "78861069",
-        "title": "Blue Island",
-        "artist": "",
-        "image": "https://c.saavncdn.com/187/Blue-Island-English-2026-20260806044534-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "78388005",
-        "title": "Music, Fashion, Film",
-        "artist": "",
-        "image": "https://c.saavncdn.com/858/Music-Fashion-Film-English-2026-20260724015815-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "bvGuzl8d",
-        "title": "AH HA",
-        "artist": "AH HA",
-        "album": "AH HA",
-        "albumId": "78701452",
-        "duration": 175,
-        "image": "https://c.saavncdn.com/944/AH-HA-English-2026-20260731030825-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyjGspUw1YftPmvYUcCeWZVTfPBFQrxk1b5WkBY4zMwKCoVWfBFmAKoxw7tS9a8Gtq",
-        "year": "2026",
-        "language": "english",
-        "hasLyrics": false
-      },
-      {
-        "id": "78005838",
-        "title": "The Odyssey (Original Motion Picture Soundtrack)",
-        "artist": "",
-        "image": "https://c.saavncdn.com/897/The-Odyssey-Original-Motion-Picture-Soundtrack-Unknown-2026-20260714070531-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "XJfz-45b",
-        "title": "I Knew It, I Knew You (From \"Toy Story 5\")",
-        "artist": "Taylor Swift",
-        "album": "I Knew It, I Knew You (From \"Toy Story 5\")",
-        "albumId": "76500207",
-        "duration": 178,
-        "image": "https://c.saavncdn.com/570/I-Knew-It-I-Knew-You-English-2026-20260605103518-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy0LYjksIKqmL+0ygvABtWbnMccBjMxvAGpQ1OvRKShFOnawlc5qOoYBw7tS9a8Gtq",
-        "year": "2026",
-        "language": "english",
-        "hasLyrics": false
-      },
-      {
-        "id": "YiWcjwp4",
-        "title": "Come Over",
-        "artist": "Come Over",
-        "album": "Come Over",
-        "albumId": "76788669",
-        "duration": 178,
-        "image": "https://c.saavncdn.com/715/Come-Over-Korean-2026-20260612094405-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyIj658hYEvu/1J0vo4l48KcDvBkc0PMRird9U+QqqVvfpaI5QceP+3Rw7tS9a8Gtq",
-        "year": "2026",
-        "language": "korean",
-        "hasLyrics": false
-      },
-      {
-        "id": "OE8j-qej",
-        "title": "Face Card",
-        "artist": "Face Card",
-        "album": "Face Card",
-        "albumId": "78576186",
-        "duration": 130,
-        "image": "https://c.saavncdn.com/044/Face-Card-English-2026-20260814043258-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyPLBaGh2Zw6lzHHmAA9VS6EMXqoBM7B0yOaf2+Ev6Fa5VrIOpVml1gBw7tS9a8Gtq",
-        "year": "2026",
-        "language": "english",
-        "hasLyrics": false
-      },
-      {
-        "id": "78982880",
-        "title": "NO ME ARREPIENTO DE SENTIR TANTO",
-        "artist": "",
-        "image": "https://c.saavncdn.com/846/NO-ME-ARREPIENTO-DE-SENTIR-TANTO-Spanish-2026-20260807103515-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "cq6C7rC2",
-        "title": "Privacy",
-        "artist": "Jason Derulo",
-        "album": "Privacy",
-        "albumId": "78036814",
-        "duration": 194,
-        "image": "https://c.saavncdn.com/526/Privacy-English-2026-20260716190917-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy+osyjgDM/FAMqY2DnUvn8Pc73Pm1vbQObyMk1OoIYatD9S1yhnBaaRw7tS9a8Gtq",
-        "year": "2026",
-        "language": "english",
-        "hasLyrics": false
-      },
-      {
-        "id": "77557330",
-        "title": "CONFESSIONS II",
-        "artist": "",
-        "image": "https://c.saavncdn.com/288/CONFESSIONS-II-English-2026-20260702073233-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "ChVQ2Wgk",
-        "title": "FATE",
-        "artist": "Alan Walker, Ava Max",
-        "album": "FATE",
-        "albumId": "76464179",
-        "duration": 188,
-        "image": "https://c.saavncdn.com/276/FATE-English-2026-20260703195016-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyEzUpcTvXESCGHSUgZgkNYaEOsdgMEZFe98EW9iEJWh2BiFot5o4/Axw7tS9a8Gtq",
-        "year": "2026",
-        "language": "english",
-        "hasLyrics": false
-      },
-      {
-        "id": "_KmApK3G",
-        "title": "Fireflies",
-        "artist": "Fireflies",
-        "album": "Fireflies",
-        "albumId": "77875316",
-        "duration": 263,
-        "image": "https://c.saavncdn.com/752/Fireflies-English-2026-20260718010211-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyohschCymRs9dGVD0XMBsJ3bKYAkc1M5/LwlDFHTqVvfPqDLkTxqjgBw7tS9a8Gtq",
-        "year": "2026",
-        "language": "english",
-        "hasLyrics": false
-      }
-    ]
-  },
-  {
     "id": "top_playlists",
     "title": "Editorial Picks",
     "subtitle": "",
@@ -632,6 +632,141 @@
         "subtitle": "20.1K Followers",
         "image": "https://c.saavncdn.com/editorial/KPopLoveSongs_20260302060021.jpg",
         "songCount": 50
+      }
+    ]
+  },
+  {
+    "id": "promo:vx:data:68",
+    "title": "Fresh Hits",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "85481065",
+        "title": "Fresh Tunes",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/FreshTunes_20260821091154.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "7386899",
+        "title": "Future  Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/FutureHits_20260819102631.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "107320028",
+        "title": "Fresh K-Pop Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/FreshKPopHits_20260731112148.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "81399744",
+        "title": "Heartbeats",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/Heartbeats_20260821031236.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1265890645",
+        "title": "ArtistOne Finds",
+        "subtitle": "2.7K Followers",
+        "image": "https://c.saavncdn.com/editorial/ArtistOneFinds_20260821102816.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "81169234",
+        "title": "Now Playing Pop",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/NowPlayingPop_20260812071504.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "48189087",
+        "title": "English Viral Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/EnglishViralHits_20260807044054.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "86183802",
+        "title": "Rap Cypher",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/RapCypher_20260821031635.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1219007021",
+        "title": "New Indie - English",
+        "subtitle": "683 Followers",
+        "image": "https://c.saavncdn.com/editorial/NewIndieEnglish_20260807102451.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "173255392",
+        "title": "The Drop",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/TheDrop_20260821032039.jpg",
+        "songCount": 0
+      }
+    ]
+  },
+  {
+    "id": "promo:vx:data:76",
+    "title": "Top Genres & Moods",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "410785269",
+        "title": "Best of K-Pop",
+        "subtitle": "27.6K Followers",
+        "image": "https://c.saavncdn.com/editorial/BestofKPop_20260615095904.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1199709032",
+        "title": "Best of Phonk",
+        "subtitle": "61.1K Followers",
+        "image": "https://c.saavncdn.com/editorial/BestofPhonk_20251209111646.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "158224102",
+        "title": "Best of Rock - English",
+        "subtitle": "4.5K Followers",
+        "image": "https://c.saavncdn.com/editorial/BestofRockEnglish_20251209105422.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "158226586",
+        "title": "Best Of Latin Pop",
+        "subtitle": "6.2K Followers",
+        "image": "https://c.saavncdn.com/editorial/BestOfLatinPop_20251209111134.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "303128179",
+        "title": "Best of Pop - English",
+        "subtitle": "38.3K Followers",
+        "image": "https://c.saavncdn.com/editorial/BestofPopEnglish_20260429115624.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "40220463",
+        "title": "Best of Reggae - English",
+        "subtitle": "2.1K Followers",
+        "image": "https://c.saavncdn.com/editorial/BestofReggaeEnglish_20260807111937.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "82914609",
+        "title": "Best of Indie - English",
+        "subtitle": "6.1K Followers",
+        "image": "https://c.saavncdn.com/editorial/BestofIndieEnglish_20260408062731.jpg",
+        "songCount": 0
       }
     ]
   },
@@ -855,141 +990,6 @@
         "title": "Puthiya Tunes",
         "subtitle": "Just Updated",
         "image": "https://c.saavncdn.com/editorial/PuthiyaTunes_20260810114916.jpg",
-        "songCount": 0
-      }
-    ]
-  },
-  {
-    "id": "promo:vx:data:68",
-    "title": "Fresh Hits",
-    "subtitle": "",
-    "type": "mixed",
-    "items": [
-      {
-        "id": "85481065",
-        "title": "Fresh Tunes",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/FreshTunes_20260821091154.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "7386899",
-        "title": "Future  Hits",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/FutureHits_20260819102631.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "107320028",
-        "title": "Fresh K-Pop Hits",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/FreshKPopHits_20260731112148.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "81399744",
-        "title": "Heartbeats",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/Heartbeats_20260821031236.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "1265890645",
-        "title": "ArtistOne Finds",
-        "subtitle": "2.7K Followers",
-        "image": "https://c.saavncdn.com/editorial/ArtistOneFinds_20260821102816.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "81169234",
-        "title": "Now Playing Pop",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/NowPlayingPop_20260812071504.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "48189087",
-        "title": "English Viral Hits",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/EnglishViralHits_20260807044054.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "86183802",
-        "title": "Rap Cypher",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/RapCypher_20260821031635.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "1219007021",
-        "title": "New Indie - English",
-        "subtitle": "683 Followers",
-        "image": "https://c.saavncdn.com/editorial/NewIndieEnglish_20260807102451.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "173255392",
-        "title": "The Drop",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/TheDrop_20260821032039.jpg",
-        "songCount": 0
-      }
-    ]
-  },
-  {
-    "id": "promo:vx:data:76",
-    "title": "Top Genres & Moods",
-    "subtitle": "",
-    "type": "mixed",
-    "items": [
-      {
-        "id": "410785269",
-        "title": "Best of K-Pop",
-        "subtitle": "27.6K Followers",
-        "image": "https://c.saavncdn.com/editorial/BestofKPop_20260615095904.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "1199709032",
-        "title": "Best of Phonk",
-        "subtitle": "61.1K Followers",
-        "image": "https://c.saavncdn.com/editorial/BestofPhonk_20251209111646.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "158224102",
-        "title": "Best of Rock - English",
-        "subtitle": "4.5K Followers",
-        "image": "https://c.saavncdn.com/editorial/BestofRockEnglish_20251209105422.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "158226586",
-        "title": "Best Of Latin Pop",
-        "subtitle": "6.2K Followers",
-        "image": "https://c.saavncdn.com/editorial/BestOfLatinPop_20251209111134.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "303128179",
-        "title": "Best of Pop - English",
-        "subtitle": "38.3K Followers",
-        "image": "https://c.saavncdn.com/editorial/BestofPopEnglish_20260429115624.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "40220463",
-        "title": "Best of Reggae - English",
-        "subtitle": "2.1K Followers",
-        "image": "https://c.saavncdn.com/editorial/BestofReggaeEnglish_20260807111937.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "82914609",
-        "title": "Best of Indie - English",
-        "subtitle": "6.1K Followers",
-        "image": "https://c.saavncdn.com/editorial/BestofIndieEnglish_20260408062731.jpg",
         "songCount": 0
       }
     ]

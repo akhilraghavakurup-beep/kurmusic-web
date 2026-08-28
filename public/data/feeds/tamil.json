@@ -1,5 +1,233 @@
 [
   {
+    "id": "new_albums",
+    "title": "New Releases",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "P5pjB99X",
+        "title": "Radhimaa (From \"Think Indie\")",
+        "artist": "Sai Abhyankkar, Vivek",
+        "album": "Radhimaa (From \"Think Indie\")",
+        "albumId": "79613192",
+        "duration": 259,
+        "image": "https://c.saavncdn.com/877/Radhimaa-From-Think-Indie-Tamil-2026-20260827192132-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyoLsZF06RsceOB83mU2psZFTghZS+oZMFyCYxzo8iTmWbhXMNqkmeWBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "3h6F8ui8",
+        "title": "Ala Bolelo (From \"Jailer 2\")",
+        "artist": "Anirudh Ravichander, Arunraja Kamaraj",
+        "album": "Ala Bolelo (From \"Jailer 2\")",
+        "albumId": "79515366",
+        "duration": 240,
+        "image": "https://c.saavncdn.com/557/Ala-Bolelo-From-Jailer-2-Tamil-2026-20260821084843-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyvzXSrhnlq1EEoa3t9MhQFEXxO/+r50WWWWflLm6C1XPvtVCrEk3TeBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "98viXOUc",
+        "title": "Bloody Band (From \"DC\")",
+        "artist": "Anirudh Ravichander",
+        "album": "Bloody Band (From \"DC\")",
+        "albumId": "79119455",
+        "duration": 156,
+        "image": "https://c.saavncdn.com/150/Bloody-Band-From-DC-Unknown-2026-20260811063758-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyZNGesMXMF26gU9NQQIu2uVZ6BEJyaocRmhgkxJiCeAy2H4CpVp53IRw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "96AyCy2b",
+        "title": "Kalyana Virundhu (From \"Dorothy\")",
+        "artist": "Ilaiyaraaja, Yugendran Vasudevan, Anthony Daasan, Priya Jerson",
+        "album": "Kalyana Virundhu (From \"Dorothy\")",
+        "albumId": "79565191",
+        "duration": 238,
+        "image": "https://c.saavncdn.com/889/Kalyana-Virundhu-From-Dorothy-Tamil-2026-20260822194208-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyY5Q/sh1sSx7HNrDzuiD0hrl1vYi4Er4EMcKDYUBNwy5Fj6Wh4vJm5hw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "79225358",
+        "title": "Vishwanath & Sons (Tamil)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/435/Vishwanath-Sons-Tamil-Tamil-2026-20260813174027-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "iJd6rt-r",
+        "title": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Tamil]",
+        "artist": "Sai Abhyankkar, Rokesh",
+        "album": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Tamil]",
+        "albumId": "78584772",
+        "duration": 210,
+        "image": "https://c.saavncdn.com/024/Alaakaa-Loova-From-OM-Chapter-1-Udhiram-The-Blood-Wood-Tamil-Tamil-2026-20260730045529-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDywc1YnMo9PfA/r1Vrw0w/sKzQufY9gnv7VazYz2bp/+QLDdpldtYASxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "78425642",
+        "title": "DC (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/606/DC-Original-Motion-Picture-Soundtrack-Tamil-2026-20260727061230-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "78362084",
+        "title": "Jana Nayagan - Tamil",
+        "artist": "",
+        "image": "https://c.saavncdn.com/810/Jana-Nayagan-Tamil-Tamil-2026-20260722221103-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "79618164",
+        "title": "Hi",
+        "artist": "",
+        "image": "https://c.saavncdn.com/647/Hi-Tamil-2026-20260824181417-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "xGniQtAd",
+        "title": "One Name (From \"Jailer 2\")",
+        "artist": "Anirudh Ravichander, Heisenberg",
+        "album": "One Name (From \"Jailer 2\")",
+        "albumId": "77613884",
+        "duration": 60,
+        "image": "https://c.saavncdn.com/651/One-Name-From-Jailer-2-English-2026-20260703080039-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyF1aowzSHAT04r4VXGJraS5u0GNALDMmzwBfUjomwjenPNgjbsHtlzxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "gbtZ6uiB",
+        "title": "Aasai Varame (From \"Anbil Avan\")",
+        "artist": "Govind Vasantha, Madrashe",
+        "album": "Aasai Varame (From \"Anbil Avan\")",
+        "albumId": "79217698",
+        "duration": 286,
+        "image": "https://c.saavncdn.com/572/Aasai-Varame-From-Anbil-Avan-Tamil-2026-20260813154846-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy0ht1oHPbeWEhWTXYqFS+cPxhB3HSRHYH5tUl1FhuVJui+Z7nyUWKBBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": true
+      },
+      {
+        "id": "ud6Y0sN6",
+        "title": "Ayyayo Ammaadi (From \"Sigma\") (Tamil)",
+        "artist": "Thaman S, Vivek",
+        "album": "Ayyayo Ammaadi (From \"Sigma\") (Tamil)",
+        "albumId": "79130802",
+        "duration": 210,
+        "image": "https://c.saavncdn.com/974/Ayyayo-Ammaadi-From-Sigma-Tamil-Tamil-2026-20260811093845-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy72iOvcwQmUT+ZCGEQJbqHqdC+itAOVezN6iVX3GJAYXJX7dpmZIMzRw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "NFi1BWgA",
+        "title": "Usure Needhan Pulla (From \"Mandaadi\")",
+        "artist": "G.V. Prakash Kumar",
+        "album": "Usure Needhan Pulla (From \"Mandaadi\")",
+        "albumId": "79121519",
+        "duration": 225,
+        "image": "https://c.saavncdn.com/867/Usure-Needhan-Pulla-From-Mandaadi-Tamil-2026-20260811124016-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDymsqmFPxgd3TL6vd2fewyg5JVyoj8ldjlMM3hoLX/dzaKeeeufo8K4Bw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "79518620",
+        "title": "Ram and Leela (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/796/Ram-and-Leela-Original-Motion-Picture-Soundtrack-Tamil-2026-20260821152504-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "79227436",
+        "title": "Toxic - Tamil (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/386/Toxic-Tamil-Original-Motion-Picture-Soundtrack-Tamil-2026-20260818072109-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "C3-KcNcm",
+        "title": "YaaLi Theme (From \"Sardar 2\")",
+        "artist": "Sam C.S., The Imbachi, Zeba Tommy, Lavita Lobo, Nambi G",
+        "album": "YaaLi Theme (From \"Sardar 2\")",
+        "albumId": "78921647",
+        "duration": 117,
+        "image": "https://c.saavncdn.com/939/YaaLi-Theme-From-Sardar-2-Tamil-2026-20260805172209-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy1/HDiMYRnP1z/i/mlNkiGy6dKo2HO/MgLFh1JAwJI97Myy3FPDzYkxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "ELN2nTsE",
+        "title": "Parandhu Pogum Manase (From \"XY\" Mayavan Universe)",
+        "artist": "Srikant Krishna, PA Hariharan",
+        "album": "Parandhu Pogum Manase (From \"XY\" Mayavan Universe)",
+        "albumId": "79246571",
+        "duration": 164,
+        "image": "https://c.saavncdn.com/240/Parandhu-Pogum-Manase-From-XY-Mayavan-Universe-Tamil-2026-20260814062257-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyePM7LKPLcWMeopM9HSBNCEm2dAFjpzvksb0hOsK584jaFC9cp1R48Rw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "79429594",
+        "title": "Once More (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/000/Once-More-Original-Motion-Picture-Soundtrack-Tamil-2026-20260819184312-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "RU4UIolr",
+        "title": "Aane Wala Star",
+        "artist": "Sai Abhyankkar, Dholu bholu",
+        "album": "Aane Wala Star",
+        "albumId": "77673756",
+        "duration": 132,
+        "image": "https://c.saavncdn.com/006/Aane-Wala-Star-Tamil-2026-20260705235934-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy4F3vzrHnuulhrY+oEujtW62kUbwylxbSV40pcx3HGFvM2iyzLEuzTxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "79488428",
+        "title": "Irumudi Kattu",
+        "artist": "",
+        "image": "https://c.saavncdn.com/902/Irumudi-Kattu-Tamil-2026-20260820221017-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      }
+    ]
+  },
+  {
     "id": "new_trending",
     "title": "Trending Now",
     "subtitle": "",
@@ -306,234 +534,6 @@
     ]
   },
   {
-    "id": "new_albums",
-    "title": "New Releases",
-    "subtitle": "",
-    "type": "mixed",
-    "items": [
-      {
-        "id": "P5pjB99X",
-        "title": "Radhimaa (From \"Think Indie\")",
-        "artist": "Sai Abhyankkar, Vivek",
-        "album": "Radhimaa (From \"Think Indie\")",
-        "albumId": "79613192",
-        "duration": 259,
-        "image": "https://c.saavncdn.com/877/Radhimaa-From-Think-Indie-Tamil-2026-20260827192132-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyoLsZF06RsceOB83mU2psZFTghZS+oZMFyCYxzo8iTmWbhXMNqkmeWBw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
-      },
-      {
-        "id": "3h6F8ui8",
-        "title": "Ala Bolelo (From \"Jailer 2\")",
-        "artist": "Anirudh Ravichander, Arunraja Kamaraj",
-        "album": "Ala Bolelo (From \"Jailer 2\")",
-        "albumId": "79515366",
-        "duration": 240,
-        "image": "https://c.saavncdn.com/557/Ala-Bolelo-From-Jailer-2-Tamil-2026-20260821084843-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyvzXSrhnlq1EEoa3t9MhQFEXxO/+r50WWWWflLm6C1XPvtVCrEk3TeBw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
-      },
-      {
-        "id": "98viXOUc",
-        "title": "Bloody Band (From \"DC\")",
-        "artist": "Anirudh Ravichander",
-        "album": "Bloody Band (From \"DC\")",
-        "albumId": "79119455",
-        "duration": 156,
-        "image": "https://c.saavncdn.com/150/Bloody-Band-From-DC-Unknown-2026-20260811063758-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyZNGesMXMF26gU9NQQIu2uVZ6BEJyaocRmhgkxJiCeAy2H4CpVp53IRw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
-      },
-      {
-        "id": "96AyCy2b",
-        "title": "Kalyana Virundhu (From \"Dorothy\")",
-        "artist": "Ilaiyaraaja, Yugendran Vasudevan, Anthony Daasan, Priya Jerson",
-        "album": "Kalyana Virundhu (From \"Dorothy\")",
-        "albumId": "79565191",
-        "duration": 238,
-        "image": "https://c.saavncdn.com/889/Kalyana-Virundhu-From-Dorothy-Tamil-2026-20260822194208-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyY5Q/sh1sSx7HNrDzuiD0hrl1vYi4Er4EMcKDYUBNwy5Fj6Wh4vJm5hw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
-      },
-      {
-        "id": "79225358",
-        "title": "Vishwanath & Sons (Tamil)",
-        "artist": "",
-        "image": "https://c.saavncdn.com/435/Vishwanath-Sons-Tamil-Tamil-2026-20260813174027-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "iJd6rt-r",
-        "title": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Tamil]",
-        "artist": "Sai Abhyankkar, Rokesh",
-        "album": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Tamil]",
-        "albumId": "78584772",
-        "duration": 210,
-        "image": "https://c.saavncdn.com/024/Alaakaa-Loova-From-OM-Chapter-1-Udhiram-The-Blood-Wood-Tamil-Tamil-2026-20260730045529-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDywc1YnMo9PfA/r1Vrw0w/sKzQufY9gnv7VazYz2bp/+QLDdpldtYASxw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
-      },
-      {
-        "id": "78425642",
-        "title": "DC (Original Motion Picture Soundtrack)",
-        "artist": "",
-        "image": "https://c.saavncdn.com/606/DC-Original-Motion-Picture-Soundtrack-Tamil-2026-20260727061230-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "78362084",
-        "title": "Jana Nayagan - Tamil",
-        "artist": "",
-        "image": "https://c.saavncdn.com/810/Jana-Nayagan-Tamil-Tamil-2026-20260722221103-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "79618164",
-        "title": "Hi",
-        "artist": "",
-        "image": "https://c.saavncdn.com/647/Hi-Tamil-2026-20260824181417-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "xGniQtAd",
-        "title": "One Name (From \"Jailer 2\")",
-        "artist": "Anirudh Ravichander, Heisenberg",
-        "album": "One Name (From \"Jailer 2\")",
-        "albumId": "77613884",
-        "duration": 60,
-        "image": "https://c.saavncdn.com/651/One-Name-From-Jailer-2-English-2026-20260703080039-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyF1aowzSHAT04r4VXGJraS5u0GNALDMmzwBfUjomwjenPNgjbsHtlzxw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
-      },
-      {
-        "id": "gbtZ6uiB",
-        "title": "Aasai Varame (From \"Anbil Avan\")",
-        "artist": "Govind Vasantha, Madrashe",
-        "album": "Aasai Varame (From \"Anbil Avan\")",
-        "albumId": "79217698",
-        "duration": 286,
-        "image": "https://c.saavncdn.com/572/Aasai-Varame-From-Anbil-Avan-Tamil-2026-20260813154846-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy0ht1oHPbeWEhWTXYqFS+cPxhB3HSRHYH5tUl1FhuVJui+Z7nyUWKBBw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": true
-      },
-      {
-        "id": "ud6Y0sN6",
-        "title": "Ayyayo Ammaadi (From \"Sigma\") (Tamil)",
-        "artist": "Thaman S, Vivek",
-        "album": "Ayyayo Ammaadi (From \"Sigma\") (Tamil)",
-        "albumId": "79130802",
-        "duration": 210,
-        "image": "https://c.saavncdn.com/974/Ayyayo-Ammaadi-From-Sigma-Tamil-Tamil-2026-20260811093845-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy72iOvcwQmUT+ZCGEQJbqHqdC+itAOVezN6iVX3GJAYXJX7dpmZIMzRw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
-      },
-      {
-        "id": "NFi1BWgA",
-        "title": "Usure Needhan Pulla (From \"Mandaadi\")",
-        "artist": "G.V. Prakash Kumar",
-        "album": "Usure Needhan Pulla (From \"Mandaadi\")",
-        "albumId": "79121519",
-        "duration": 225,
-        "image": "https://c.saavncdn.com/867/Usure-Needhan-Pulla-From-Mandaadi-Tamil-2026-20260811124016-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDymsqmFPxgd3TL6vd2fewyg5JVyoj8ldjlMM3hoLX/dzaKeeeufo8K4Bw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
-      },
-      {
-        "id": "79518620",
-        "title": "Ram and Leela (Original Motion Picture Soundtrack)",
-        "artist": "",
-        "image": "https://c.saavncdn.com/796/Ram-and-Leela-Original-Motion-Picture-Soundtrack-Tamil-2026-20260821152504-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "79227436",
-        "title": "Toxic - Tamil (Original Motion Picture Soundtrack)",
-        "artist": "",
-        "image": "https://c.saavncdn.com/386/Toxic-Tamil-Original-Motion-Picture-Soundtrack-Tamil-2026-20260818072109-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "C3-KcNcm",
-        "title": "YaaLi Theme (From \"Sardar 2\")",
-        "artist": "Sam C.S., The Imbachi, Zeba Tommy, Lavita Lobo, Nambi G",
-        "album": "YaaLi Theme (From \"Sardar 2\")",
-        "albumId": "78921647",
-        "duration": 117,
-        "image": "https://c.saavncdn.com/939/YaaLi-Theme-From-Sardar-2-Tamil-2026-20260805172209-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy1/HDiMYRnP1z/i/mlNkiGy6dKo2HO/MgLFh1JAwJI97Myy3FPDzYkxw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
-      },
-      {
-        "id": "ELN2nTsE",
-        "title": "Parandhu Pogum Manase (From \"XY\" Mayavan Universe)",
-        "artist": "Srikant Krishna, PA Hariharan",
-        "album": "Parandhu Pogum Manase (From \"XY\" Mayavan Universe)",
-        "albumId": "79246571",
-        "duration": 164,
-        "image": "https://c.saavncdn.com/240/Parandhu-Pogum-Manase-From-XY-Mayavan-Universe-Tamil-2026-20260814062257-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyePM7LKPLcWMeopM9HSBNCEm2dAFjpzvksb0hOsK584jaFC9cp1R48Rw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
-      },
-      {
-        "id": "79429594",
-        "title": "Once More (Original Motion Picture Soundtrack)",
-        "artist": "",
-        "image": "https://c.saavncdn.com/000/Once-More-Original-Motion-Picture-Soundtrack-Tamil-2026-20260819184312-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "RU4UIolr",
-        "title": "Aane Wala Star",
-        "artist": "Sai Abhyankkar, Dholu bholu",
-        "album": "Aane Wala Star",
-        "albumId": "77673756",
-        "duration": 132,
-        "image": "https://c.saavncdn.com/006/Aane-Wala-Star-Tamil-2026-20260705235934-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy4F3vzrHnuulhrY+oEujtW62kUbwylxbSV40pcx3HGFvM2iyzLEuzTxw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
-      },
-      {
-        "id": "79488428",
-        "title": "Irumudi Kattu",
-        "artist": "",
-        "image": "https://c.saavncdn.com/902/Irumudi-Kattu-Tamil-2026-20260820221017-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      }
-    ]
-  },
-  {
     "id": "top_playlists",
     "title": "Editorial Picks",
     "subtitle": "",
@@ -622,6 +622,127 @@
         "subtitle": "Just Updated",
         "image": "https://c.saavncdn.com/editorial/Let_sPlayPradeepRanganathan_20260403085039.jpg",
         "songCount": 24
+      }
+    ]
+  },
+  {
+    "id": "promo:vx:data:68",
+    "title": "Fresh Hits",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "10763385",
+        "title": "Pudhu Tunes",
+        "subtitle": "48.5K Followers",
+        "image": "https://c.saavncdn.com/editorial/PudhuTunes_20260825123207.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "2574965",
+        "title": "Mersal Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/MersalHits_20260826075616.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "7332875",
+        "title": "Semma Pop",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/SemmaPop_20260825124642.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "2721785",
+        "title": "Kadhaley",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/Kadhaley_20260731045840.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1265890645",
+        "title": "ArtistOne Finds",
+        "subtitle": "2.7K Followers",
+        "image": "https://c.saavncdn.com/editorial/ArtistOneFinds_20260821102816.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "83409788",
+        "title": "Dance Podu",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/DancePodu_20260814130358.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "80802063",
+        "title": "Tamil Viral Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/TamilViralHits_20260805060135.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1219050727",
+        "title": "New Indie - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/NewIndieTamil_20260825130027.jpg",
+        "songCount": 0
+      }
+    ]
+  },
+  {
+    "id": "promo:vx:data:76",
+    "title": "Top Genres & Moods",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "1074590003",
+        "title": "Tamil BGM",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/TamilBGM_20260811075813.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "109118539",
+        "title": "Motivational Hits - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/MotivationalHitsTamil_20260623102812.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "790274287",
+        "title": "Filmy Flirting - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/FilmyFlirtingTamil_20260623101727.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "83409225",
+        "title": "Therific Theme",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/TherificTheme_20260624052234.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "810678506",
+        "title": "2000s Melodies - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/2000sMelodiesTamil_20240910061317.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1134650280",
+        "title": "Best of Romance - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/BestofRomanceTamil_20260623102758.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "789168950",
+        "title": "Iravaaga Nee",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/IravaagaNee_20260302042438.jpg",
+        "songCount": 0
       }
     ]
   },
@@ -845,127 +966,6 @@
         "title": "Puthiya Tunes",
         "subtitle": "Just Updated",
         "image": "https://c.saavncdn.com/editorial/PuthiyaTunes_20260810114916.jpg",
-        "songCount": 0
-      }
-    ]
-  },
-  {
-    "id": "promo:vx:data:68",
-    "title": "Fresh Hits",
-    "subtitle": "",
-    "type": "mixed",
-    "items": [
-      {
-        "id": "10763385",
-        "title": "Pudhu Tunes",
-        "subtitle": "48.5K Followers",
-        "image": "https://c.saavncdn.com/editorial/PudhuTunes_20260825123207.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "2574965",
-        "title": "Mersal Hits",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/MersalHits_20260826075616.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "7332875",
-        "title": "Semma Pop",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/SemmaPop_20260825124642.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "2721785",
-        "title": "Kadhaley",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/Kadhaley_20260731045840.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "1265890645",
-        "title": "ArtistOne Finds",
-        "subtitle": "2.7K Followers",
-        "image": "https://c.saavncdn.com/editorial/ArtistOneFinds_20260821102816.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "83409788",
-        "title": "Dance Podu",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/DancePodu_20260814130358.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "80802063",
-        "title": "Tamil Viral Hits",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/TamilViralHits_20260805060135.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "1219050727",
-        "title": "New Indie - Tamil",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/NewIndieTamil_20260825130027.jpg",
-        "songCount": 0
-      }
-    ]
-  },
-  {
-    "id": "promo:vx:data:76",
-    "title": "Top Genres & Moods",
-    "subtitle": "",
-    "type": "mixed",
-    "items": [
-      {
-        "id": "1074590003",
-        "title": "Tamil BGM",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/TamilBGM_20260811075813.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "109118539",
-        "title": "Motivational Hits - Tamil",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/MotivationalHitsTamil_20260623102812.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "790274287",
-        "title": "Filmy Flirting - Tamil",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/FilmyFlirtingTamil_20260623101727.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "83409225",
-        "title": "Therific Theme",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/TherificTheme_20260624052234.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "810678506",
-        "title": "2000s Melodies - Tamil",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/2000sMelodiesTamil_20240910061317.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "1134650280",
-        "title": "Best of Romance - Tamil",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/BestofRomanceTamil_20260623102758.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "789168950",
-        "title": "Iravaaga Nee",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/IravaagaNee_20260302042438.jpg",
         "songCount": 0
       }
     ]

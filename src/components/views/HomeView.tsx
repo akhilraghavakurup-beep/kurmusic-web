@@ -168,7 +168,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
         <section className="space-y-3 relative group/quick">
           <div className="flex items-center justify-between">
             <h3 className="text-lg font-bold text-white font-display">
-              Quick Picks {selectedLabels ? `(${selectedLabels})` : ''}
+              Quick Picks
             </h3>
             <div className="flex items-center gap-1.5 opacity-90 sm:opacity-0 sm:group-hover/quick:opacity-100 transition-opacity">
               <button
@@ -300,17 +300,25 @@ export const HomeView: React.FC<HomeViewProps> = ({
         </section>
       )}
 
-      {/* Horizontal Shelves / Carousels */}
+      {/* Horizontal Shelves / Carousels (New Releases First) */}
       <div className="space-y-8">
-        {sections.map((section) => (
-          <HorizontalSection
-            key={section.id}
-            section={section}
-            onSelectAlbum={onSelectAlbum}
-            onSelectPlaylist={onSelectPlaylist}
-            onSelectArtist={onSelectArtist}
-          />
-        ))}
+        {[...sections]
+          .sort((a, b) => {
+            const aIsNew = a.id.includes('new_albums') || a.title.toLowerCase().includes('new release');
+            const bIsNew = b.id.includes('new_albums') || b.title.toLowerCase().includes('new release');
+            if (aIsNew && !bIsNew) return -1;
+            if (!aIsNew && bIsNew) return 1;
+            return 0;
+          })
+          .map((section) => (
+            <HorizontalSection
+              key={section.id}
+              section={section}
+              onSelectAlbum={onSelectAlbum}
+              onSelectPlaylist={onSelectPlaylist}
+              onSelectArtist={onSelectArtist}
+            />
+          ))}
       </div>
     </div>
   );

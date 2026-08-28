@@ -1,5 +1,243 @@
 [
   {
+    "id": "new_albums",
+    "title": "New Releases",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "79488223",
+        "title": "Irumudi",
+        "artist": "",
+        "image": "https://c.saavncdn.com/919/Irumudi-Telugu-2026-20260821191100-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "79228006",
+        "title": "Toxic - Telugu (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/379/Toxic-Telugu-Original-Motion-Picture-Soundtrack-Telugu-2026-20260818072128-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "-D0EECa0",
+        "title": "Ala Bolelo (From \"Jailer 2\")",
+        "artist": "Anirudh Ravichander, Srinivasa Mouli",
+        "album": "Ala Bolelo (From \"Jailer 2\")",
+        "albumId": "79515330",
+        "duration": 240,
+        "image": "https://c.saavncdn.com/039/Ala-Bolelo-From-Jailer-2-Telugu-2026-20260822185700-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyrf6UPAs4YcBpg2ot53F8w9Z1jrqgGHD23oyhM/651shlOC4jHSeHUBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "telugu",
+        "hasLyrics": false
+      },
+      {
+        "id": "79225356",
+        "title": "Vishwanath & Sons (Telugu)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/434/Vishwanath-Sons-Telugu-2026-20260813174026-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "VBXZqRZE",
+        "title": "Chinni Chinni (From \"Itllu Arjuna\")",
+        "artist": "Thaman S, Kalyan Chakravarthy, Mohit Chauhan",
+        "album": "Chinni Chinni (From \"Itllu Arjuna\")",
+        "albumId": "79338964",
+        "duration": 250,
+        "image": "https://c.saavncdn.com/719/Chinni-Chinni-From-Itllu-Arjuna-Telugu-2026-20260817151029-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDypaEhfdaOxKIWE1LiN0dGFAvbz73gAZ8VHh0hE26fFDOHAxO9KVivCRw7tS9a8Gtq",
+        "year": "2026",
+        "language": "telugu",
+        "hasLyrics": false
+      },
+      {
+        "id": "78400522",
+        "title": "Chennai Love Story",
+        "artist": "",
+        "image": "https://c.saavncdn.com/842/Chennai-Love-Story-Telugu-2026-20260723201006-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "78912313",
+        "title": "DC (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/965/DC-Original-Motion-Picture-Soundtrack-Tamil-2026-20260805081906-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "HhXg2PEn",
+        "title": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Telugu]",
+        "artist": "Sai Abhyankkar, Chandra Bose, Ram Miriyala, Arun Kaundinya",
+        "album": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Telugu]",
+        "albumId": "78585053",
+        "duration": 210,
+        "image": "https://c.saavncdn.com/635/Alaakaa-Loova-From-OM-Chapter-1-Udhiram-The-Blood-Wood-Telugu-Telugu-2026-20260730045454-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy+V01E/XMksqC5DlOO8rXBYJ9k+vO8afJ0Nj0jCU/5dhVLDkocOaOAhw7tS9a8Gtq",
+        "year": "2026",
+        "language": "telugu",
+        "hasLyrics": false
+      },
+      {
+        "id": "RhGThEY0",
+        "title": "Fanaa (From \"HIGH\")",
+        "artist": "Shahzad Ali",
+        "album": "Fanaa (From \"HIGH\")",
+        "albumId": "79028961",
+        "duration": 231,
+        "image": "https://c.saavncdn.com/601/Fanaa-From-HIGH-Telugu-2026-20260808141750-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyJTIY5zjtoGJdBr+AMa8IFPrAcAcro4P3es06y/lXHxCNeBMpdsoo9Bw7tS9a8Gtq",
+        "year": "2026",
+        "language": "telugu",
+        "hasLyrics": false
+      },
+      {
+        "id": "vKiRnZhS",
+        "title": "Bad Time Band Baaja (From \"Ramba Oorvasi Menaka\")",
+        "artist": "Ram Miriyala",
+        "album": "Bad Time Band Baaja (From \"Ramba Oorvasi Menaka\")",
+        "albumId": "79426550",
+        "duration": 175,
+        "image": "https://c.saavncdn.com/702/Bad-Time-Band-Baaja-From-Ramba-Oorvasi-Menaka-Telugu-2026-20260819161205-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy/qKn+zUWRe9+pd/UjbmPKN1ACZLniis99d5/tm4wB96KdmkpsQhSXhw7tS9a8Gtq",
+        "year": "2026",
+        "language": "telugu",
+        "hasLyrics": false
+      },
+      {
+        "id": "-Rod5jl4",
+        "title": "Manasa Vacha (From \"EPIC - First Semester\")",
+        "artist": "S.P.B. Charan, K. S. Chithra",
+        "album": "Manasa Vacha (From \"EPIC - First Semester\")",
+        "albumId": "79475999",
+        "duration": 255,
+        "image": "https://c.saavncdn.com/903/Manasa-Vacha-From-EPIC-First-Semester-Telugu-2026-20260820151043-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyI1ISx5/TX/2VUK93grBPFK/DX7ZgmxMr45UZn0WyOqs651J5WZUstxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "telugu",
+        "hasLyrics": false
+      },
+      {
+        "id": "79215508",
+        "title": "Pallaburusu (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/182/Pallaburusu-Original-Motion-Picture-Soundtrack-Telugu-2026-20260813142900-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "sTUukcc_",
+        "title": "Anthima Katha ( From Ameerlog)",
+        "artist": "Smaran, Niklesh Sunkoji",
+        "album": "Anthima Katha ( From Ameerlog)",
+        "albumId": "79608743",
+        "duration": 266,
+        "image": "https://c.saavncdn.com/712/Anthima-Katha-From-Ameerlog-Telugu-2026-20260824124803-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyogAkegu/9aAJVoLskSsE/RXKLVCDfo7a3ub939hPkTURXWvIVHPKQRw7tS9a8Gtq",
+        "year": "2026",
+        "language": "telugu",
+        "hasLyrics": false
+      },
+      {
+        "id": "tGc37e4S",
+        "title": "Romanchakam - Title Track (From \"Romanchakam\")",
+        "artist": "Vasuki Vaibhav, Chandrabose",
+        "album": "Romanchakam - Title Track (From \"Romanchakam\")",
+        "albumId": "79175114",
+        "duration": 173,
+        "image": "https://c.saavncdn.com/412/Romanchakam-Title-Track-From-Romanchakam-Telugu-2026-20260812171051-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyESbrZjyKrSDvVWToWcHi6WuR/HWeoQyp5clncO4QYURMMuq27subzxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "telugu",
+        "hasLyrics": false
+      },
+      {
+        "id": "o5ZbYv_v",
+        "title": "Evare Nuvve (From \"I'M Game - Telugu\")",
+        "artist": "Jakes Bejoy, Sanare",
+        "album": "Evare Nuvve (From \"I'M Game - Telugu\")",
+        "albumId": "79074221",
+        "duration": 264,
+        "image": "https://c.saavncdn.com/854/Evare-Nuvve-From-I-M-Game-Telugu-Telugu-2026-20260810103433-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyAu866w0SoGArZoVB1TTZMcsgnZjdsXnPIhUjP/fe7j9QZfD3EEtq/hw7tS9a8Gtq",
+        "year": "2026",
+        "language": "telugu",
+        "hasLyrics": false
+      },
+      {
+        "id": "_iqSIL1W",
+        "title": "Yellamma Theme (From \"Yellamma\")",
+        "artist": "Devi Sri Prasad",
+        "album": "Yellamma Theme (From \"Yellamma\")",
+        "albumId": "78779803",
+        "duration": 119,
+        "image": "https://c.saavncdn.com/545/Yellamma-Theme-From-Yellamma-Telugu-2026-20260801191223-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyzCRFeUllFuEZ3oYgWyOEVc0p/sbOAf4IqKif3wq+yUEOSp+DWfgICBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "telugu",
+        "hasLyrics": false
+      },
+      {
+        "id": "t1UriaT4",
+        "title": "Telusa Neeke Pilla (From \"Mandaadi - Telugu\")",
+        "artist": "G.V. Prakash Kumar",
+        "album": "Telusa Neeke Pilla (From \"Mandaadi - Telugu\")",
+        "albumId": "78913685",
+        "duration": 225,
+        "image": "https://c.saavncdn.com/303/Telusa-Neeke-Pilla-From-Mandaadi-Telugu-Telugu-2026-20260805120532-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy6r+vFGyWcwcEDKjci0gSb0pqOtMUJ9IxfnS2ybNo9VnW36FYVfcxbhw7tS9a8Gtq",
+        "year": "2026",
+        "language": "telugu",
+        "hasLyrics": false
+      },
+      {
+        "id": "Grsn1d2s",
+        "title": "Kallo Kallolam (From \" Dark Chocolate \")",
+        "artist": "Vivek Sagar",
+        "album": "Kallo Kallolam (From \" Dark Chocolate \")",
+        "albumId": "79121159",
+        "duration": 231,
+        "image": "https://c.saavncdn.com/159/Kallo-Kallolam-From-Dark-Chocolate-Telugu-2026-20260811121530-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyakzRXusnmZoH6Kt272y30D74ymadUecWmG6bCQ5EYXfNIO9ZMqVfthw7tS9a8Gtq",
+        "year": "2026",
+        "language": "telugu",
+        "hasLyrics": false
+      },
+      {
+        "id": "LQntI9kM",
+        "title": "Aaja Meri Jaani (From \"Baa Baa Black Sheep\")",
+        "artist": "Electronic kili, Arcado, Kittu Vissapragada",
+        "album": "Aaja Meri Jaani (From \"Baa Baa Black Sheep\")",
+        "albumId": "79208668",
+        "duration": 207,
+        "image": "https://c.saavncdn.com/125/Aaja-Meri-Jaani-From-Baa-Baa-Black-Sheep-Telugu-2026-20260813153805-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyDyRPZr8BPU83Fh8mmDiu1gQ+QPUOMp3OHPS9g4PE/EitCl9VN7PACRw7tS9a8Gtq",
+        "year": "2026",
+        "language": "telugu",
+        "hasLyrics": false
+      },
+      {
+        "id": "YKvB-Oh-",
+        "title": "Olammo Vagalaadi (From \"Sigma\") (Telugu)",
+        "artist": "Thaman S, Krishna Chaitanya",
+        "album": "Olammo Vagalaadi (From \"Sigma\") (Telugu)",
+        "albumId": "79130797",
+        "duration": 210,
+        "image": "https://c.saavncdn.com/973/Olammo-Vagalaadi-From-Sigma-Telugu-Telugu-2026-20260811093819-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyMnjGaKefqAUIgsUz6gEGX1BhNoTv/f1oeNNE8zG/YANBxyrph5w+rxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "telugu",
+        "hasLyrics": false
+      }
+    ]
+  },
+  {
     "id": "new_trending",
     "title": "Trending Now",
     "subtitle": "",
@@ -294,244 +532,6 @@
     ]
   },
   {
-    "id": "new_albums",
-    "title": "New Releases",
-    "subtitle": "",
-    "type": "mixed",
-    "items": [
-      {
-        "id": "79488223",
-        "title": "Irumudi",
-        "artist": "",
-        "image": "https://c.saavncdn.com/919/Irumudi-Telugu-2026-20260821191100-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "79228006",
-        "title": "Toxic - Telugu (Original Motion Picture Soundtrack)",
-        "artist": "",
-        "image": "https://c.saavncdn.com/379/Toxic-Telugu-Original-Motion-Picture-Soundtrack-Telugu-2026-20260818072128-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "-D0EECa0",
-        "title": "Ala Bolelo (From \"Jailer 2\")",
-        "artist": "Anirudh Ravichander, Srinivasa Mouli",
-        "album": "Ala Bolelo (From \"Jailer 2\")",
-        "albumId": "79515330",
-        "duration": 240,
-        "image": "https://c.saavncdn.com/039/Ala-Bolelo-From-Jailer-2-Telugu-2026-20260822185700-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyrf6UPAs4YcBpg2ot53F8w9Z1jrqgGHD23oyhM/651shlOC4jHSeHUBw7tS9a8Gtq",
-        "year": "2026",
-        "language": "telugu",
-        "hasLyrics": false
-      },
-      {
-        "id": "79225356",
-        "title": "Vishwanath & Sons (Telugu)",
-        "artist": "",
-        "image": "https://c.saavncdn.com/434/Vishwanath-Sons-Telugu-2026-20260813174026-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "VBXZqRZE",
-        "title": "Chinni Chinni (From \"Itllu Arjuna\")",
-        "artist": "Thaman S, Kalyan Chakravarthy, Mohit Chauhan",
-        "album": "Chinni Chinni (From \"Itllu Arjuna\")",
-        "albumId": "79338964",
-        "duration": 250,
-        "image": "https://c.saavncdn.com/719/Chinni-Chinni-From-Itllu-Arjuna-Telugu-2026-20260817151029-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDypaEhfdaOxKIWE1LiN0dGFAvbz73gAZ8VHh0hE26fFDOHAxO9KVivCRw7tS9a8Gtq",
-        "year": "2026",
-        "language": "telugu",
-        "hasLyrics": false
-      },
-      {
-        "id": "78400522",
-        "title": "Chennai Love Story",
-        "artist": "",
-        "image": "https://c.saavncdn.com/842/Chennai-Love-Story-Telugu-2026-20260723201006-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "78912313",
-        "title": "DC (Original Motion Picture Soundtrack)",
-        "artist": "",
-        "image": "https://c.saavncdn.com/965/DC-Original-Motion-Picture-Soundtrack-Tamil-2026-20260805081906-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "HhXg2PEn",
-        "title": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Telugu]",
-        "artist": "Sai Abhyankkar, Chandra Bose, Ram Miriyala, Arun Kaundinya",
-        "album": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Telugu]",
-        "albumId": "78585053",
-        "duration": 210,
-        "image": "https://c.saavncdn.com/635/Alaakaa-Loova-From-OM-Chapter-1-Udhiram-The-Blood-Wood-Telugu-Telugu-2026-20260730045454-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy+V01E/XMksqC5DlOO8rXBYJ9k+vO8afJ0Nj0jCU/5dhVLDkocOaOAhw7tS9a8Gtq",
-        "year": "2026",
-        "language": "telugu",
-        "hasLyrics": false
-      },
-      {
-        "id": "RhGThEY0",
-        "title": "Fanaa (From \"HIGH\")",
-        "artist": "Shahzad Ali",
-        "album": "Fanaa (From \"HIGH\")",
-        "albumId": "79028961",
-        "duration": 231,
-        "image": "https://c.saavncdn.com/601/Fanaa-From-HIGH-Telugu-2026-20260808141750-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyJTIY5zjtoGJdBr+AMa8IFPrAcAcro4P3es06y/lXHxCNeBMpdsoo9Bw7tS9a8Gtq",
-        "year": "2026",
-        "language": "telugu",
-        "hasLyrics": false
-      },
-      {
-        "id": "vKiRnZhS",
-        "title": "Bad Time Band Baaja (From \"Ramba Oorvasi Menaka\")",
-        "artist": "Ram Miriyala",
-        "album": "Bad Time Band Baaja (From \"Ramba Oorvasi Menaka\")",
-        "albumId": "79426550",
-        "duration": 175,
-        "image": "https://c.saavncdn.com/702/Bad-Time-Band-Baaja-From-Ramba-Oorvasi-Menaka-Telugu-2026-20260819161205-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy/qKn+zUWRe9+pd/UjbmPKN1ACZLniis99d5/tm4wB96KdmkpsQhSXhw7tS9a8Gtq",
-        "year": "2026",
-        "language": "telugu",
-        "hasLyrics": false
-      },
-      {
-        "id": "-Rod5jl4",
-        "title": "Manasa Vacha (From \"EPIC - First Semester\")",
-        "artist": "S.P.B. Charan, K. S. Chithra",
-        "album": "Manasa Vacha (From \"EPIC - First Semester\")",
-        "albumId": "79475999",
-        "duration": 255,
-        "image": "https://c.saavncdn.com/903/Manasa-Vacha-From-EPIC-First-Semester-Telugu-2026-20260820151043-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyI1ISx5/TX/2VUK93grBPFK/DX7ZgmxMr45UZn0WyOqs651J5WZUstxw7tS9a8Gtq",
-        "year": "2026",
-        "language": "telugu",
-        "hasLyrics": false
-      },
-      {
-        "id": "79215508",
-        "title": "Pallaburusu (Original Motion Picture Soundtrack)",
-        "artist": "",
-        "image": "https://c.saavncdn.com/182/Pallaburusu-Original-Motion-Picture-Soundtrack-Telugu-2026-20260813142900-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "sTUukcc_",
-        "title": "Anthima Katha ( From Ameerlog)",
-        "artist": "Smaran, Niklesh Sunkoji",
-        "album": "Anthima Katha ( From Ameerlog)",
-        "albumId": "79608743",
-        "duration": 266,
-        "image": "https://c.saavncdn.com/712/Anthima-Katha-From-Ameerlog-Telugu-2026-20260824124803-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyogAkegu/9aAJVoLskSsE/RXKLVCDfo7a3ub939hPkTURXWvIVHPKQRw7tS9a8Gtq",
-        "year": "2026",
-        "language": "telugu",
-        "hasLyrics": false
-      },
-      {
-        "id": "tGc37e4S",
-        "title": "Romanchakam - Title Track (From \"Romanchakam\")",
-        "artist": "Vasuki Vaibhav, Chandrabose",
-        "album": "Romanchakam - Title Track (From \"Romanchakam\")",
-        "albumId": "79175114",
-        "duration": 173,
-        "image": "https://c.saavncdn.com/412/Romanchakam-Title-Track-From-Romanchakam-Telugu-2026-20260812171051-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyESbrZjyKrSDvVWToWcHi6WuR/HWeoQyp5clncO4QYURMMuq27subzxw7tS9a8Gtq",
-        "year": "2026",
-        "language": "telugu",
-        "hasLyrics": false
-      },
-      {
-        "id": "o5ZbYv_v",
-        "title": "Evare Nuvve (From \"I'M Game - Telugu\")",
-        "artist": "Jakes Bejoy, Sanare",
-        "album": "Evare Nuvve (From \"I'M Game - Telugu\")",
-        "albumId": "79074221",
-        "duration": 264,
-        "image": "https://c.saavncdn.com/854/Evare-Nuvve-From-I-M-Game-Telugu-Telugu-2026-20260810103433-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyAu866w0SoGArZoVB1TTZMcsgnZjdsXnPIhUjP/fe7j9QZfD3EEtq/hw7tS9a8Gtq",
-        "year": "2026",
-        "language": "telugu",
-        "hasLyrics": false
-      },
-      {
-        "id": "_iqSIL1W",
-        "title": "Yellamma Theme (From \"Yellamma\")",
-        "artist": "Devi Sri Prasad",
-        "album": "Yellamma Theme (From \"Yellamma\")",
-        "albumId": "78779803",
-        "duration": 119,
-        "image": "https://c.saavncdn.com/545/Yellamma-Theme-From-Yellamma-Telugu-2026-20260801191223-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyzCRFeUllFuEZ3oYgWyOEVc0p/sbOAf4IqKif3wq+yUEOSp+DWfgICBw7tS9a8Gtq",
-        "year": "2026",
-        "language": "telugu",
-        "hasLyrics": false
-      },
-      {
-        "id": "t1UriaT4",
-        "title": "Telusa Neeke Pilla (From \"Mandaadi - Telugu\")",
-        "artist": "G.V. Prakash Kumar",
-        "album": "Telusa Neeke Pilla (From \"Mandaadi - Telugu\")",
-        "albumId": "78913685",
-        "duration": 225,
-        "image": "https://c.saavncdn.com/303/Telusa-Neeke-Pilla-From-Mandaadi-Telugu-Telugu-2026-20260805120532-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy6r+vFGyWcwcEDKjci0gSb0pqOtMUJ9IxfnS2ybNo9VnW36FYVfcxbhw7tS9a8Gtq",
-        "year": "2026",
-        "language": "telugu",
-        "hasLyrics": false
-      },
-      {
-        "id": "Grsn1d2s",
-        "title": "Kallo Kallolam (From \" Dark Chocolate \")",
-        "artist": "Vivek Sagar",
-        "album": "Kallo Kallolam (From \" Dark Chocolate \")",
-        "albumId": "79121159",
-        "duration": 231,
-        "image": "https://c.saavncdn.com/159/Kallo-Kallolam-From-Dark-Chocolate-Telugu-2026-20260811121530-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyakzRXusnmZoH6Kt272y30D74ymadUecWmG6bCQ5EYXfNIO9ZMqVfthw7tS9a8Gtq",
-        "year": "2026",
-        "language": "telugu",
-        "hasLyrics": false
-      },
-      {
-        "id": "LQntI9kM",
-        "title": "Aaja Meri Jaani (From \"Baa Baa Black Sheep\")",
-        "artist": "Electronic kili, Arcado, Kittu Vissapragada",
-        "album": "Aaja Meri Jaani (From \"Baa Baa Black Sheep\")",
-        "albumId": "79208668",
-        "duration": 207,
-        "image": "https://c.saavncdn.com/125/Aaja-Meri-Jaani-From-Baa-Baa-Black-Sheep-Telugu-2026-20260813153805-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyDyRPZr8BPU83Fh8mmDiu1gQ+QPUOMp3OHPS9g4PE/EitCl9VN7PACRw7tS9a8Gtq",
-        "year": "2026",
-        "language": "telugu",
-        "hasLyrics": false
-      },
-      {
-        "id": "YKvB-Oh-",
-        "title": "Olammo Vagalaadi (From \"Sigma\") (Telugu)",
-        "artist": "Thaman S, Krishna Chaitanya",
-        "album": "Olammo Vagalaadi (From \"Sigma\") (Telugu)",
-        "albumId": "79130797",
-        "duration": 210,
-        "image": "https://c.saavncdn.com/973/Olammo-Vagalaadi-From-Sigma-Telugu-Telugu-2026-20260811093819-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyMnjGaKefqAUIgsUz6gEGX1BhNoTv/f1oeNNE8zG/YANBxyrph5w+rxw7tS9a8Gtq",
-        "year": "2026",
-        "language": "telugu",
-        "hasLyrics": false
-      }
-    ]
-  },
-  {
     "id": "top_playlists",
     "title": "Editorial Picks",
     "subtitle": "",
@@ -620,6 +620,127 @@
         "subtitle": "Just Updated",
         "image": "https://c.saavncdn.com/editorial/TeluguFolkSongs_20260623104212.jpg",
         "songCount": 50
+      }
+    ]
+  },
+  {
+    "id": "promo:vx:data:68",
+    "title": "Fresh Hits",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "2912846",
+        "title": "Kotha Tunes",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/KothaTunes_20260820125729.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "2574962",
+        "title": "Adhire Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/AdhireHits_20260819090234.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "158224013",
+        "title": "Kirak Pop",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/KirakPop_20260807124703.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1265890645",
+        "title": "ArtistOne Finds",
+        "subtitle": "2.7K Followers",
+        "image": "https://c.saavncdn.com/editorial/ArtistOneFinds_20260821102816.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "814453257",
+        "title": "Telugu Viral Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/TeluguViralHits_20260821093016.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "83439247",
+        "title": "Dance Cheddam",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/DanceCheddam_20260803112551.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1219444539",
+        "title": "New Indie - Telugu",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/NewIndieTelugu_20260810114328.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "83443327",
+        "title": "Love Dub",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/LoveDub_20260727101418.jpg",
+        "songCount": 0
+      }
+    ]
+  },
+  {
+    "id": "promo:vx:data:76",
+    "title": "Top Genres & Moods",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "802943374",
+        "title": "Best Of Hip Hop - Telugu",
+        "subtitle": "5.2K Followers",
+        "image": "https://c.saavncdn.com/editorial/BestOfHipHopTelugu_20240410122531.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "110048908",
+        "title": "Telugu Folk Songs",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/TeluguFolkSongs_20260623104212.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "169673226",
+        "title": "Chill Boss",
+        "subtitle": "73.2K Followers",
+        "image": "https://c.saavncdn.com/editorial/ChillBoss_20260622053644.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "832227909",
+        "title": "Best Of Indie - Telugu",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/BestOfIndieTelugu_20260807124813.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "315471271",
+        "title": "Tollywood Jazz",
+        "subtitle": "3.9K Followers",
+        "image": "https://c.saavncdn.com/editorial/TollywoodJazz_20241211064947.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "158226390",
+        "title": "Tollywood Remix",
+        "subtitle": "23.5K Followers",
+        "image": "https://c.saavncdn.com/editorial/TollywoodRemix_20240910101003.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "895019624",
+        "title": "Best of Unplugged - Telugu",
+        "subtitle": "4.6K Followers",
+        "image": "https://c.saavncdn.com/editorial/BestofUnpluggedTelugu_20241129123729.jpg",
+        "songCount": 0
       }
     ]
   },
@@ -843,127 +964,6 @@
         "title": "Puthiya Tunes",
         "subtitle": "Just Updated",
         "image": "https://c.saavncdn.com/editorial/PuthiyaTunes_20260810114916.jpg",
-        "songCount": 0
-      }
-    ]
-  },
-  {
-    "id": "promo:vx:data:68",
-    "title": "Fresh Hits",
-    "subtitle": "",
-    "type": "mixed",
-    "items": [
-      {
-        "id": "2912846",
-        "title": "Kotha Tunes",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/KothaTunes_20260820125729.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "2574962",
-        "title": "Adhire Hits",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/AdhireHits_20260819090234.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "158224013",
-        "title": "Kirak Pop",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/KirakPop_20260807124703.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "1265890645",
-        "title": "ArtistOne Finds",
-        "subtitle": "2.7K Followers",
-        "image": "https://c.saavncdn.com/editorial/ArtistOneFinds_20260821102816.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "814453257",
-        "title": "Telugu Viral Hits",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/TeluguViralHits_20260821093016.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "83439247",
-        "title": "Dance Cheddam",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/DanceCheddam_20260803112551.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "1219444539",
-        "title": "New Indie - Telugu",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/NewIndieTelugu_20260810114328.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "83443327",
-        "title": "Love Dub",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/LoveDub_20260727101418.jpg",
-        "songCount": 0
-      }
-    ]
-  },
-  {
-    "id": "promo:vx:data:76",
-    "title": "Top Genres & Moods",
-    "subtitle": "",
-    "type": "mixed",
-    "items": [
-      {
-        "id": "802943374",
-        "title": "Best Of Hip Hop - Telugu",
-        "subtitle": "5.2K Followers",
-        "image": "https://c.saavncdn.com/editorial/BestOfHipHopTelugu_20240410122531.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "110048908",
-        "title": "Telugu Folk Songs",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/TeluguFolkSongs_20260623104212.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "169673226",
-        "title": "Chill Boss",
-        "subtitle": "73.2K Followers",
-        "image": "https://c.saavncdn.com/editorial/ChillBoss_20260622053644.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "832227909",
-        "title": "Best Of Indie - Telugu",
-        "subtitle": "Just Updated",
-        "image": "https://c.saavncdn.com/editorial/BestOfIndieTelugu_20260807124813.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "315471271",
-        "title": "Tollywood Jazz",
-        "subtitle": "3.9K Followers",
-        "image": "https://c.saavncdn.com/editorial/TollywoodJazz_20241211064947.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "158226390",
-        "title": "Tollywood Remix",
-        "subtitle": "23.5K Followers",
-        "image": "https://c.saavncdn.com/editorial/TollywoodRemix_20240910101003.jpg",
-        "songCount": 0
-      },
-      {
-        "id": "895019624",
-        "title": "Best of Unplugged - Telugu",
-        "subtitle": "4.6K Followers",
-        "image": "https://c.saavncdn.com/editorial/BestofUnpluggedTelugu_20241129123729.jpg",
         "songCount": 0
       }
     ]

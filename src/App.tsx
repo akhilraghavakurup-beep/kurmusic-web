@@ -6,6 +6,7 @@ import { MobilePlayer } from './components/player/MobilePlayer';
 import { QueueDrawer } from './components/player/QueueDrawer';
 import { LyricsModal } from './components/player/LyricsModal';
 import { HomeView } from './components/views/HomeView';
+import { RewindView } from './components/views/RewindView';
 import { SearchView } from './components/views/SearchView';
 import { AlbumView } from './components/views/AlbumView';
 import { ArtistView } from './components/views/ArtistView';
@@ -14,7 +15,7 @@ import { LibraryView } from './components/views/LibraryView';
 import { DownloadsView } from './components/views/DownloadsView';
 import { SettingsModal } from './components/views/SettingsModal';
 import { usePlayerStore } from './stores/player-store';
-import { Home, Search, Library, Download, SlidersHorizontal, Play, Pause, Heart } from 'lucide-react';
+import { Home, Search, Library, Download, SlidersHorizontal, Play, Pause, Heart, Sparkles } from 'lucide-react';
 import { useLibraryStore } from './stores/library-store';
 
 export const App: React.FC = () => {
@@ -113,6 +114,13 @@ export const App: React.FC = () => {
             <HomeView
               onSelectAlbum={handleSelectAlbum}
               onSelectPlaylist={handleSelectPlaylist}
+              onSelectArtist={handleSelectArtist}
+            />
+          )}
+
+          {activeTab === 'rewind' && (
+            <RewindView
+              onSelectAlbum={handleSelectAlbum}
               onSelectArtist={handleSelectArtist}
             />
           )}
@@ -226,6 +234,16 @@ export const App: React.FC = () => {
         >
           <Home className="w-5 h-5" />
           <span className="text-[10px] font-medium">Home</span>
+        </button>
+
+        <button
+          onClick={() => navigateTo('rewind')}
+          className={`flex flex-col items-center gap-1 p-2 ${
+            activeTab === 'rewind' ? 'text-pink-400 font-bold' : 'text-slate-400'
+          }`}
+        >
+          <Sparkles className="w-5 h-5" />
+          <span className="text-[10px] font-medium">Rewind</span>
         </button>
 
         <button

@@ -1,5 +1,238 @@
 [
   {
+    "id": "new_albums",
+    "title": "New Releases",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "79136465",
+        "title": "Khalifa",
+        "artist": "",
+        "image": "https://c.saavncdn.com/060/Khalifa-Malayalam-2026-20260811192325-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "P5pjB99X",
+        "title": "Radhimaa (From \"Think Indie\")",
+        "artist": "Sai Abhyankkar, Vivek",
+        "album": "Radhimaa (From \"Think Indie\")",
+        "albumId": "79613192",
+        "duration": 259,
+        "image": "https://c.saavncdn.com/877/Radhimaa-From-Think-Indie-Tamil-2026-20260827192132-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyoLsZF06RsceOB83mU2psZFTghZS+oZMFyCYxzo8iTmWbhXMNqkmeWBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "VU9Tu56D",
+        "title": "Mazhavillaye (From \"I'M Game - Malayalam\")",
+        "artist": "Jakes Bejoy, Sharfu",
+        "album": "Mazhavillaye (From \"I'M Game - Malayalam\")",
+        "albumId": "79074219",
+        "duration": 264,
+        "image": "https://c.saavncdn.com/632/Mazhavillaye-From-I-M-Game-Malayalam-Malayalam-2026-20260810103441-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy1DeZBLLdNrGGmSPs47wY6Kz+KtBkFTHAplMXWZQs651hR3YR6uJ76hw7tS9a8Gtq",
+        "year": "2026",
+        "language": "malayalam",
+        "hasLyrics": false
+      },
+      {
+        "id": "3h6F8ui8",
+        "title": "Ala Bolelo (From \"Jailer 2\")",
+        "artist": "Anirudh Ravichander, Arunraja Kamaraj",
+        "album": "Ala Bolelo (From \"Jailer 2\")",
+        "albumId": "79515366",
+        "duration": 240,
+        "image": "https://c.saavncdn.com/557/Ala-Bolelo-From-Jailer-2-Tamil-2026-20260821084843-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyvzXSrhnlq1EEoa3t9MhQFEXxO/+r50WWWWflLm6C1XPvtVCrEk3TeBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "77189973",
+        "title": "KALYANI (Remix)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/475/KALYANI-Remix-Malayalam-2026-20260622131127-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "98viXOUc",
+        "title": "Bloody Band (From \"DC\")",
+        "artist": "Anirudh Ravichander",
+        "album": "Bloody Band (From \"DC\")",
+        "albumId": "79119455",
+        "duration": 156,
+        "image": "https://c.saavncdn.com/150/Bloody-Band-From-DC-Unknown-2026-20260811063758-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyZNGesMXMF26gU9NQQIu2uVZ6BEJyaocRmhgkxJiCeAy2H4CpVp53IRw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "ftFNGOjL",
+        "title": "Illey Illa (From \"Bethlehem Kudumba Unit\")",
+        "artist": "Vishnu Vijay, Suhail Koya, Kapil Kapilan",
+        "album": "Illey Illa (From \"Bethlehem Kudumba Unit\")",
+        "albumId": "79096898",
+        "duration": 210,
+        "image": "https://c.saavncdn.com/663/Illey-Illa-From-Bethlehem-Kudumba-Unit-Malayalam-2026-20260810204143-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyNam6yPPLQE4DbpHsxSwDT4u1Tmds4X+h3WiD76Hrl25fAVYsZshp4Bw7tS9a8Gtq",
+        "year": "2026",
+        "language": "malayalam",
+        "hasLyrics": true
+      },
+      {
+        "id": "96AyCy2b",
+        "title": "Kalyana Virundhu (From \"Dorothy\")",
+        "artist": "Ilaiyaraaja, Yugendran Vasudevan, Anthony Daasan, Priya Jerson",
+        "album": "Kalyana Virundhu (From \"Dorothy\")",
+        "albumId": "79565191",
+        "duration": 238,
+        "image": "https://c.saavncdn.com/889/Kalyana-Virundhu-From-Dorothy-Tamil-2026-20260822194208-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyY5Q/sh1sSx7HNrDzuiD0hrl1vYi4Er4EMcKDYUBNwy5Fj6Wh4vJm5hw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "79001907",
+        "title": "Thudakkam (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/569/Thudakkam-Original-Motion-Picture-Soundtrack-Malayalam-2026-20260807120406-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "79225358",
+        "title": "Vishwanath & Sons (Tamil)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/435/Vishwanath-Sons-Tamil-Tamil-2026-20260813174027-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "0gb6jkXS",
+        "title": "Onakampany",
+        "artist": "Sooraj S. Kurup, Suhail Koya",
+        "album": "Onakampany",
+        "albumId": "79263865",
+        "duration": 241,
+        "image": "https://c.saavncdn.com/134/Onakampany-Malayalam-2026-20260814103813-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyMaokBYUu+OgaNzUszSBnfJ7J2TvZSHOykSJzHix8WDpXsAwu/6oP0Bw7tS9a8Gtq",
+        "year": "2026",
+        "language": "malayalam",
+        "hasLyrics": false
+      },
+      {
+        "id": "iJd6rt-r",
+        "title": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Tamil]",
+        "artist": "Sai Abhyankkar, Rokesh",
+        "album": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Tamil]",
+        "albumId": "78584772",
+        "duration": 210,
+        "image": "https://c.saavncdn.com/024/Alaakaa-Loova-From-OM-Chapter-1-Udhiram-The-Blood-Wood-Tamil-Tamil-2026-20260730045529-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDywc1YnMo9PfA/r1Vrw0w/sKzQufY9gnv7VazYz2bp/+QLDdpldtYASxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "6wyfStxU",
+        "title": "Aavani Thumbi - Duet",
+        "artist": "Deva Prasanth, Naveen Marar",
+        "album": "Aavani Thumbi - Duet",
+        "albumId": "79358854",
+        "duration": 225,
+        "image": "https://c.saavncdn.com/517/Aavani-Thumbi-Duet-Malayalam-2026-20260817233607-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyojl2NDtraM51Ep0VBPT+OW97uf5WrCx4W1CdBL29v91fzVzQnZsd9hw7tS9a8Gtq",
+        "year": "2026",
+        "language": "malayalam",
+        "hasLyrics": false
+      },
+      {
+        "id": "78425642",
+        "title": "DC (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/606/DC-Original-Motion-Picture-Soundtrack-Tamil-2026-20260727061230-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "SK2zvXEf",
+        "title": "Junoon",
+        "artist": "Ali Najih",
+        "album": "Junoon",
+        "albumId": "76507003",
+        "duration": 169,
+        "image": "https://c.saavncdn.com/485/Junoon-Malayalam-2026-20260615135316-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyzYXqgctzvGk0qJmDS/UoCFaaaIWGUgm84n7wIJs2VDyWi+2j0tKJIRw7tS9a8Gtq",
+        "year": "2026",
+        "language": "malayalam",
+        "hasLyrics": false
+      },
+      {
+        "id": "78362084",
+        "title": "Jana Nayagan - Tamil",
+        "artist": "",
+        "image": "https://c.saavncdn.com/810/Jana-Nayagan-Tamil-Tamil-2026-20260722221103-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "8OU6i1HV",
+        "title": "Malayali Manka (From 'Saina Music Indie')",
+        "artist": "Zukaboi",
+        "album": "Malayali Manka (From 'Saina Music Indie')",
+        "albumId": "78473787",
+        "duration": 226,
+        "image": "https://c.saavncdn.com/547/Malayali-Manka-From-Saina-Music-Indie-Malayalam-2026-20260803224830-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyQWvW76foqxP6DspEU1/hICd0T1FNElfrk3H5MpSByJAfY/ypz4l4UBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "malayalam",
+        "hasLyrics": false
+      },
+      {
+        "id": "79618164",
+        "title": "Hi",
+        "artist": "",
+        "image": "https://c.saavncdn.com/647/Hi-Tamil-2026-20260824181417-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "XtbQE7we",
+        "title": "Maanthrikam (From \"Bethlehem Kudumba Unit\")",
+        "artist": "Vishnu Vijay",
+        "album": "Maanthrikam (From \"Bethlehem Kudumba Unit\")",
+        "albumId": "78354192",
+        "duration": 196,
+        "image": "https://c.saavncdn.com/440/Maanthrikam-From-Bethlehem-Kudumba-Unit-Malayalam-2026-20260722184822-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyt5jS+rCdAe7NkI8b9nzSao9/sPg3QPFKG7EHMNGk6ZpqJwiFUMfgMRw7tS9a8Gtq",
+        "year": "2026",
+        "language": "malayalam",
+        "hasLyrics": false
+      },
+      {
+        "id": "xGniQtAd",
+        "title": "One Name (From \"Jailer 2\")",
+        "artist": "Anirudh Ravichander, Heisenberg",
+        "album": "One Name (From \"Jailer 2\")",
+        "albumId": "77613884",
+        "duration": 60,
+        "image": "https://c.saavncdn.com/651/One-Name-From-Jailer-2-English-2026-20260703080039-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyF1aowzSHAT04r4VXGJraS5u0GNALDMmzwBfUjomwjenPNgjbsHtlzxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      }
+    ]
+  },
+  {
     "id": "new_trending",
     "title": "Trending Now",
     "subtitle": "",
@@ -353,239 +586,6 @@
         "subtitle": "JioSaavn",
         "image": "https://c.saavncdn.com/editorial/charts_Malayalam1990s_170434_20240408063530.jpg",
         "songCount": 0
-      }
-    ]
-  },
-  {
-    "id": "new_albums",
-    "title": "New Releases",
-    "subtitle": "",
-    "type": "mixed",
-    "items": [
-      {
-        "id": "79136465",
-        "title": "Khalifa",
-        "artist": "",
-        "image": "https://c.saavncdn.com/060/Khalifa-Malayalam-2026-20260811192325-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "P5pjB99X",
-        "title": "Radhimaa (From \"Think Indie\")",
-        "artist": "Sai Abhyankkar, Vivek",
-        "album": "Radhimaa (From \"Think Indie\")",
-        "albumId": "79613192",
-        "duration": 259,
-        "image": "https://c.saavncdn.com/877/Radhimaa-From-Think-Indie-Tamil-2026-20260827192132-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyoLsZF06RsceOB83mU2psZFTghZS+oZMFyCYxzo8iTmWbhXMNqkmeWBw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
-      },
-      {
-        "id": "VU9Tu56D",
-        "title": "Mazhavillaye (From \"I'M Game - Malayalam\")",
-        "artist": "Jakes Bejoy, Sharfu",
-        "album": "Mazhavillaye (From \"I'M Game - Malayalam\")",
-        "albumId": "79074219",
-        "duration": 264,
-        "image": "https://c.saavncdn.com/632/Mazhavillaye-From-I-M-Game-Malayalam-Malayalam-2026-20260810103441-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy1DeZBLLdNrGGmSPs47wY6Kz+KtBkFTHAplMXWZQs651hR3YR6uJ76hw7tS9a8Gtq",
-        "year": "2026",
-        "language": "malayalam",
-        "hasLyrics": false
-      },
-      {
-        "id": "3h6F8ui8",
-        "title": "Ala Bolelo (From \"Jailer 2\")",
-        "artist": "Anirudh Ravichander, Arunraja Kamaraj",
-        "album": "Ala Bolelo (From \"Jailer 2\")",
-        "albumId": "79515366",
-        "duration": 240,
-        "image": "https://c.saavncdn.com/557/Ala-Bolelo-From-Jailer-2-Tamil-2026-20260821084843-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyvzXSrhnlq1EEoa3t9MhQFEXxO/+r50WWWWflLm6C1XPvtVCrEk3TeBw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
-      },
-      {
-        "id": "77189973",
-        "title": "KALYANI (Remix)",
-        "artist": "",
-        "image": "https://c.saavncdn.com/475/KALYANI-Remix-Malayalam-2026-20260622131127-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "98viXOUc",
-        "title": "Bloody Band (From \"DC\")",
-        "artist": "Anirudh Ravichander",
-        "album": "Bloody Band (From \"DC\")",
-        "albumId": "79119455",
-        "duration": 156,
-        "image": "https://c.saavncdn.com/150/Bloody-Band-From-DC-Unknown-2026-20260811063758-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyZNGesMXMF26gU9NQQIu2uVZ6BEJyaocRmhgkxJiCeAy2H4CpVp53IRw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
-      },
-      {
-        "id": "ftFNGOjL",
-        "title": "Illey Illa (From \"Bethlehem Kudumba Unit\")",
-        "artist": "Vishnu Vijay, Suhail Koya, Kapil Kapilan",
-        "album": "Illey Illa (From \"Bethlehem Kudumba Unit\")",
-        "albumId": "79096898",
-        "duration": 210,
-        "image": "https://c.saavncdn.com/663/Illey-Illa-From-Bethlehem-Kudumba-Unit-Malayalam-2026-20260810204143-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyNam6yPPLQE4DbpHsxSwDT4u1Tmds4X+h3WiD76Hrl25fAVYsZshp4Bw7tS9a8Gtq",
-        "year": "2026",
-        "language": "malayalam",
-        "hasLyrics": true
-      },
-      {
-        "id": "96AyCy2b",
-        "title": "Kalyana Virundhu (From \"Dorothy\")",
-        "artist": "Ilaiyaraaja, Yugendran Vasudevan, Anthony Daasan, Priya Jerson",
-        "album": "Kalyana Virundhu (From \"Dorothy\")",
-        "albumId": "79565191",
-        "duration": 238,
-        "image": "https://c.saavncdn.com/889/Kalyana-Virundhu-From-Dorothy-Tamil-2026-20260822194208-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyY5Q/sh1sSx7HNrDzuiD0hrl1vYi4Er4EMcKDYUBNwy5Fj6Wh4vJm5hw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
-      },
-      {
-        "id": "79001907",
-        "title": "Thudakkam (Original Motion Picture Soundtrack)",
-        "artist": "",
-        "image": "https://c.saavncdn.com/569/Thudakkam-Original-Motion-Picture-Soundtrack-Malayalam-2026-20260807120406-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "79225358",
-        "title": "Vishwanath & Sons (Tamil)",
-        "artist": "",
-        "image": "https://c.saavncdn.com/435/Vishwanath-Sons-Tamil-Tamil-2026-20260813174027-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "0gb6jkXS",
-        "title": "Onakampany",
-        "artist": "Sooraj S. Kurup, Suhail Koya",
-        "album": "Onakampany",
-        "albumId": "79263865",
-        "duration": 241,
-        "image": "https://c.saavncdn.com/134/Onakampany-Malayalam-2026-20260814103813-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyMaokBYUu+OgaNzUszSBnfJ7J2TvZSHOykSJzHix8WDpXsAwu/6oP0Bw7tS9a8Gtq",
-        "year": "2026",
-        "language": "malayalam",
-        "hasLyrics": false
-      },
-      {
-        "id": "iJd6rt-r",
-        "title": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Tamil]",
-        "artist": "Sai Abhyankkar, Rokesh",
-        "album": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Tamil]",
-        "albumId": "78584772",
-        "duration": 210,
-        "image": "https://c.saavncdn.com/024/Alaakaa-Loova-From-OM-Chapter-1-Udhiram-The-Blood-Wood-Tamil-Tamil-2026-20260730045529-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDywc1YnMo9PfA/r1Vrw0w/sKzQufY9gnv7VazYz2bp/+QLDdpldtYASxw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
-      },
-      {
-        "id": "6wyfStxU",
-        "title": "Aavani Thumbi - Duet",
-        "artist": "Deva Prasanth, Naveen Marar",
-        "album": "Aavani Thumbi - Duet",
-        "albumId": "79358854",
-        "duration": 225,
-        "image": "https://c.saavncdn.com/517/Aavani-Thumbi-Duet-Malayalam-2026-20260817233607-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyojl2NDtraM51Ep0VBPT+OW97uf5WrCx4W1CdBL29v91fzVzQnZsd9hw7tS9a8Gtq",
-        "year": "2026",
-        "language": "malayalam",
-        "hasLyrics": false
-      },
-      {
-        "id": "78425642",
-        "title": "DC (Original Motion Picture Soundtrack)",
-        "artist": "",
-        "image": "https://c.saavncdn.com/606/DC-Original-Motion-Picture-Soundtrack-Tamil-2026-20260727061230-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "SK2zvXEf",
-        "title": "Junoon",
-        "artist": "Ali Najih",
-        "album": "Junoon",
-        "albumId": "76507003",
-        "duration": 169,
-        "image": "https://c.saavncdn.com/485/Junoon-Malayalam-2026-20260615135316-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyzYXqgctzvGk0qJmDS/UoCFaaaIWGUgm84n7wIJs2VDyWi+2j0tKJIRw7tS9a8Gtq",
-        "year": "2026",
-        "language": "malayalam",
-        "hasLyrics": false
-      },
-      {
-        "id": "78362084",
-        "title": "Jana Nayagan - Tamil",
-        "artist": "",
-        "image": "https://c.saavncdn.com/810/Jana-Nayagan-Tamil-Tamil-2026-20260722221103-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "8OU6i1HV",
-        "title": "Malayali Manka (From 'Saina Music Indie')",
-        "artist": "Zukaboi",
-        "album": "Malayali Manka (From 'Saina Music Indie')",
-        "albumId": "78473787",
-        "duration": 226,
-        "image": "https://c.saavncdn.com/547/Malayali-Manka-From-Saina-Music-Indie-Malayalam-2026-20260803224830-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyQWvW76foqxP6DspEU1/hICd0T1FNElfrk3H5MpSByJAfY/ypz4l4UBw7tS9a8Gtq",
-        "year": "2026",
-        "language": "malayalam",
-        "hasLyrics": false
-      },
-      {
-        "id": "79618164",
-        "title": "Hi",
-        "artist": "",
-        "image": "https://c.saavncdn.com/647/Hi-Tamil-2026-20260824181417-500x500.jpg",
-        "year": null,
-        "songCount": 0
-      },
-      {
-        "id": "XtbQE7we",
-        "title": "Maanthrikam (From \"Bethlehem Kudumba Unit\")",
-        "artist": "Vishnu Vijay",
-        "album": "Maanthrikam (From \"Bethlehem Kudumba Unit\")",
-        "albumId": "78354192",
-        "duration": 196,
-        "image": "https://c.saavncdn.com/440/Maanthrikam-From-Bethlehem-Kudumba-Unit-Malayalam-2026-20260722184822-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyt5jS+rCdAe7NkI8b9nzSao9/sPg3QPFKG7EHMNGk6ZpqJwiFUMfgMRw7tS9a8Gtq",
-        "year": "2026",
-        "language": "malayalam",
-        "hasLyrics": false
-      },
-      {
-        "id": "xGniQtAd",
-        "title": "One Name (From \"Jailer 2\")",
-        "artist": "Anirudh Ravichander, Heisenberg",
-        "album": "One Name (From \"Jailer 2\")",
-        "albumId": "77613884",
-        "duration": 60,
-        "image": "https://c.saavncdn.com/651/One-Name-From-Jailer-2-English-2026-20260703080039-500x500.jpg",
-        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyF1aowzSHAT04r4VXGJraS5u0GNALDMmzwBfUjomwjenPNgjbsHtlzxw7tS9a8Gtq",
-        "year": "2026",
-        "language": "tamil",
-        "hasLyrics": false
       }
     ]
   },

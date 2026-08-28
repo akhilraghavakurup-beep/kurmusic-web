@@ -7,12 +7,13 @@ import {
   ListPlus, 
   Download, 
   Settings, 
-  Music2 
+  Music2,
+  Sparkles 
 } from 'lucide-react';
 import { useLibraryStore } from '../../stores/library-store';
 import { useDownloadStore } from '../../stores/download-store';
 
-export type ActiveTab = 'home' | 'search' | 'library' | 'liked' | 'downloads' | 'album' | 'artist' | 'playlist';
+export type ActiveTab = 'home' | 'rewind' | 'search' | 'library' | 'liked' | 'downloads' | 'album' | 'artist' | 'playlist';
 
 interface SidebarProps {
   activeTab: ActiveTab;
@@ -72,6 +73,18 @@ export const Sidebar: React.FC<SidebarProps> = ({
         >
           <Home className="w-5 h-5" />
           <span>Home</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab('rewind')}
+          className={`w-full flex items-center gap-3.5 px-3.5 py-2.5 rounded-xl font-medium text-sm transition-all ${
+            activeTab === 'rewind'
+              ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg shadow-purple-600/30 font-semibold'
+              : 'text-slate-400 hover:text-white hover:bg-white/5'
+          }`}
+        >
+          <Sparkles className="w-5 h-5 text-pink-400" />
+          <span>Kur Rewind</span>
         </button>
 
         <button
