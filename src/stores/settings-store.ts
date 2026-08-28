@@ -24,7 +24,7 @@ const loadSavedSettings = () => {
     console.error('Failed to load settings:', e);
   }
   return {
-    languages: ['hindi', 'english'],
+    languages: ['malayalam', 'tamil', 'telugu', 'hindi', 'punjabi', 'english'],
     audioQuality: '320kbps' as AudioQuality,
     customProxy: '',
     accentColor: '#9333EA',

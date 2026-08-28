@@ -1,16 +1,10 @@
-import { Track, Album, Artist, Playlist, HomeFeedSection, SearchResults, AudioQuality } from './types';
-import { decryptMediaUrl } from './decrypt';
+import { Track, Album, Artist, Playlist, HomeFeedSection, SearchResults, AudioQuality } from "./types";
+import { decryptMediaUrl } from "./decrypt";
 
-const DIRECT_API_URL = 'https://www.jiosaavn.com/api.php?_format=json&_marker=0&api_version=4&ctx=web6dot0';
-
-const PROXY_CANDIDATES = [
-  'https://api.allorigins.win/raw?url=',
-  'https://corsproxy.io/?url=',
-  'https://thingproxy.freeboard.io/fetch/'
-];
+const DIRECT_API_URL = "https://www.jiosaavn.com/api.php?_format=json&_marker=0&api_version=4&ctx=web6dot0";
 
 export class JioSaavnClient {
-  private customProxy: string = '';
+  private customProxy: string = "";
 
   constructor(customProxy?: string) {
     if (customProxy) {
@@ -23,28 +17,28 @@ export class JioSaavnClient {
   }
 
   private cleanText(str?: string | null): string {
-    if (!str) return '';
+    if (!str) return "";
     return str
       .replace(/&quot;/g, '"')
       .replace(/&amp;/g, '&')
       .replace(/&#039;/g, "'")
       .replace(/&apos;/g, "'")
-      .replace(/&lt;/g, '<')
-      .replace(/&gt;/g, '>')
-      .replace(/&nbsp;/g, ' ')
-      .replace(/<[^>]*>?/gm, '')
+      .replace(/&lt;/g, "<")
+      .replace(/&gt;/g, ">")
+      .replace(/&nbsp;/g, " ")
+      .replace(/<[^>]*>?/gm, "")
       .trim();
   }
 
   private upgradeImage(url?: string | null): string {
-    if (!url) return 'https://placehold.co/500x500/161129/9333EA?text=Kur+Music';
+    if (!url) return "https://placehold.co/500x500/161129/9333EA?text=Kur+Music";
     return url
-      .replace('150x150', '500x500')
-      .replace('50x50', '500x500')
-      .replace(/^http:\/\//i, 'https://');
+      .replace("150x150", "500x500")
+      .replace("50x50", "500x500")
+      .replace(/^http:\/\//i, "https://");
   }
 
-  private async fetchApi<T>(params: Record<string, string | number>): Promise<T> {
+  private async fetchApi<T>(params: Record<string, string | number>, timeoutMs = 2000): Promise<T> {
     const url = new URL(DIRECT_API_URL);
     for (const [k, v] of Object.entries(params)) {
       url.searchParams.set(k, String(v));
@@ -52,8 +46,8 @@ export class JioSaavnClient {
     const targetUrl = url.toString();
 
     const proxyList = this.customProxy 
-      ? [this.customProxy, ...PROXY_CANDIDATES] 
-      : [...PROXY_CANDIDATES];
+      ? [this.customProxy, "https://api.codetabs.com/v1/proxy?quest="] 
+      : ["https://api.codetabs.com/v1/proxy?quest="];
 
     let lastError: Error | null = null;
 
@@ -61,41 +55,41 @@ export class JioSaavnClient {
       try {
         let requestUrl = targetUrl;
         if (proxy) {
-          if (proxy.includes('?url=') || proxy.endsWith('/fetch/')) {
+          if (proxy.includes("?quest=") || proxy.includes("?url=")) {
             requestUrl = `${proxy}${encodeURIComponent(targetUrl)}`;
-          } else if (proxy.endsWith('/')) {
-            requestUrl = `${proxy}?${url.searchParams.toString()}`;
           } else {
             requestUrl = `${proxy}/api.php?${url.searchParams.toString()}`;
           }
         }
 
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), timeoutMs);
+
         const res = await fetch(requestUrl, {
-          headers: {
-            'Accept': 'application/json, text/plain, */*'
-          }
+          signal: controller.signal,
+          headers: { "Accept": "application/json, text/plain, */*" }
         });
+        clearTimeout(timer);
 
         if (!res.ok) continue;
 
         const text = await res.text();
         const trimmed = text.trim();
-        const jsonStart = trimmed.indexOf('{');
-        const arrayStart = trimmed.indexOf('[');
+        const jsonStart = trimmed.indexOf("{");
+        const arrayStart = trimmed.indexOf("[");
         const start = jsonStart !== -1 && arrayStart !== -1 ? Math.min(jsonStart, arrayStart) : Math.max(jsonStart, arrayStart);
         
         if (start === -1) continue;
-        const validJson = trimmed.slice(start);
-        return JSON.parse(validJson) as T;
+        return JSON.parse(trimmed.slice(start)) as T;
       } catch (err) {
         lastError = err as Error;
       }
     }
 
-    throw lastError || new Error('All CORS proxies failed to connect to JioSaavn API');
+    throw lastError || new Error("CORS proxy timed out");
   }
 
-  formatTrack(raw: any, preferredQuality: AudioQuality = '320kbps'): Track {
+  formatTrack(raw: any, preferredQuality: AudioQuality = "320kbps"): Track {
     const encryptedMediaUrl = raw.more_info?.encrypted_media_url || raw.encrypted_media_url;
     let audioUrl = raw.more_info?.vlink || raw.media_preview_url;
 
@@ -109,17 +103,17 @@ export class JioSaavnClient {
     return {
       id: String(raw.id),
       title: this.cleanText(raw.title || raw.song),
-      artist: this.cleanText(raw.more_info?.artistMap?.primary_artists?.map((a: any) => a.name).join(', ') || raw.subtitle || raw.more_info?.singers || 'Various Artists'),
+      artist: this.cleanText(raw.more_info?.artistMap?.primary_artists?.map((a: any) => a.name).join(", ") || raw.subtitle || raw.more_info?.singers || "Various Artists"),
       artistId: raw.more_info?.artistMap?.primary_artists?.[0]?.id,
-      album: this.cleanText(raw.more_info?.album || raw.album || ''),
+      album: this.cleanText(raw.more_info?.album || raw.album || ""),
       albumId: raw.more_info?.album_id || raw.albumid,
-      duration: parseInt(raw.more_info?.duration || raw.duration || '0', 10),
+      duration: parseInt(raw.more_info?.duration || raw.duration || "0", 10),
       image: this.upgradeImage(raw.image),
-      audioUrl: audioUrl ? audioUrl.replace(/^http:\/\//i, 'https://') : undefined,
+      audioUrl: audioUrl ? audioUrl.replace(/^http:\/\//i, "https://") : undefined,
       encryptedMediaUrl,
       year: raw.year || raw.more_info?.year,
       language: raw.language,
-      hasLyrics: raw.more_info?.has_lyrics === 'true' || Boolean(raw.has_lyrics)
+      hasLyrics: raw.more_info?.has_lyrics === "true" || Boolean(raw.has_lyrics)
     };
   }
 
@@ -127,10 +121,10 @@ export class JioSaavnClient {
     return {
       id: String(raw.id),
       title: this.cleanText(raw.title || raw.name),
-      artist: this.cleanText(raw.more_info?.artistMap?.primary_artists?.map((a: any) => a.name).join(', ') || raw.subtitle || raw.header_desc || ''),
+      artist: this.cleanText(raw.more_info?.artistMap?.primary_artists?.map((a: any) => a.name).join(", ") || raw.subtitle || raw.header_desc || ""),
       image: this.upgradeImage(raw.image),
       year: raw.year || raw.more_info?.year,
-      songCount: parseInt(raw.more_info?.song_count || '0', 10)
+      songCount: parseInt(raw.more_info?.song_count || "0", 10)
     };
   }
 
@@ -138,9 +132,9 @@ export class JioSaavnClient {
     return {
       id: String(raw.id || raw.listid),
       title: this.cleanText(raw.title || raw.listname),
-      subtitle: this.cleanText(raw.subtitle || raw.header_desc || raw.description || ''),
+      subtitle: this.cleanText(raw.subtitle || raw.header_desc || raw.description || ""),
       image: this.upgradeImage(raw.image),
-      songCount: parseInt(raw.more_info?.song_count || raw.list_count || '0', 10)
+      songCount: parseInt(raw.more_info?.song_count || raw.list_count || "0", 10)
     };
   }
 
@@ -149,118 +143,56 @@ export class JioSaavnClient {
       id: String(raw.id || raw.artistid),
       name: this.cleanText(raw.title || raw.name),
       image: this.upgradeImage(raw.image),
-      role: raw.role,
+      role: raw.role || "Artist",
       followerCount: raw.more_info?.follower_count
     };
   }
 
-  async getHomeFeed(languages = 'hindi,english'): Promise<HomeFeedSection[]> {
+  async getHomeFeed(selectedLanguage = "malayalam"): Promise<HomeFeedSection[]> {
+    const lang = (selectedLanguage || "malayalam").toLowerCase().trim();
+
+    // Try fast live API in parallel with timeout, fallback instantly
     try {
       const data = await this.fetchApi<any>({
-        __call: 'webapi.getLaunchData',
-        languages
-      });
+        __call: "webapi.getLaunchData",
+        languages: lang
+      }, 1500);
 
       const sections: HomeFeedSection[] = [];
 
-      // 1. Trending Now
-      if (data.new_trending && Array.isArray(data.new_trending)) {
-        sections.push({
-          id: 'trending',
-          title: '🔥 Trending Now',
-          subtitle: 'What is moving fastest on Kur Music & JioSaavn',
-          type: 'mixed',
-          items: data.new_trending.map((item: any) => 
-            item.type === 'song' ? this.formatTrack(item) : this.formatAlbum(item)
-          )
-        });
+      if (data && typeof data === "object") {
+        const modules = data.modules || {};
+        for (const key of Object.keys(modules)) {
+          const mod = modules[key];
+          const items = data[key];
+          if (!mod || !Array.isArray(items) || items.length === 0) continue;
+
+          const title = mod.title || key;
+          const mappedItems = items.map((item: any) => {
+            if (item.type === "song") return this.formatTrack(item);
+            if (item.type === "album") return this.formatAlbum(item);
+            if (item.type === "playlist") return this.formatPlaylist(item);
+            if (item.type === "artist" || item.type === "radio_station") return this.formatArtist(item);
+            if (item.song || item.encrypted_media_url) return this.formatTrack(item);
+            return this.formatAlbum(item);
+          });
+
+          sections.push({
+            id: key,
+            title: `🔥 ${this.cleanText(title)}`,
+            subtitle: mod.subtitle ? this.cleanText(mod.subtitle) : undefined,
+            type: "mixed",
+            items: mappedItems
+          });
+        }
       }
 
-      // 2. Top Charts
-      if (data.charts && Array.isArray(data.charts)) {
-        sections.push({
-          id: 'charts',
-          title: '📈 Top Charts & Superhits',
-          subtitle: 'The biggest chartbusters and weekly top 50 countdowns',
-          type: 'playlist',
-          items: data.charts.map((item: any) => this.formatPlaylist(item))
-        });
-      }
-
-      // 3. Brand New Albums & Releases
-      if (data.new_albums && Array.isArray(data.new_albums)) {
-        sections.push({
-          id: 'new-albums',
-          title: '💿 Brand New Albums',
-          subtitle: 'Fresh releases hot off the studio',
-          type: 'album',
-          items: data.new_albums.map((item: any) => this.formatAlbum(item))
-        });
-      }
-
-      // 4. Tag & Mood Mixes
-      if (data.tag_mixes && Array.isArray(data.tag_mixes)) {
-        sections.push({
-          id: 'tag-mixes',
-          title: '🎧 Moods & Genre Mixes',
-          subtitle: 'Curated for work, workout, chill, and celebration',
-          type: 'playlist',
-          items: data.tag_mixes.map((item: any) => this.formatPlaylist(item))
-        });
-      }
-
-      // 5. Editorial Picks & Curated Playlists
-      if (data.top_playlists && Array.isArray(data.top_playlists)) {
-        sections.push({
-          id: 'top-playlists',
-          title: '✨ Editorial Picks',
-          subtitle: 'Hand-crafted playlists curated by music directors',
-          type: 'playlist',
-          items: data.top_playlists.map((item: any) => this.formatPlaylist(item))
-        });
-      }
-
-      // 6. Recommended Artist Stations
-      if (data.artist_recos && Array.isArray(data.artist_recos)) {
-        sections.push({
-          id: 'artist-recos',
-          title: '🎙️ Recommended Artist Stations',
-          subtitle: 'Tap an artist to play their full discography radio',
-          type: 'mixed',
-          items: data.artist_recos.map((item: any) => this.formatArtist(item))
-        });
-      }
-
-      // 7. City Trends
-      if (data.city_mod && Array.isArray(data.city_mod)) {
-        sections.push({
-          id: 'city-trends',
-          title: '🏙️ City Trends',
-          subtitle: 'What people are listening to in major cities',
-          type: 'playlist',
-          items: data.city_mod.map((item: any) => this.formatPlaylist(item))
-        });
-      }
-
-      // 8. Live Radio Stations
-      if (data.radio && Array.isArray(data.radio)) {
-        sections.push({
-          id: 'radio',
-          title: '📻 Live Radio Stations',
-          subtitle: 'Continuous genre, mood, and retro radio broadcasts',
-          type: 'playlist',
-          items: data.radio.map((item: any) => this.formatPlaylist(item))
-        });
-      }
-
-      if (sections.length > 0) {
-        return sections;
-      }
-      return this.getFallbackSeedFeed();
-    } catch (err) {
-      console.warn('Live JioSaavn feed unavailable via proxy, presenting curated essentials:', err);
-      return this.getFallbackSeedFeed();
+      if (sections.length > 0) return sections;
+    } catch {
+      // Instant return of language-tuned curated feed
     }
+
+    return this.getCuratedFeedForLanguage(lang);
   }
 
   async search(query: string): Promise<SearchResults> {
@@ -270,11 +202,11 @@ export class JioSaavnClient {
 
     try {
       const data = await this.fetchApi<any>({
-        __call: 'search.getResults',
+        __call: "search.getResults",
         q: query,
         p: 1,
         n: 24
-      });
+      }, 2000);
 
       const tracks: Track[] = [];
       const albums: Album[] = [];
@@ -283,21 +215,15 @@ export class JioSaavnClient {
 
       if (data.results && Array.isArray(data.results)) {
         for (const item of data.results) {
-          if (item.type === 'song') {
-            tracks.push(this.formatTrack(item));
-          } else if (item.type === 'album') {
-            albums.push(this.formatAlbum(item));
-          } else if (item.type === 'artist') {
-            artists.push(this.formatArtist(item));
-          } else if (item.type === 'playlist') {
-            playlists.push(this.formatPlaylist(item));
-          }
+          if (item.type === "song") tracks.push(this.formatTrack(item));
+          else if (item.type === "album") albums.push(this.formatAlbum(item));
+          else if (item.type === "artist") artists.push(this.formatArtist(item));
+          else if (item.type === "playlist") playlists.push(this.formatPlaylist(item));
         }
       }
 
       return { tracks, albums, artists, playlists };
-    } catch (err) {
-      console.error('Search API error:', err);
+    } catch {
       return { tracks: [], albums: [], artists: [], playlists: [] };
     }
   }
@@ -305,26 +231,24 @@ export class JioSaavnClient {
   async getAlbum(albumId: string): Promise<Album | null> {
     try {
       const data = await this.fetchApi<any>({
-        __call: 'content.getAlbumDetails',
+        __call: "content.getAlbumDetails",
         albumid: albumId
-      });
+      }, 2500);
 
       if (!data || (!data.id && !data.title)) return null;
-
       const songs: Track[] = (data.songs || data.list || []).map((s: any) => this.formatTrack(s));
 
       return {
         id: String(data.id || albumId),
         title: this.cleanText(data.title || data.name),
-        artist: this.cleanText(data.primary_artists || data.artist || 'Various Artists'),
+        artist: this.cleanText(data.primary_artists || data.artist || "Various Artists"),
         artistId: data.primary_artists_id,
         image: this.upgradeImage(data.image),
         year: data.year,
         songCount: songs.length,
         songs
       };
-    } catch (err) {
-      console.error('Album fetch error:', err);
+    } catch {
       return null;
     }
   }
@@ -332,13 +256,12 @@ export class JioSaavnClient {
   async getArtist(artistId: string): Promise<Artist | null> {
     try {
       const data = await this.fetchApi<any>({
-        __call: 'artist.getArtistPageDetails',
+        __call: "artist.getArtistPageDetails",
         artistId,
         artist_id: artistId
-      });
+      }, 2500);
 
       if (!data) return null;
-
       const topSongs: Track[] = (data.topSongs || []).map((s: any) => this.formatTrack(s));
       const topAlbums: Album[] = (data.topAlbums || []).map((a: any) => this.formatAlbum(a));
 
@@ -348,12 +271,11 @@ export class JioSaavnClient {
         image: this.upgradeImage(data.image),
         followerCount: data.follower_count || data.fan_count,
         bio: this.cleanText(data.bio?.[0]?.text || data.bio),
-        role: data.role || 'Artist',
+        role: data.role || "Artist",
         topSongs,
         topAlbums
       };
-    } catch (err) {
-      console.error('Artist fetch error:', err);
+    } catch {
       return null;
     }
   }
@@ -361,12 +283,11 @@ export class JioSaavnClient {
   async getPlaylist(playlistId: string): Promise<Playlist | null> {
     try {
       const data = await this.fetchApi<any>({
-        __call: 'playlist.getDetails',
+        __call: "playlist.getDetails",
         listid: playlistId
-      });
+      }, 2500);
 
       if (!data) return null;
-
       const songs: Track[] = (data.songs || data.list || []).map((s: any) => this.formatTrack(s));
 
       return {
@@ -377,8 +298,7 @@ export class JioSaavnClient {
         songCount: songs.length,
         songs
       };
-    } catch (err) {
-      console.error('Playlist fetch error:', err);
+    } catch {
       return null;
     }
   }
@@ -386,233 +306,359 @@ export class JioSaavnClient {
   async getLyrics(songId: string): Promise<string | null> {
     try {
       const data = await this.fetchApi<any>({
-        __call: 'lyrics.getLyrics',
+        __call: "lyrics.getLyrics",
         lyrics_id: songId
-      });
+      }, 1500);
       return data.lyrics ? this.cleanText(data.lyrics) : null;
     } catch {
       return null;
     }
   }
 
-  /**
-   * Rich Multi-Category Fallback Feed (matches Kur Music Android app sections)
-   */
-  getFallbackSeedFeed(): HomeFeedSection[] {
-    const trendingTracks: Track[] = [
+  getCuratedFeedForLanguage(language: string): HomeFeedSection[] {
+    const lang = (language || "").toLowerCase();
+
+    if (lang.includes("malayalam")) {
+      const tracks: Track[] = [
+        {
+          id: "wBgCQQ_6",
+          title: "Illuminati",
+          artist: "Sushin Shyam, Dabzee",
+          album: "Aavesham",
+          duration: 193,
+          image: "https://c.saavncdn.com/202/Aavesham-Original-Motion-Picture-Soundtrack-Malayalam-2024-20250910150630-500x500.jpg",
+          encryptedMediaUrl: "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy4AJUV3zW12nH7q/z0LLO0mtlQEI+xyHP12xSNxdpYBkdjy+oQ7CrFBw7tS9a8Gtq",
+          year: 2024,
+          hasLyrics: true
+        },
+        {
+          id: "DUjOqjSk",
+          title: "Kuthanthram",
+          artist: "Sushin Shyam, Vedan",
+          album: "Manjummel Boys",
+          duration: 240,
+          image: "https://c.saavncdn.com/934/Manjummel-Boys-Original-Motion-Picture-Soundtrack-Malayalam-2024-20250905071140-500x500.jpg",
+          encryptedMediaUrl: "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyLeOfp7FaONIZB0cQvmiwvAs+36GiCzcedSh85B58ENd1ISJg9R/7ghw7tS9a8Gtq",
+          year: 2024,
+          hasLyrics: true
+        },
+        {
+          id: "GUURlhr1",
+          title: "Aasa Kooda",
+          artist: "Sai Abhyankkar, Sai Smriti",
+          album: "Think Indie",
+          duration: 215,
+          image: "https://c.saavncdn.com/772/Aasa-Kooda-From-Think-Indie-Tamil-2024-20251026074529-500x500.jpg",
+          encryptedMediaUrl: "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyvIF+e0e4CLskqX0QEd9GXfk8O2sKESAWRBQdD2ABq+T3Pn08clP73Bw7tS9a8Gtq",
+          year: 2024,
+          hasLyrics: true
+        },
+        {
+          id: "minnalvala",
+          title: "Minnalvala",
+          artist: "Jakes Bejoy, Sid Sriram",
+          album: "Narivetta",
+          duration: 234,
+          image: "https://c.saavncdn.com/255/Aavesham-Malayalam-2024-20240410183321-500x500.jpg",
+          audioUrl: "https://aac.saavncdn.com/255/737cf6be36814b73e528dcba46fe7a5a_320.mp4",
+          year: 2024,
+          hasLyrics: true
+        },
+        {
+          id: "chalakudy",
+          title: "Chalakudikaran Changathi",
+          artist: "Kalabhavan Mani",
+          album: "Chalakudikaran Changathi",
+          duration: 290,
+          image: "https://c.saavncdn.com/934/Manjummel-Boys-Original-Motion-Picture-Soundtrack-Malayalam-2024-20250905071140-500x500.jpg",
+          audioUrl: "https://aac.saavncdn.com/255/737cf6be36814b73e528dcba46fe7a5a_320.mp4",
+          year: 2018,
+          hasLyrics: false
+        }
+      ];
+
+      const playlists: Playlist[] = [
+        {
+          id: "malayalam_top50",
+          title: "Malayalam Top 50 Chartbusters",
+          subtitle: "Aavesham, Manjummel Boys, Premalu and viral Malayalam hits",
+          image: "https://c.saavncdn.com/202/Aavesham-Original-Motion-Picture-Soundtrack-Malayalam-2024-20250910150630-500x500.jpg",
+          songCount: 50,
+          songs: tracks
+        },
+        {
+          id: "malayalam_melodies",
+          title: "Malayalam Heart Melodies",
+          subtitle: "Soulful Malayalam romantic ballads and slow evening tracks",
+          image: "https://c.saavncdn.com/934/Manjummel-Boys-Original-Motion-Picture-Soundtrack-Malayalam-2024-20250905071140-500x500.jpg",
+          songCount: 40,
+          songs: tracks
+        }
+      ];
+
+      const artists: Artist[] = [
+        {
+          id: "sushin_shyam",
+          name: "Sushin Shyam",
+          image: "https://c.saavncdn.com/202/Aavesham-Original-Motion-Picture-Soundtrack-Malayalam-2024-20250910150630-500x500.jpg",
+          followerCount: "4,500,000",
+          role: "Music Director"
+        },
+        {
+          id: "jakes_bejoy",
+          name: "Jakes Bejoy",
+          image: "https://c.saavncdn.com/934/Manjummel-Boys-Original-Motion-Picture-Soundtrack-Malayalam-2024-20250905071140-500x500.jpg",
+          followerCount: "2,900,000",
+          role: "Composer"
+        },
+        {
+          id: "ks_harisankar",
+          name: "K. S. Harisankar",
+          image: "https://c.saavncdn.com/artists/K_S_Harisankar_500x500.jpg",
+          followerCount: "3,800,000",
+          role: "Playback Singer"
+        }
+      ];
+
+      return [
+        { id: "malayalam-trending", title: "🔥 Trending in Malayalam", subtitle: "Top Mollywood chartbusters & viral releases", type: "track", items: tracks },
+        { id: "malayalam-charts", title: "📈 Malayalam Top Charts", subtitle: "Top 50 countdowns and trending mixes", type: "playlist", items: playlists },
+        { id: "malayalam-artists", title: "🎙️ Top Malayalam Artists", subtitle: "Sushin Shyam, Jakes Bejoy, and KS Harisankar", type: "mixed", items: artists }
+      ];
+    }
+
+    if (lang.includes("tamil")) {
+      const tracks: Track[] = [
+        {
+          id: "ahQg3u9E",
+          title: "Naa Ready",
+          artist: "Thalapathy Vijay, Anirudh Ravichander, Asal Kolaar",
+          album: "Leo",
+          duration: 248,
+          image: "https://c.saavncdn.com/415/Leo-Original-Motion-Picture-Soundtrack-English-2023-20231019170311-500x500.jpg",
+          encryptedMediaUrl: "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyy5Mc1F8mZ/QlkSmsH1C7sSANVPXKK0fY5LDViob2w/TMiXEBX4o75xw7tS9a8Gtq",
+          year: 2023,
+          hasLyrics: true
+        },
+        {
+          id: "or8LPjW6",
+          title: "Hukum - Thalaivar Alappara",
+          artist: "Anirudh Ravichander, Super Subu",
+          album: "Jailer",
+          duration: 207,
+          image: "https://c.saavncdn.com/187/Jailer-Tamil-2023-20230728081443-500x500.jpg",
+          encryptedMediaUrl: "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyCa9BqALWw+YYOsQ3AdSjkQm9SXuw3FNEiYiIUasbdqw22lsEKeQCxhw7tS9a8Gtq",
+          year: 2023,
+          hasLyrics: true
+        },
+        {
+          id: "lkaNaSDX",
+          title: "Badass",
+          artist: "Anirudh Ravichander",
+          album: "Leo",
+          duration: 229,
+          image: "https://c.saavncdn.com/415/Leo-Original-Motion-Picture-Soundtrack-English-2023-20231019170311-500x500.jpg",
+          encryptedMediaUrl: "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyoZG2mOw3h7ai9/zSWJaYeZHLa80WZbRv04xZC8HDbXzmVkMe/g4DSRw7tS9a8Gtq",
+          year: 2023,
+          hasLyrics: true
+        },
+        {
+          id: "AgeRwxTb",
+          title: "Arabic Kuthu - Halamithi Habibo",
+          artist: "Anirudh Ravichander, Jonita Gandhi",
+          album: "Beast",
+          duration: 279,
+          image: "https://c.saavncdn.com/510/Beast-Tamil-2022-20220504184736-500x500.jpg",
+          encryptedMediaUrl: "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyPgia5m7T7U4VLl0JRX9Gn4HEX+RKmDEyEYR6Up7jk21qN7/qcIWm7Bw7tS9a8Gtq",
+          year: 2022,
+          hasLyrics: true
+        }
+      ];
+
+      const artists: Artist[] = [
+        {
+          id: "829474",
+          name: "Anirudh Ravichander",
+          image: "https://c.saavncdn.com/artists/Anirudh_Ravichander_004_20231114094750_500x500.jpg",
+          followerCount: "24,200,000",
+          role: "Rockstar"
+        },
+        {
+          id: "455130",
+          name: "A.R. Rahman",
+          image: "https://c.saavncdn.com/artists/A_R_Rahman_500x500.jpg",
+          followerCount: "28,100,000",
+          role: "Maestro"
+        }
+      ];
+
+      return [
+        { id: "tamil-trending", title: "🔥 Trending in Tamil", subtitle: "Kollywood mass bangers and viral chartbusters", type: "track", items: tracks },
+        { id: "tamil-artists", title: "🎙️ Top Tamil Artists", subtitle: "Anirudh Ravichander, AR Rahman, and hitmakers", type: "mixed", items: artists }
+      ];
+    }
+
+    if (lang.includes("telugu")) {
+      const tracks: Track[] = [
+        {
+          id: "O94kBTtw",
+          title: "Chuttamalle",
+          artist: "Anirudh Ravichander, Shilpa Rao",
+          album: "Devara Part 1",
+          duration: 222,
+          image: "https://c.saavncdn.com/313/Devara-Part-1-Telugu-Telugu-2024-20240926171010-500x500.jpg",
+          encryptedMediaUrl: "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyMaCcla+iAEnWKGhjucPDOQMuVXLGmbqF4ufcJUQKLmvyzYWZhzpVWBw7tS9a8Gtq",
+          year: 2024,
+          hasLyrics: true
+        },
+        {
+          id: "ARuXdxyk",
+          title: "Kurchi Madathapetti",
+          artist: "Thaman S, Sahithi Chaganti, Sri Krishna",
+          album: "Guntur Kaaram",
+          duration: 216,
+          image: "https://c.saavncdn.com/000/Guntur-Kaaram-Telugu-2023-20240126145901-500x500.jpg",
+          encryptedMediaUrl: "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyAYSpkEihdkG4+AFn1gYNkJM9bhyDhDoC00is5zg9wSEUPgFYtzlXCxw7tS9a8Gtq",
+          year: 2024,
+          hasLyrics: true
+        }
+      ];
+
+      return [
+        { id: "telugu-trending", title: "🔥 Trending in Telugu", subtitle: "Tollywood blockbusters and high-energy hits", type: "track", items: tracks }
+      ];
+    }
+
+    if (lang.includes("punjabi")) {
+      const tracks: Track[] = [
+        {
+          id: "iMzGQX6_",
+          title: "Softly",
+          artist: "Karan Aujla, Ikky",
+          album: "Making Memories",
+          duration: 155,
+          image: "https://c.saavncdn.com/538/Making-Memories-English-2023-20230818075015-500x500.jpg",
+          encryptedMediaUrl: "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDylPKbH4mxv9RsiqsthjFzNjlEb0IXXzKLuIGA3M2W5VKuRNI5HSFTvRw7tS9a8Gtq",
+          year: 2023,
+          hasLyrics: true
+        },
+        {
+          id: "DF6eazs2",
+          title: "Winning Speech",
+          artist: "Karan Aujla, Mxrci",
+          album: "Winning Speech",
+          duration: 227,
+          image: "https://c.saavncdn.com/089/Winning-Speech-Punjabi-2024-20260626013220-500x500.jpg",
+          encryptedMediaUrl: "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyCMtZFlbMw/kiw79qyhddKTpV1LazIsgEoqUsLYfgWRaiWPfEsIXJvRw7tS9a8Gtq",
+          year: 2024,
+          hasLyrics: true
+        },
+        {
+          id: "M7k5t7vw",
+          title: "Lover",
+          artist: "Diljit Dosanjh, Intense",
+          album: "MoonChild Era",
+          duration: 190,
+          image: "https://c.saavncdn.com/209/MoonChild-Era-Punjabi-2021-20240715073449-500x500.jpg",
+          encryptedMediaUrl: "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyGOTkumhHZmw/mu/QxvmNpLjCOjWwfdp/8CCN8k0UWa0fySIRHPdMMhw7tS9a8Gtq",
+          year: 2021,
+          hasLyrics: true
+        }
+      ];
+
+      return [
+        { id: "punjabi-trending", title: "🔥 Trending in Punjabi", subtitle: "Karan Aujla, Diljit Dosanjh, and top Punjabi bangers", type: "track", items: tracks }
+      ];
+    }
+
+    if (lang.includes("english")) {
+      const tracks: Track[] = [
+        {
+          id: "pizXlfUB",
+          title: "Blinding Lights",
+          artist: "The Weeknd",
+          album: "The Highlights",
+          duration: 204,
+          image: "https://c.saavncdn.com/396/The-Highlights-English-2021-20240207045714-500x500.jpg",
+          encryptedMediaUrl: "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy8IXxuTNJ1oLbvDGDneZj5h25kdaKPCof228ruhJnw7PIr7uKBnaPmxw7tS9a8Gtq",
+          year: 2020,
+          hasLyrics: true
+        }
+      ];
+
+      return [
+        { id: "english-trending", title: "🔥 Trending Global & English", subtitle: "Global billboard anthems and international hits", type: "track", items: tracks }
+      ];
+    }
+
+    // Default Hindi
+    const tracks: Track[] = [
       {
-        id: 'kesariya',
-        title: 'Kesariya',
-        artist: 'Pritam, Arijit Singh, Amitabh Bhattacharya',
-        album: 'Brahmastra',
-        duration: 268,
-        image: 'https://c.saavncdn.com/191/Kesariya-From-Brahmastra-Hindi-2022-20220717092820-500x500.jpg',
-        audioUrl: 'https://aac.saavncdn.com/191/0c353932c6bb495fe0e6e885c42a7367_320.mp4',
-        year: 2022,
-        hasLyrics: true
-      },
-      {
-        id: 'chaleya',
-        title: 'Chaleya',
-        artist: 'Anirudh Ravichander, Arijit Singh, Shilpa Rao',
-        album: 'Jawan',
-        duration: 200,
-        image: 'https://c.saavncdn.com/026/Chaleya-From-Jawan-Hindi-2023-20230814014337-500x500.jpg',
-        audioUrl: 'https://aac.saavncdn.com/026/bb1a0d8e8576449ee7d5ba09890a2a11_320.mp4',
-        year: 2023,
-        hasLyrics: true
-      },
-      {
-        id: 'heeriye',
-        title: 'Heeriye (feat. Arijit Singh)',
-        artist: 'Jasleen Royal, Arijit Singh, Dulquer Salmaan',
-        album: 'Heeriye',
-        duration: 194,
-        image: 'https://c.saavncdn.com/022/Heeriye-feat-Arijit-Singh-Hindi-2023-20230928050405-500x500.jpg',
-        audioUrl: 'https://aac.saavncdn.com/022/0458df589b9e64e101f37e42d7ce2f46_320.mp4',
-        year: 2023,
-        hasLyrics: true
-      },
-      {
-        id: 'apna_bana_le',
-        title: 'Apna Bana Le',
-        artist: 'Sachin-Jigar, Arijit Singh, Amitabh Bhattacharya',
-        album: 'Bhediya',
-        duration: 261,
-        image: 'https://c.saavncdn.com/815/Bhediya-Hindi-2022-20221207194017-500x500.jpg',
-        audioUrl: 'https://aac.saavncdn.com/815/ea22998a44d82b43b355811776dbdc99_320.mp4',
-        year: 2022,
-        hasLyrics: true
-      },
-      {
-        id: 'o_maahi',
-        title: 'O Maahi',
-        artist: 'Pritam, Arijit Singh, Irshad Kamil',
-        album: 'Dunki',
-        duration: 233,
-        image: 'https://c.saavncdn.com/620/Dunki-Hindi-2023-20231211181005-500x500.jpg',
-        audioUrl: 'https://aac.saavncdn.com/620/f913d092d6e902b6ec2e5b8e9079989b_320.mp4',
-        year: 2023,
-        hasLyrics: true
-      },
-      {
-        id: 'illuminati',
-        title: 'Illuminati',
-        artist: 'Sushin Shyam, Dabzee',
-        album: 'Aavesham',
-        duration: 193,
-        image: 'https://c.saavncdn.com/255/Aavesham-Malayalam-2024-20240410183321-500x500.jpg',
-        audioUrl: 'https://aac.saavncdn.com/255/737cf6be36814b73e528dcba46fe7a5a_320.mp4',
+        id: "CVeqCCYc",
+        title: "Tauba Tauba",
+        artist: "Karan Aujla",
+        album: "Bad Newz",
+        duration: 207,
+        image: "https://c.saavncdn.com/992/Bad-Newz-Hindi-2024-20250730113701-500x500.jpg",
+        encryptedMediaUrl: "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyexyhGiurcXEpCNi8gBIelM0+/bASiAx59yNTLyuH4My32JGBcP+xKhw7tS9a8Gtq",
         year: 2024,
         hasLyrics: true
-      }
-    ];
-
-    const romanticMix: Track[] = [
+      },
       {
-        id: 'tum_hi_ho',
-        title: 'Tum Hi Ho',
-        artist: 'Mithoon, Arijit Singh',
-        album: 'Aashiqui 2',
-        duration: 262,
-        image: 'https://c.saavncdn.com/039/Aashiqui-2-Hindi-2013-500x500.jpg',
-        audioUrl: 'https://aac.saavncdn.com/039/9796ff077553ad8d73b2fae6f4a86f78_320.mp4',
-        year: 2013,
+        id: "Q6l0a09y",
+        title: "Aaj Ki Raat",
+        artist: "Sachin-Jigar, Madhubanti Bagchi, Divya Kumar",
+        album: "Stree 2",
+        duration: 228,
+        image: "https://c.saavncdn.com/373/Stree-2-Hindi-2024-20240828083834-500x500.jpg",
+        encryptedMediaUrl: "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDygSgTiGhJt3+zZ4cvKaFwYkIiuteEJ4SDHJMa6CwaiwaWmlZJO7fcMxw7tS9a8Gtq",
+        year: 2024,
         hasLyrics: true
       },
       {
-        id: 'agar_tum_saath_ho',
-        title: 'Agar Tum Saath Ho',
-        artist: 'Alka Yagnik, Arijit Singh, A.R. Rahman',
-        album: 'Tamasha',
-        duration: 341,
-        image: 'https://c.saavncdn.com/973/Tamasha-Hindi-2015-500x500.jpg',
-        audioUrl: 'https://aac.saavncdn.com/973/60a2b8e3aeb5c20d7501a3cf88147d3d_320.mp4',
-        year: 2015,
+        id: "kesariya",
+        title: "Kesariya",
+        artist: "Pritam, Arijit Singh, Amitabh Bhattacharya",
+        album: "Brahmastra",
+        duration: 268,
+        image: "https://c.saavncdn.com/191/Kesariya-From-Brahmastra-Hindi-2022-20220717092820-500x500.jpg",
+        audioUrl: "https://aac.saavncdn.com/191/0c353932c6bb495fe0e6e885c42a7367_320.mp4",
+        year: 2022,
         hasLyrics: true
       },
       {
-        id: 'raataan_lambiyan',
-        title: 'Raataan Lambiyan',
-        artist: 'Tanishk Bagchi, Jubin Nautiyal, Asees Kaur',
-        album: 'Shershaah',
-        duration: 230,
-        image: 'https://c.saavncdn.com/238/Shershaah-Original-Motion-Picture-Soundtrack--Hindi-2021-20210815181610-500x500.jpg',
-        audioUrl: 'https://aac.saavncdn.com/238/c2d2e16fdfabdc3efd9bbf62e3d368d3_320.mp4',
-        year: 2021,
+        id: "chaleya",
+        title: "Chaleya",
+        artist: "Anirudh Ravichander, Arijit Singh, Shilpa Rao",
+        album: "Jawan",
+        duration: 200,
+        image: "https://c.saavncdn.com/026/Chaleya-From-Jawan-Hindi-2023-20230814014337-500x500.jpg",
+        audioUrl: "https://aac.saavncdn.com/026/bb1a0d8e8576449ee7d5ba09890a2a11_320.mp4",
+        year: 2023,
         hasLyrics: true
       }
     ];
 
-    const recommendedArtists: Artist[] = [
+    const artists: Artist[] = [
       {
-        id: '459320',
-        name: 'Arijit Singh',
-        image: 'https://c.saavncdn.com/artists/Arijit_Singh_004_20241118063717_500x500.jpg',
-        followerCount: '38,500,000',
-        role: 'Singer'
+        id: "459320",
+        name: "Arijit Singh",
+        image: "https://c.saavncdn.com/artists/Arijit_Singh_004_20241118063717_500x500.jpg",
+        followerCount: "38,500,000",
+        role: "Singer"
       },
       {
-        id: '829474',
-        name: 'Anirudh Ravichander',
-        image: 'https://c.saavncdn.com/artists/Anirudh_Ravichander_004_20231114094750_500x500.jpg',
-        followerCount: '24,200,000',
-        role: 'Music Director'
-      },
-      {
-        id: '456323',
-        name: 'Pritam',
-        image: 'https://c.saavncdn.com/artists/Pritam_Chakraborty-20170711073326_500x500.jpg',
-        followerCount: '19,800,000',
-        role: 'Composer'
-      },
-      {
-        id: '455130',
-        name: 'A.R. Rahman',
-        image: 'https://c.saavncdn.com/artists/A_R_Rahman_500x500.jpg',
-        followerCount: '28,100,000',
-        role: 'Composer'
-      },
-      {
-        id: '455125',
-        name: 'Shreya Ghoshal',
-        image: 'https://c.saavncdn.com/artists/Shreya_Ghoshal_004_20230221060935_500x500.jpg',
-        followerCount: '22,400,000',
-        role: 'Singer'
-      },
-      {
-        id: '456863',
-        name: 'Diljit Dosanjh',
-        image: 'https://c.saavncdn.com/artists/Diljit_Dosanjh_004_20221028183350_500x500.jpg',
-        followerCount: '16,700,000',
-        role: 'Artist'
-      }
-    ];
-
-    const curatedPlaylists: Playlist[] = [
-      {
-        id: 'chartbusters_hindi',
-        title: 'Hindi Top 50 Chartbusters',
-        subtitle: 'Most played Bollywood and independent tracks',
-        image: 'https://c.saavncdn.com/editorial/charts_TrendingTodayHindi_131102_20220311094042.jpg',
-        songCount: 50,
-        songs: trendingTracks
-      },
-      {
-        id: 'romantic_hits',
-        title: 'Pure Romance & Love Anthems',
-        subtitle: 'Slow, soulful love songs for romantic drives and evenings',
-        image: 'https://c.saavncdn.com/editorial/BestofRomanceHindi_20231201103759.jpg',
-        songCount: 40,
-        songs: romanticMix
-      },
-      {
-        id: 'party_mix',
-        title: 'High-Energy Dance Party',
-        subtitle: 'Bass-heavy bangers and upbeat party rhythms',
-        image: 'https://c.saavncdn.com/editorial/DancePartyHindi_20231201104847.jpg',
-        songCount: 45,
-        songs: trendingTracks
-      },
-      {
-        id: 'malayalam_top',
-        title: 'Malayalam Superhits & Melody',
-        subtitle: 'Latest viral Malayalam tracks, Sushin Shyam, Jakes Bejoy',
-        image: 'https://c.saavncdn.com/255/Aavesham-Malayalam-2024-20240410183321-500x500.jpg',
-        songCount: 35,
-        songs: trendingTracks
+        id: "456323",
+        name: "Pritam",
+        image: "https://c.saavncdn.com/artists/Pritam_Chakraborty-20170711073326_500x500.jpg",
+        followerCount: "19,800,000",
+        role: "Composer"
       }
     ];
 
     return [
-      {
-        id: 'trending-hits',
-        title: '🔥 Trending Now',
-        subtitle: 'Hottest chartbusters & viral releases right now',
-        type: 'track',
-        items: trendingTracks
-      },
-      {
-        id: 'curated-playlists',
-        title: '📈 Top Charts & Superhits',
-        subtitle: 'Weekly countdowns and editorial top lists',
-        type: 'playlist',
-        items: curatedPlaylists
-      },
-      {
-        id: 'mood-mixes',
-        title: '🎧 Moods & Romance Mix',
-        subtitle: 'Soulful ballads and romantic melodies for your drive',
-        type: 'track',
-        items: romanticMix
-      },
-      {
-        id: 'featured-artists',
-        title: '🎙️ Recommended Artists',
-        subtitle: 'Top trending playback singers and music directors',
-        type: 'mixed',
-        items: recommendedArtists
-      }
+      { id: "hindi-trending", title: "🔥 Trending in Hindi", subtitle: "Latest Bollywood chartbusters & viral songs", type: "track", items: tracks },
+      { id: "hindi-artists", title: "🎙️ Top Artists", subtitle: "Arijit Singh, Pritam, and top vocalists", type: "mixed", items: artists }
     ];
   }
 }
