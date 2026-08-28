@@ -217,25 +217,89 @@ export class JioSaavnClient {
       return this.getHomeFeed(langs[0]);
     }
 
+    // Direct multi-language launch feed for default Malayalam & Tamil
+    if (langs.length === 2 && langs.includes("malayalam") && langs.includes("tamil")) {
+      try {
+        const base = (import.meta as any).env?.BASE_URL || "./";
+        const cleanBase = base.endsWith("/") ? base : base + "/";
+        const res = await fetch(`${cleanBase}data/feeds/malayalam_tamil.json`);
+        if (res.ok) {
+          const data = (await res.json()) as HomeFeedSection[];
+          if (Array.isArray(data) && data.length > 0) return data;
+        }
+      } catch {}
+    }
+
     const feeds = await Promise.all(langs.map((l) => this.getHomeFeed(l)));
     const combined: HomeFeedSection[] = [];
     const maxSections = Math.max(...feeds.map((f) => f.length));
 
+    // Global tracking to prevent any repeated artists or items across shelves
+    const seenArtistNames = new Set<string>();
+    const seenTrackIds = new Set<string>();
+    const seenAlbumIds = new Set<string>();
+    const consolidatedArtists: Artist[] = [];
+
     for (let i = 0; i < maxSections; i++) {
       for (let j = 0; j < feeds.length; j++) {
         const section = feeds[j][i];
-        if (section) {
-          const langName = langs[j].charAt(0).toUpperCase() + langs[j].slice(1);
-          const hasLangInTitle = section.title.toLowerCase().includes(langs[j].toLowerCase());
-          const displayTitle = hasLangInTitle ? section.title : `${section.title} (${langName})`;
+        if (!section) continue;
 
-          combined.push({
-            ...section,
-            id: `${langs[j]}-${section.id}-${i}`,
-            title: displayTitle,
-          });
+        const isArtistSection =
+          section.id.includes("artist") ||
+          section.title.toLowerCase().includes("artist");
+
+        if (isArtistSection) {
+          // Merge artists into single consolidated shelf without duplicates
+          for (const it of section.items) {
+            const name = (it as any).name || (it as any).title || "";
+            const normName = name.toLowerCase().trim();
+            if (normName && !seenArtistNames.has(normName)) {
+              seenArtistNames.add(normName);
+              consolidatedArtists.push(it as Artist);
+            }
+          }
+          continue;
         }
+
+        // Deduplicate tracks and albums within this shelf
+        const dedupedItems = section.items.filter((item) => {
+          if ("duration" in item) {
+            if (seenTrackIds.has(item.id)) return false;
+            seenTrackIds.add(item.id);
+            return true;
+          } else if ("songCount" in item && "artist" in item) {
+            if (seenAlbumIds.has(item.id)) return false;
+            seenAlbumIds.add(item.id);
+            return true;
+          }
+          return true;
+        });
+
+        if (dedupedItems.length === 0) continue;
+
+        const langName = langs[j].charAt(0).toUpperCase() + langs[j].slice(1);
+        const hasLangInTitle = section.title.toLowerCase().includes(langs[j].toLowerCase());
+        const displayTitle = hasLangInTitle ? section.title : `${section.title} (${langName})`;
+
+        combined.push({
+          ...section,
+          id: `${langs[j]}-${section.id}-${i}`,
+          title: displayTitle,
+          items: dedupedItems,
+        });
       }
+    }
+
+    // Append single consolidated artists shelf at the end if we have artists
+    if (consolidatedArtists.length > 0) {
+      combined.push({
+        id: "consolidated-artists",
+        title: "Recommended Artists",
+        subtitle: `Top artists in ${langs.map((l) => l.charAt(0).toUpperCase() + l.slice(1)).join(" & ")}`,
+        type: "mixed",
+        items: consolidatedArtists,
+      });
     }
 
     return combined;
@@ -251,21 +315,50 @@ export class JioSaavnClient {
     const combined: HomeFeedSection[] = [];
     const maxSections = Math.max(...feeds.map((f) => f.length));
 
+    const seenArtistNames = new Set<string>();
+    const consolidatedArtists: Artist[] = [];
+
     for (let i = 0; i < maxSections; i++) {
       for (let j = 0; j < feeds.length; j++) {
         const section = feeds[j][i];
-        if (section) {
-          const langName = langs[j].charAt(0).toUpperCase() + langs[j].slice(1);
-          const hasLangInTitle = section.title.toLowerCase().includes(langs[j].toLowerCase());
-          const displayTitle = hasLangInTitle ? section.title : `${section.title} (${langName})`;
+        if (!section) continue;
 
-          combined.push({
-            ...section,
-            id: `curated-${langs[j]}-${section.id}-${i}`,
-            title: displayTitle,
-          });
+        const isArtistSection =
+          section.id.includes("artist") ||
+          section.title.toLowerCase().includes("artist");
+
+        if (isArtistSection) {
+          for (const it of section.items) {
+            const name = (it as any).name || (it as any).title || "";
+            const normName = name.toLowerCase().trim();
+            if (normName && !seenArtistNames.has(normName)) {
+              seenArtistNames.add(normName);
+              consolidatedArtists.push(it as Artist);
+            }
+          }
+          continue;
         }
+
+        const langName = langs[j].charAt(0).toUpperCase() + langs[j].slice(1);
+        const hasLangInTitle = section.title.toLowerCase().includes(langs[j].toLowerCase());
+        const displayTitle = hasLangInTitle ? section.title : `${section.title} (${langName})`;
+
+        combined.push({
+          ...section,
+          id: `curated-${langs[j]}-${section.id}-${i}`,
+          title: displayTitle,
+        });
       }
+    }
+
+    if (consolidatedArtists.length > 0) {
+      combined.push({
+        id: "curated-artists",
+        title: "Recommended Artists",
+        subtitle: `Top artists in ${langs.map((l) => l.charAt(0).toUpperCase() + l.slice(1)).join(" & ")}`,
+        type: "mixed",
+        items: consolidatedArtists,
+      });
     }
 
     return combined;

@@ -1,0 +1,1185 @@
+[
+  {
+    "id": "new_trending",
+    "title": "Trending Now",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "1133105280",
+        "title": "Tamil Hit Songs",
+        "subtitle": "17.6K Fans",
+        "image": "https://c.saavncdn.com/editorial/TamilHitSongs_20250217095444.jpg?bch=1787875404",
+        "songCount": 30
+      },
+      {
+        "id": "79136465",
+        "title": "Khalifa",
+        "artist": "",
+        "image": "https://c.saavncdn.com/060/Khalifa-Malayalam-2026-20260811192325-500x500.jpg?bch=496639",
+        "year": null,
+        "songCount": 7
+      },
+      {
+        "id": "1134651042",
+        "title": "Tamil: India Superhits Top 50",
+        "subtitle": "64.2K Fans",
+        "image": "https://c.saavncdn.com/editorial/Tamil-IndiaSuperhitsTop50_20260814053619.jpg?bch=1787895482",
+        "songCount": 50
+      },
+      {
+        "id": "74155418",
+        "title": "Vaazha 2 (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/639/Vaazha-2-Original-Motion-Picture-Soundtrack-Malayalam-2026-20260403000537-500x500.jpg?bch=496639",
+        "year": null,
+        "songCount": 11
+      },
+      {
+        "id": "76070868",
+        "title": "Karuppu (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/875/Karuppu-Original-Motion-Picture-Soundtrack-Tamil-2026-20260525175054-500x500.jpg?bch=496639",
+        "year": null,
+        "songCount": 9
+      },
+      {
+        "id": "158240424",
+        "title": "KS Harisankar - Love Songs - Malayalam",
+        "subtitle": "81.4K Fans",
+        "image": "https://c.saavncdn.com/editorial/KSHarisankarLoveSongsMalayalam_20240319054634.jpg?bch=1776939563",
+        "songCount": 26
+      },
+      {
+        "id": "78425642",
+        "title": "DC (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/606/DC-Original-Motion-Picture-Soundtrack-Tamil-2026-20260727061230-500x500.jpg?bch=496639",
+        "year": null,
+        "songCount": 15
+      },
+      {
+        "id": "74549017",
+        "title": "Pallichattambi",
+        "artist": "",
+        "image": "https://c.saavncdn.com/776/Pallichattambi-Malayalam-2026-20260413214004-500x500.jpg?bch=496639",
+        "year": null,
+        "songCount": 8
+      },
+      {
+        "id": "79565191",
+        "title": "Kalyana Virundhu (From \"Dorothy\")",
+        "artist": "",
+        "image": "https://c.saavncdn.com/889/Kalyana-Virundhu-From-Dorothy-Tamil-2026-20260822194208-500x500.jpg?bch=496639",
+        "year": null,
+        "songCount": 1
+      },
+      {
+        "id": "70333348",
+        "title": "Chalakudikaran Changathi Mix File",
+        "artist": "",
+        "image": "https://c.saavncdn.com/156/Chalakudikaran-Changathi-Mix-File-Malayalam-2025-20251204083405-500x500.jpg?bch=496639",
+        "year": null,
+        "songCount": 22
+      },
+      {
+        "id": "79613192",
+        "title": "Radhimaa (From \"Think Indie\")",
+        "artist": "",
+        "image": "https://c.saavncdn.com/877/Radhimaa-From-Think-Indie-Tamil-2026-20260827192132-500x500.jpg?bch=496639",
+        "year": null,
+        "songCount": 1
+      },
+      {
+        "id": "79096898",
+        "title": "Illey Illa (From \"Bethlehem Kudumba Unit\")",
+        "artist": "",
+        "image": "https://c.saavncdn.com/663/Illey-Illa-From-Bethlehem-Kudumba-Unit-Malayalam-2026-20260810204143-500x500.jpg?bch=496639",
+        "year": null,
+        "songCount": 1
+      },
+      {
+        "id": "78362084",
+        "title": "Jana Nayagan - Tamil",
+        "artist": "",
+        "image": "https://c.saavncdn.com/810/Jana-Nayagan-Tamil-Tamil-2026-20260722221103-500x500.jpg?bch=496639",
+        "year": null,
+        "songCount": 9
+      },
+      {
+        "id": "ghftpzqU",
+        "title": "Delulu Delulu",
+        "artist": "Bibin Ashok, Fejo, Heykarthii",
+        "album": "Athi Bheekara Kaamukan",
+        "albumId": "73265234",
+        "duration": 199,
+        "image": "https://c.saavncdn.com/385/Athi-Bheekara-Kaamukan-Malayalam-2026-20260311073314-500x500.jpg?bch=496639",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDykMtkv/FppQ9f+JDFrxaukwVqmVmz0qZOgw5QnJuRilb91TL/evyOJhw7tS9a8Gtq",
+        "year": "2026",
+        "language": "malayalam",
+        "hasLyrics": false
+      },
+      {
+        "id": "RU4UIolr",
+        "title": "Aane Wala Star",
+        "artist": "Sai Abhyankkar, Dholu bholu",
+        "album": "Aane Wala Star",
+        "albumId": "77673756",
+        "duration": 132,
+        "image": "https://c.saavncdn.com/006/Aane-Wala-Star-Tamil-2026-20260705235934-500x500.jpg?bch=496639",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy4F3vzrHnuulhrY+oEujtW62kUbwylxbSV40pcx3HGFvM2iyzLEuzTxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "158224274",
+        "title": "Yesudas Bhakthi Geetham",
+        "subtitle": "871 Followers",
+        "image": "https://c.saavncdn.com/editorial/YesudasBhakthiGeetham_20250312181051.jpg?bch=1772525741",
+        "songCount": 30
+      },
+      {
+        "id": "79227436",
+        "title": "Toxic - Tamil (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/386/Toxic-Tamil-Original-Motion-Picture-Soundtrack-Tamil-2026-20260818072109-500x500.jpg?bch=496639",
+        "year": null,
+        "songCount": 9
+      },
+      {
+        "id": "dWRDKwku",
+        "title": "Kinginichar",
+        "artist": "M.H.R, Joker390P",
+        "album": "Kinginichar",
+        "albumId": "73552981",
+        "duration": 132,
+        "image": "https://c.saavncdn.com/225/Kinginichar-Malayalam-2026-20260318203500-500x500.jpg?bch=496639",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyL4UkX/fRBciBzOqikCFrgtREv4V6K+xJWAQM7MvKyCDdLXE7uOkA7Rw7tS9a8Gtq",
+        "year": "2026",
+        "language": "malayalam",
+        "hasLyrics": false
+      },
+      {
+        "id": "xGniQtAd",
+        "title": "One Name (From \"Jailer 2\")",
+        "artist": "Anirudh Ravichander, Heisenberg",
+        "album": "One Name (From \"Jailer 2\")",
+        "albumId": "77613884",
+        "duration": 60,
+        "image": "https://c.saavncdn.com/651/One-Name-From-Jailer-2-English-2026-20260703080039-500x500.jpg?bch=496639",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyF1aowzSHAT04r4VXGJraS5u0GNALDMmzwBfUjomwjenPNgjbsHtlzxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "77139041",
+        "title": "Balan - The Boy (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/457/Balan-The-Boy-Original-Motion-Picture-Soundtrack-Malayalam-2026-20260622192559-500x500.jpg?bch=496639",
+        "year": null,
+        "songCount": 3
+      },
+      {
+        "id": "iJd6rt-r",
+        "title": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Tamil]",
+        "artist": "Sai Abhyankkar, Rokesh",
+        "album": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Tamil]",
+        "albumId": "78584772",
+        "duration": 210,
+        "image": "https://c.saavncdn.com/024/Alaakaa-Loova-From-OM-Chapter-1-Udhiram-The-Blood-Wood-Tamil-Tamil-2026-20260730045529-500x500.jpg?bch=496639",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDywc1YnMo9PfA/r1Vrw0w/sKzQufY9gnv7VazYz2bp/+QLDdpldtYASxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "929620611",
+        "title": "K. S. Chithra Bhakti Geetham",
+        "subtitle": "1.2K Followers",
+        "image": "https://c.saavncdn.com/editorial/K-S-ChithraBhaktiGeetham_20240717085703.jpg?bch=1772522301",
+        "songCount": 23
+      },
+      {
+        "id": "XHwAd5c0",
+        "title": "Aura 10/10 (From \"Meesaya Murukku 2\")",
+        "artist": "Hiphop Tamizha, Thamizh Aadhavan",
+        "album": "Aura 10/10 (From \"Meesaya Murukku 2\")",
+        "albumId": "72976062",
+        "duration": 129,
+        "image": "https://c.saavncdn.com/290/Aura-10-10-From-Meesaya-Murukku-2-Tamil-2026-20260303073304-500x500.jpg?bch=496639",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyJtfBVetMR7Y/UvZ87r5j9JX9Rc9TD83F41gn7CZdP/TP4VI2iPE/oBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "PBwf7SaO",
+        "title": "Kotha Raja",
+        "artist": "Jakes Bejoy, Asal Kolaar, Roll Rida, Mu.Ri, Dabzee, Resmi Sateesh",
+        "album": "King of Kotha",
+        "albumId": "47758826",
+        "duration": 275,
+        "image": "https://c.saavncdn.com/213/King-of-Kotha-Original-Motion-Picture-Soundtrack-Malayalam-2023-20230823190149-500x500.jpg?bch=496639",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyiFHDMSDXPffVMxI+zEeYhJT4/HObhGUG/A255FM8zrVVXiHJ3+rnfhw7tS9a8Gtq",
+        "year": "2023",
+        "language": "malayalam",
+        "hasLyrics": false
+      }
+    ]
+  },
+  {
+    "id": "charts",
+    "title": "Top Charts",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "1134651042",
+        "title": "Tamil: India Superhits Top 50",
+        "subtitle": "",
+        "image": "https://c.saavncdn.com/editorial/Tamil-IndiaSuperhitsTop50_20260814053619.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1134705865",
+        "title": "Malayalam: India Superhits Top 50",
+        "subtitle": "",
+        "image": "https://c.saavncdn.com/editorial/Malayalam-IndiaSuperhitsTop50_20260828052957.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1134548194",
+        "title": "India Superhits Top 50",
+        "subtitle": "",
+        "image": "https://c.saavncdn.com/editorial/IndiaSuperhitsTop50_20260821042536.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "951898142",
+        "title": "Most Searched Songs - Malayalam",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/MostSearchedSongsMalayalam_20260720091627.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1026391929",
+        "title": "Most Searched Songs - Tamil",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/MostSearchedSongsTamil_20260817103921.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1139764479",
+        "title": "Most Streamed Love Songs: Malayalam",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/MostStreamedLoveSongs-Malayalam_20260817102949.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1139646951",
+        "title": "Most Streamed Love Songs: Tamil",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/MostStreamedLoveSongs-Tamil_20260810093843.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "110858205",
+        "title": "Trending Today",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/charts_TrendingToday_134351_20230826113717.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1181705742",
+        "title": "Malayalam 2000s",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/charts_Malayalam2000s_160867_20240408063713.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1170578788",
+        "title": "Tamil 2010s",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/charts_Tamil2010s_138543_20240408061942.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1170578783",
+        "title": "Tamil 2000s",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/charts_Tamil2000s_171230_20240408062044.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1170578779",
+        "title": "Tamil 1990s",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/charts_Tamil1990s_190250_20240408062124.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "901538755",
+        "title": "Tamil 1980s",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/charts_Tamil1980s_157873_20240408062147.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "901538753",
+        "title": "Tamil 1970s",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/charts_Tamil1970s_102109_20240408062208.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "901538752",
+        "title": "Tamil 1960s",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/charts_Tamil1960s_20240507052255.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1181705744",
+        "title": "Malayalam 1980s",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/charts_Malayalam1980s_132298_20240408063554.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1181705743",
+        "title": "Malayalam 1990s",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/charts_Malayalam1990s_170434_20240408063530.jpg",
+        "songCount": 0
+      }
+    ]
+  },
+  {
+    "id": "new_albums",
+    "title": "New Releases",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "79136465",
+        "title": "Khalifa",
+        "artist": "",
+        "image": "https://c.saavncdn.com/060/Khalifa-Malayalam-2026-20260811192325-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "P5pjB99X",
+        "title": "Radhimaa (From \"Think Indie\")",
+        "artist": "Sai Abhyankkar, Vivek",
+        "album": "Radhimaa (From \"Think Indie\")",
+        "albumId": "79613192",
+        "duration": 259,
+        "image": "https://c.saavncdn.com/877/Radhimaa-From-Think-Indie-Tamil-2026-20260827192132-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyoLsZF06RsceOB83mU2psZFTghZS+oZMFyCYxzo8iTmWbhXMNqkmeWBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "VU9Tu56D",
+        "title": "Mazhavillaye (From \"I'M Game - Malayalam\")",
+        "artist": "Jakes Bejoy, Sharfu",
+        "album": "Mazhavillaye (From \"I'M Game - Malayalam\")",
+        "albumId": "79074219",
+        "duration": 264,
+        "image": "https://c.saavncdn.com/632/Mazhavillaye-From-I-M-Game-Malayalam-Malayalam-2026-20260810103441-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy1DeZBLLdNrGGmSPs47wY6Kz+KtBkFTHAplMXWZQs651hR3YR6uJ76hw7tS9a8Gtq",
+        "year": "2026",
+        "language": "malayalam",
+        "hasLyrics": false
+      },
+      {
+        "id": "3h6F8ui8",
+        "title": "Ala Bolelo (From \"Jailer 2\")",
+        "artist": "Anirudh Ravichander, Arunraja Kamaraj",
+        "album": "Ala Bolelo (From \"Jailer 2\")",
+        "albumId": "79515366",
+        "duration": 240,
+        "image": "https://c.saavncdn.com/557/Ala-Bolelo-From-Jailer-2-Tamil-2026-20260821084843-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyvzXSrhnlq1EEoa3t9MhQFEXxO/+r50WWWWflLm6C1XPvtVCrEk3TeBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "77189973",
+        "title": "KALYANI (Remix)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/475/KALYANI-Remix-Malayalam-2026-20260622131127-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "98viXOUc",
+        "title": "Bloody Band (From \"DC\")",
+        "artist": "Anirudh Ravichander",
+        "album": "Bloody Band (From \"DC\")",
+        "albumId": "79119455",
+        "duration": 156,
+        "image": "https://c.saavncdn.com/150/Bloody-Band-From-DC-Unknown-2026-20260811063758-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyZNGesMXMF26gU9NQQIu2uVZ6BEJyaocRmhgkxJiCeAy2H4CpVp53IRw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "ftFNGOjL",
+        "title": "Illey Illa (From \"Bethlehem Kudumba Unit\")",
+        "artist": "Vishnu Vijay, Suhail Koya, Kapil Kapilan",
+        "album": "Illey Illa (From \"Bethlehem Kudumba Unit\")",
+        "albumId": "79096898",
+        "duration": 210,
+        "image": "https://c.saavncdn.com/663/Illey-Illa-From-Bethlehem-Kudumba-Unit-Malayalam-2026-20260810204143-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyNam6yPPLQE4DbpHsxSwDT4u1Tmds4X+h3WiD76Hrl25fAVYsZshp4Bw7tS9a8Gtq",
+        "year": "2026",
+        "language": "malayalam",
+        "hasLyrics": true
+      },
+      {
+        "id": "96AyCy2b",
+        "title": "Kalyana Virundhu (From \"Dorothy\")",
+        "artist": "Ilaiyaraaja, Yugendran Vasudevan, Anthony Daasan, Priya Jerson",
+        "album": "Kalyana Virundhu (From \"Dorothy\")",
+        "albumId": "79565191",
+        "duration": 238,
+        "image": "https://c.saavncdn.com/889/Kalyana-Virundhu-From-Dorothy-Tamil-2026-20260822194208-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyY5Q/sh1sSx7HNrDzuiD0hrl1vYi4Er4EMcKDYUBNwy5Fj6Wh4vJm5hw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "79001907",
+        "title": "Thudakkam (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/569/Thudakkam-Original-Motion-Picture-Soundtrack-Malayalam-2026-20260807120406-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "79225358",
+        "title": "Vishwanath & Sons (Tamil)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/435/Vishwanath-Sons-Tamil-Tamil-2026-20260813174027-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "0gb6jkXS",
+        "title": "Onakampany",
+        "artist": "Sooraj S. Kurup, Suhail Koya",
+        "album": "Onakampany",
+        "albumId": "79263865",
+        "duration": 241,
+        "image": "https://c.saavncdn.com/134/Onakampany-Malayalam-2026-20260814103813-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyMaokBYUu+OgaNzUszSBnfJ7J2TvZSHOykSJzHix8WDpXsAwu/6oP0Bw7tS9a8Gtq",
+        "year": "2026",
+        "language": "malayalam",
+        "hasLyrics": false
+      },
+      {
+        "id": "iJd6rt-r",
+        "title": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Tamil]",
+        "artist": "Sai Abhyankkar, Rokesh",
+        "album": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Tamil]",
+        "albumId": "78584772",
+        "duration": 210,
+        "image": "https://c.saavncdn.com/024/Alaakaa-Loova-From-OM-Chapter-1-Udhiram-The-Blood-Wood-Tamil-Tamil-2026-20260730045529-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDywc1YnMo9PfA/r1Vrw0w/sKzQufY9gnv7VazYz2bp/+QLDdpldtYASxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      },
+      {
+        "id": "6wyfStxU",
+        "title": "Aavani Thumbi - Duet",
+        "artist": "Deva Prasanth, Naveen Marar",
+        "album": "Aavani Thumbi - Duet",
+        "albumId": "79358854",
+        "duration": 225,
+        "image": "https://c.saavncdn.com/517/Aavani-Thumbi-Duet-Malayalam-2026-20260817233607-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyojl2NDtraM51Ep0VBPT+OW97uf5WrCx4W1CdBL29v91fzVzQnZsd9hw7tS9a8Gtq",
+        "year": "2026",
+        "language": "malayalam",
+        "hasLyrics": false
+      },
+      {
+        "id": "78425642",
+        "title": "DC (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/606/DC-Original-Motion-Picture-Soundtrack-Tamil-2026-20260727061230-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "SK2zvXEf",
+        "title": "Junoon",
+        "artist": "Ali Najih",
+        "album": "Junoon",
+        "albumId": "76507003",
+        "duration": 169,
+        "image": "https://c.saavncdn.com/485/Junoon-Malayalam-2026-20260615135316-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyzYXqgctzvGk0qJmDS/UoCFaaaIWGUgm84n7wIJs2VDyWi+2j0tKJIRw7tS9a8Gtq",
+        "year": "2026",
+        "language": "malayalam",
+        "hasLyrics": false
+      },
+      {
+        "id": "78362084",
+        "title": "Jana Nayagan - Tamil",
+        "artist": "",
+        "image": "https://c.saavncdn.com/810/Jana-Nayagan-Tamil-Tamil-2026-20260722221103-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "8OU6i1HV",
+        "title": "Malayali Manka (From 'Saina Music Indie')",
+        "artist": "Zukaboi",
+        "album": "Malayali Manka (From 'Saina Music Indie')",
+        "albumId": "78473787",
+        "duration": 226,
+        "image": "https://c.saavncdn.com/547/Malayali-Manka-From-Saina-Music-Indie-Malayalam-2026-20260803224830-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyQWvW76foqxP6DspEU1/hICd0T1FNElfrk3H5MpSByJAfY/ypz4l4UBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "malayalam",
+        "hasLyrics": false
+      },
+      {
+        "id": "79618164",
+        "title": "Hi",
+        "artist": "",
+        "image": "https://c.saavncdn.com/647/Hi-Tamil-2026-20260824181417-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "XtbQE7we",
+        "title": "Maanthrikam (From \"Bethlehem Kudumba Unit\")",
+        "artist": "Vishnu Vijay",
+        "album": "Maanthrikam (From \"Bethlehem Kudumba Unit\")",
+        "albumId": "78354192",
+        "duration": 196,
+        "image": "https://c.saavncdn.com/440/Maanthrikam-From-Bethlehem-Kudumba-Unit-Malayalam-2026-20260722184822-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyt5jS+rCdAe7NkI8b9nzSao9/sPg3QPFKG7EHMNGk6ZpqJwiFUMfgMRw7tS9a8Gtq",
+        "year": "2026",
+        "language": "malayalam",
+        "hasLyrics": false
+      },
+      {
+        "id": "xGniQtAd",
+        "title": "One Name (From \"Jailer 2\")",
+        "artist": "Anirudh Ravichander, Heisenberg",
+        "album": "One Name (From \"Jailer 2\")",
+        "albumId": "77613884",
+        "duration": 60,
+        "image": "https://c.saavncdn.com/651/One-Name-From-Jailer-2-English-2026-20260703080039-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyF1aowzSHAT04r4VXGJraS5u0GNALDMmzwBfUjomwjenPNgjbsHtlzxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "tamil",
+        "hasLyrics": false
+      }
+    ]
+  },
+  {
+    "id": "top_playlists",
+    "title": "Editorial Picks",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "72168272",
+        "title": "Let's Play - Nivin Pauly - Malayalam",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/Let_sPlayNivinPaulyMalayalam_20241007114443.jpg",
+        "songCount": 50
+      },
+      {
+        "id": "848384706",
+        "title": "Dance Queens - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/DanceQueensTamil_20260825130211.jpg",
+        "songCount": 30
+      },
+      {
+        "id": "902306817",
+        "title": "Viral Nation",
+        "subtitle": "67.6K Followers",
+        "image": "https://c.saavncdn.com/editorial/ViralNation_20260824113119.jpg",
+        "songCount": 30
+      },
+      {
+        "id": "802931786",
+        "title": "Best Of Hip Hop - Malayalam",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/BestOfHipHopMalayalam_20240614150926.jpg",
+        "songCount": 40
+      },
+      {
+        "id": "82543613",
+        "title": "Let's Play - Vijay",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/Let_sPlayVijay_20250217095544.jpg",
+        "songCount": 50
+      },
+      {
+        "id": "1265890645",
+        "title": "ArtistOne Finds",
+        "subtitle": "2.7K Followers",
+        "image": "https://c.saavncdn.com/editorial/ArtistOneFinds_20260821102816.jpg",
+        "songCount": 50
+      },
+      {
+        "id": "325040007",
+        "title": "Bands of Kerala",
+        "subtitle": "1.8K Followers",
+        "image": "https://c.saavncdn.com/editorial/BandsofKerala_20260806085923.jpg",
+        "songCount": 35
+      },
+      {
+        "id": "83409225",
+        "title": "Therific Theme",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/TherificTheme_20260624052234.jpg",
+        "songCount": 50
+      },
+      {
+        "id": "1302055479",
+        "title": "Romantic Hits 2026 - Malayalam",
+        "subtitle": "20 Songs",
+        "image": "https://c.saavncdn.com/editorial/RomanticHits2026Malayalam_20260706090206.jpg",
+        "songCount": 20
+      },
+      {
+        "id": "158200430",
+        "title": "Thaai Manne Vanakkam",
+        "subtitle": "758 Followers",
+        "image": "https://c.saavncdn.com/editorial/ThaaiManneVanakkam_20260112062438.jpg",
+        "songCount": 26
+      },
+      {
+        "id": "203105416",
+        "title": "Chaya Friends Club",
+        "subtitle": "2.1K Followers",
+        "image": "https://c.saavncdn.com/editorial/ChayaFriendsClub_20251118115249.jpg",
+        "songCount": 28
+      },
+      {
+        "id": "1074590003",
+        "title": "Tamil BGM",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/TamilBGM_20260811075813.jpg",
+        "songCount": 42
+      }
+    ]
+  },
+  {
+    "id": "promo:vx:data:68",
+    "title": "Fresh Hits",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "146675675",
+        "title": "Puthiya Tunes",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/PuthiyaTunes_20260810114916.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "10763385",
+        "title": "Pudhu Tunes",
+        "subtitle": "48.5K Followers",
+        "image": "https://c.saavncdn.com/editorial/PudhuTunes_20260825123207.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "3344648",
+        "title": "Kidu Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/KiduHits_20260819094611.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "2574965",
+        "title": "Mersal Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/MersalHits_20260826075616.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "2721785",
+        "title": "Kadhaley",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/Kadhaley_20260828063731.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "80802063",
+        "title": "Tamil Viral Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/TamilViralHits_20260805060135.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "47119716",
+        "title": "Snehame",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/Snehame_20260817114403.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "148554493",
+        "title": "Adipoli Pop",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/AdipoliPop_20260812101043.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "83409788",
+        "title": "Dance Podu",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/DancePodu_20260814130358.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "7332875",
+        "title": "Semma Pop",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/SemmaPop_20260825124642.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1219251930",
+        "title": "New Indie - Malayalam",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/NewIndieMalayalam_20260811131709.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1265890645",
+        "title": "ArtistOne Finds",
+        "subtitle": "2.7K Followers",
+        "image": "https://c.saavncdn.com/editorial/ArtistOneFinds_20260821102816.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "149089811",
+        "title": "Dance Da",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/DanceDa_20260819095100.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1219050727",
+        "title": "New Indie - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/NewIndieTamil_20260825130027.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "592722547",
+        "title": "Malayalam Viral Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/MalayalamViralHits_20260814140714.jpg",
+        "songCount": 0
+      }
+    ]
+  },
+  {
+    "id": "promo:vx:data:76",
+    "title": "Top Genres & Moods",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "330262293",
+        "title": "Rock in Malayalam",
+        "subtitle": "1.1K Followers",
+        "image": "https://c.saavncdn.com/editorial/RockinMalayalam_20260320133042.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "81952675",
+        "title": "Vidyasagar - Love Songs - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/VidyasagarLoveSongsTamil_20240223110424.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "804092154",
+        "title": "Sad Love - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/SadLoveTamil_20260623063519.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "83409225",
+        "title": "Therific Theme",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/TherificTheme_20260624052234.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "832225472",
+        "title": "Best of Indie - Malayalam",
+        "subtitle": "674 Followers",
+        "image": "https://c.saavncdn.com/editorial/BestofIndieMalayalam_20250416084018.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "320116017",
+        "title": "Malayalam Ghazal",
+        "subtitle": "934 Followers",
+        "image": "https://c.saavncdn.com/editorial/MalayalamGhazal_20241001063945.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "822222401",
+        "title": "Malayalam Folk Songs",
+        "subtitle": "779 Followers",
+        "image": "https://c.saavncdn.com/editorial/MalayalamFolkSongs_20250516194118.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "325040007",
+        "title": "Bands of Kerala",
+        "subtitle": "1.8K Followers",
+        "image": "https://c.saavncdn.com/editorial/BandsofKerala_20260806085923.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1185022857",
+        "title": "Tamil Film Instrumentals",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/TamilFilmInstrumentals_20260212093644.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1172298985",
+        "title": "Mappilapattukal",
+        "subtitle": "1,000 Followers",
+        "image": "https://c.saavncdn.com/editorial/Mappilapattukal_20240903052636.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "789168950",
+        "title": "Iravaaga Nee",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/IravaagaNee_20260302042438.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "3573131",
+        "title": "A.R. Rahman - Love Songs - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/A-R-RahmanLoveSongsTamil_20240213061239.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "802931786",
+        "title": "Best Of Hip Hop - Malayalam",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/BestOfHipHopMalayalam_20240614150926.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "810678506",
+        "title": "2000s Melodies - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/2000sMelodiesTamil_20240910061317.jpg",
+        "songCount": 0
+      }
+    ]
+  },
+  {
+    "id": "promo:vx:data:185",
+    "title": "Best Of 90s",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "158224984",
+        "title": "90s Romance - Malayalam",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/90sRomanceMalayalam_20260302061751.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "801896864",
+        "title": "Best of 90s  - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/Bestof90sTamil_20260623063315.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "833939090",
+        "title": "Vijay - 90s Hits  - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/Vijay90sHitsTamil_20251128085419.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "158225000",
+        "title": "90s Melodies - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/90sMelodiesTamil_20240827094318.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "742998885",
+        "title": "90s Romance - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/90sRomanceTamil_20260302042335.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "821635352",
+        "title": "90s Dance Hits  - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/90sDanceHitsTamil_20230831183014.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "158226420",
+        "title": "Deva - 90s Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/Deva90sHits_20251126081145.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "2841421",
+        "title": "Ilaiyaraaja - 90s Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/Ilaiyaraaja90sHits_20251126063059.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "822317343",
+        "title": "90s Dance Hits - Malayalam",
+        "subtitle": "2.5K Followers",
+        "image": "https://c.saavncdn.com/editorial/90sDanceHitsMalayalam_20240902164624.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "854563898",
+        "title": "90s Chill Hits - Malayalam",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/90sChillHitsMalayalam_20240902164748.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "429517615",
+        "title": "Mohanlal 90s Hits - Malayalam",
+        "subtitle": "3.8K Followers",
+        "image": "https://c.saavncdn.com/editorial/Mohanlal90sHitsMalayalam_20240903130346.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "158226258",
+        "title": "M G Sreekumar 90s Hits - Malayalam",
+        "subtitle": "1.7K Followers",
+        "image": "https://c.saavncdn.com/editorial/MGSreekumar90sHitsMalayalam_20240902164730.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "833826860",
+        "title": "AjithKumar - 90s Romantic Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/AjithKumar90sRomanticHits_20251201153835.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "158226468",
+        "title": "Unnikrishnan - 90s Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/Unnikrishnan90sHits_20251201153840.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "828567710",
+        "title": "A. R. Rahman - 90s Hits - Tamil",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/A-R-Rahman90sHitsTamil_20251126063048.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "802242855",
+        "title": "Best of 90s - Malayalam",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/Bestof90sMalayalam_20240902164557.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1147988709",
+        "title": "K S Chithra 90s Hits - Malayalam",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/KSChithra90sHitsMalayalam_20240902164741.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "771760245",
+        "title": "Yesudas 90s Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/Yesudas90sHits_20240902164613.jpg",
+        "songCount": 0
+      }
+    ]
+  },
+  {
+    "id": "artist_recos",
+    "title": "Recommended Artist Stations",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "455663",
+        "name": "Anirudh Ravichander",
+        "image": "https://c.saavncdn.com/artists/Anirudh_Ravichander_003_20260121134149_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "14477737",
+        "name": "Sai Abhyankkar",
+        "image": "https://c.saavncdn.com/artists/Sai_Abhyankkar_003_20250707122433_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "491878",
+        "name": "M.G. Sreekumar",
+        "image": "https://c.saavncdn.com/artists/M_G_Sreekumar_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "456269",
+        "name": "A.R. Rahman",
+        "image": "https://c.saavncdn.com/artists/AR_Rahman_002_20210120084455_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "483224",
+        "name": "K. S. Chithra",
+        "image": "https://c.saavncdn.com/artists/K_S_Chithra_002_20190906071921_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "458088",
+        "name": "Jassie Gift",
+        "image": "https://c.saavncdn.com/artists/Jassie_Gift_000_20210303130936_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "456876",
+        "name": "Kalabhavan Mani",
+        "image": "https://c.saavncdn.com/artists/Kalabhavan_Mani_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "14052201",
+        "name": "M.H.R",
+        "image": "https://c.saavncdn.com/artists/M_H_R_001_20260408185558_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "460005",
+        "name": "Sujatha Mohan",
+        "image": "https://c.saavncdn.com/artists/Sujatha_Mohan_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "455243",
+        "name": "Harris Jayaraj",
+        "image": "https://c.saavncdn.com/artists/Harris_Jayaraj_002_20230718071330_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "456164",
+        "name": "Vijay Antony",
+        "image": "https://c.saavncdn.com/artists/Vijay_Antony_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "2056418",
+        "name": "Ghibran",
+        "image": "https://c.saavncdn.com/artists/Ghibran_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "489844",
+        "name": "Kaithapram",
+        "image": "https://c.saavncdn.com/artists/Kaithapram_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "458475",
+        "name": "K.J. Yesudas",
+        "image": "https://c.saavncdn.com/artists/KJ_Yesudas_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "455130",
+        "name": "Shreya Ghoshal",
+        "image": "https://c.saavncdn.com/artists/Shreya_Ghoshal_007_20241101074144_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "455496",
+        "name": "Vidyasagar",
+        "image": "https://c.saavncdn.com/artists/Vidyasagar_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "455454",
+        "name": "G.V. Prakash Kumar",
+        "image": "https://c.saavncdn.com/artists/G_V__Prakash_Kumar_003_20251113063655_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "546329",
+        "name": "Gireesh Puthenchery",
+        "image": "https://c.saavncdn.com/artists/Gireesh_Puthenchery_000_20230217092415_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "457536",
+        "name": "Ilaiyaraaja",
+        "image": "https://c.saavncdn.com/artists/Ilaiyaraaja_001_20251020081419_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "467088",
+        "name": "Mohanlal",
+        "image": "https://c.saavncdn.com/artists/Mohanlal_004_20180706155810_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      }
+    ]
+  }
+]
