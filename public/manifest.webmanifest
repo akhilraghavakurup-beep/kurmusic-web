@@ -1,0 +1,21 @@
+{
+  "name": "Kur Music Web",
+  "short_name": "Kur Music",
+  "description": "Next-Generation Streaming Music Player with JioSaavn Catalog & CarPlay controls",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#080612",
+  "theme_color": "#080612",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
