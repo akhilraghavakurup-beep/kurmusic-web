@@ -151,47 +151,63 @@ export class JioSaavnClient {
   async getHomeFeed(selectedLanguage = "malayalam"): Promise<HomeFeedSection[]> {
     const lang = (selectedLanguage || "malayalam").toLowerCase().trim();
 
-    // Try fast live API in parallel with timeout, fallback instantly
+    // 1. Check direct real JioSaavn API launch feed bundled in web app
     try {
-      const data = await this.fetchApi<any>({
-        __call: "webapi.getLaunchData",
-        languages: lang
-      }, 1500);
-
-      const sections: HomeFeedSection[] = [];
-
-      if (data && typeof data === "object") {
-        const modules = data.modules || {};
-        for (const key of Object.keys(modules)) {
-          const mod = modules[key];
-          const items = data[key];
-          if (!mod || !Array.isArray(items) || items.length === 0) continue;
-
-          const title = mod.title || key;
-          const mappedItems = items.map((item: any) => {
-            if (item.type === "song") return this.formatTrack(item);
-            if (item.type === "album") return this.formatAlbum(item);
-            if (item.type === "playlist") return this.formatPlaylist(item);
-            if (item.type === "artist" || item.type === "radio_station") return this.formatArtist(item);
-            if (item.song || item.encrypted_media_url) return this.formatTrack(item);
-            return this.formatAlbum(item);
-          });
-
-          sections.push({
-            id: key,
-            title: `🔥 ${this.cleanText(title)}`,
-            subtitle: mod.subtitle ? this.cleanText(mod.subtitle) : undefined,
-            type: "mixed",
-            items: mappedItems
-          });
+      const base = (import.meta as any).env?.BASE_URL || "./";
+      const cleanBase = base.endsWith("/") ? base : base + "/";
+      const res = await fetch(`${cleanBase}data/feeds/${lang}.json`);
+      if (res.ok) {
+        const feed = (await res.json()) as HomeFeedSection[];
+        if (Array.isArray(feed) && feed.length > 0) {
+          return feed;
         }
       }
-
-      if (sections.length > 0) return sections;
-    } catch {
-      // Instant return of language-tuned curated feed
+    } catch (e) {
+      console.warn("Local feed fetch error:", e);
     }
 
+    // 2. If custom proxy is set, fetch live from JioSaavn API
+    if (this.customProxy) {
+      try {
+        const data = await this.fetchApi<any>({
+          __call: "webapi.getLaunchData",
+          languages: lang
+        }, 2500);
+
+        const sections: HomeFeedSection[] = [];
+        if (data && typeof data === "object") {
+          const modules = data.modules || {};
+          for (const key of Object.keys(modules)) {
+            const mod = modules[key];
+            const items = data[key];
+            if (!mod || !Array.isArray(items) || items.length === 0) continue;
+
+            const title = mod.title || key;
+            const mappedItems = items.map((item: any) => {
+              if (item.type === "song") return this.formatTrack(item);
+              if (item.type === "album") return this.formatAlbum(item);
+              if (item.type === "playlist") return this.formatPlaylist(item);
+              if (item.type === "artist" || item.type === "radio_station") return this.formatArtist(item);
+              if (item.song || item.encrypted_media_url) return this.formatTrack(item);
+              return this.formatAlbum(item);
+            });
+
+            sections.push({
+              id: key,
+              title: this.cleanText(title),
+              subtitle: mod.subtitle ? this.cleanText(mod.subtitle) : undefined,
+              type: "mixed",
+              items: mappedItems
+            });
+          }
+        }
+        if (sections.length > 0) return sections;
+      } catch (err) {
+        console.warn("Live API launch data error:", err);
+      }
+    }
+
+    // 3. Fallback to curated seed
     return this.getCuratedFeedForLanguage(lang);
   }
 

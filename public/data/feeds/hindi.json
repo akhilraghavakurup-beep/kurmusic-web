@@ -1,0 +1,1151 @@
+[
+  {
+    "id": "new_trending",
+    "title": "Trending Now",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "77868843",
+        "title": "Hanuman Ansh (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/058/Hanuman-Ansh-Original-Motion-Picture-Soundtrack-Hindi-2026-20260710211303-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 11
+      },
+      {
+        "id": "36090152",
+        "title": "Raksha Bandhan",
+        "artist": "",
+        "image": "https://c.saavncdn.com/440/Raksha-Bandhan-Hindi-2022-20230212112927-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 12
+      },
+      {
+        "id": "330056058",
+        "title": "Best Of Rock - Hindi",
+        "subtitle": "45.6K Fans",
+        "image": "https://c.saavncdn.com/editorial/BestOfRockHindi_20260325065230.jpg?bch=1787551651",
+        "songCount": 30
+      },
+      {
+        "id": "902528267",
+        "title": "Alka Yagnik - Love Songs - Hindi",
+        "subtitle": "43K Fans",
+        "image": "https://c.saavncdn.com/editorial/AlkaYagnikLoveSongsHindi_20240304111355.jpg?bch=1776930438",
+        "songCount": 33
+      },
+      {
+        "id": "73765671",
+        "title": "Dhurandhar The Revenge",
+        "artist": "",
+        "image": "https://c.saavncdn.com/581/Dhurandhar-The-Revenge-Hindi-2026-20260409161002-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 14
+      },
+      {
+        "id": "47599074",
+        "title": "Now Trending",
+        "subtitle": "64.5K Fans",
+        "image": "https://c.saavncdn.com/editorial/NowTrending_20260423085344.jpg?bch=1776936232",
+        "songCount": 37
+      },
+      {
+        "id": "3379491",
+        "title": "Best Of 90s - Hindi",
+        "subtitle": "449.4K Fans",
+        "image": "https://c.saavncdn.com/editorial/BestOf90sHindi_20251125041813.jpg?bch=1787875633",
+        "songCount": 50
+      },
+      {
+        "id": "79228004",
+        "title": "Toxic (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/355/Toxic-Original-Motion-Picture-Soundtrack-Hindi-2026-20260818072032-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 10
+      },
+      {
+        "id": "61277848",
+        "title": "Meera Ke Krishna",
+        "artist": "",
+        "image": "https://c.saavncdn.com/708/Meera-Ke-Krishna-Hindi-2025-20250116102117-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 5
+      },
+      {
+        "id": "77370855",
+        "title": "Cocktail 2",
+        "artist": "",
+        "image": "https://c.saavncdn.com/689/Cocktail-2-Hindi-2026-20260629161048-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 9
+      },
+      {
+        "id": "PTNX7k-6",
+        "title": "Vaaroon Forever (From “Mirzapur The Movie”)",
+        "artist": "Anand Bhaskar, Ginny Diwan, Romy, Shreya Ghoshal",
+        "album": "Vaaroon Forever (From “Mirzapur The Movie”)",
+        "albumId": "79342390",
+        "duration": 252,
+        "image": "https://c.saavncdn.com/381/Vaaroon-Forever-From-Mirzapur-The-Movie-Hindi-2026-20260817160523-500x500.jpg?bch=496638",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDylrNgNpI2/pTV1fKnxtKhTpOcRjiUInWHqGF29rODHIb/vN/QjIiotBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "hindi",
+        "hasLyrics": false
+      },
+      {
+        "id": "70263177",
+        "title": "Dhurandhar",
+        "artist": "",
+        "image": "https://c.saavncdn.com/475/Dhurandhar-Hindi-2025-20260203083204-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 11
+      },
+      {
+        "id": "76694606",
+        "title": "Main Vaapas Aaunga",
+        "artist": "",
+        "image": "https://c.saavncdn.com/178/Main-Vaapas-Aaunga-Hindi-2026-20260610193303-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 8
+      },
+      {
+        "id": "75124773",
+        "title": "Krishnavataram - Part 1: The Heart (Hridayam)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/593/Krishnavataram-Part-1-The-Heart-Hridayam-Hindi-2026-20260504173543-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 8
+      },
+      {
+        "id": "78300107",
+        "title": "Musafir Cafe (Songs from the Netflix Series)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/978/Musafir-Cafe-Songs-from-the-Netflix-Series-Hindi-2026-20260727151003-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 6
+      },
+      {
+        "id": "79121261",
+        "title": "Awarapan 2",
+        "artist": "",
+        "image": "https://c.saavncdn.com/820/Awarapan-2-Hindi-2026-20260811181221-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 8
+      },
+      {
+        "id": "pnTKi0r3",
+        "title": "Udi Udi",
+        "artist": "Sarkar, Hruday, Aneesh",
+        "album": "Udi Udi",
+        "albumId": "75719114",
+        "duration": 161,
+        "image": "https://c.saavncdn.com/436/Udi-Udi-Hindi-2026-20260515065019-500x500.jpg?bch=496638",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDydLZMFoFsHE79MlfhnPnT2KuiI49EBtED572q9Qh5PrQR5Z3fo02Byxw7tS9a8Gtq",
+        "year": "2026",
+        "language": "hindi",
+        "hasLyrics": true
+      },
+      {
+        "id": "76462070",
+        "title": "Emraan Hashmi Sad Love Hits",
+        "artist": "",
+        "image": "https://c.saavncdn.com/732/Emraan-Hashmi-Sad-Love-Hits-Hindi-2026-20260604155755-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 14
+      },
+      {
+        "id": "76502037",
+        "title": "Saiyonee",
+        "artist": "",
+        "image": "https://c.saavncdn.com/826/Saiyonee-Hindi-2026-20260622075845-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 1
+      },
+      {
+        "id": "AiaEw6j1",
+        "title": "Inaam",
+        "artist": "Jasleen Royal, Badshah, Ansh Chahal",
+        "album": "Inaam",
+        "albumId": "73158109",
+        "duration": 178,
+        "image": "https://c.saavncdn.com/195/Inaam-Hindi-2026-20260308053452-500x500.jpg?bch=496638",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyu48RTAxLJNrC5yMyIACX4VcaUkyJVEpwwGVcSoNaUDoQzj7dDz1Z9hw7tS9a8Gtq",
+        "year": "2026",
+        "language": "hindi",
+        "hasLyrics": false
+      },
+      {
+        "id": "73902902",
+        "title": "Gangster",
+        "artist": "",
+        "image": "https://c.saavncdn.com/810/Gangster-Hindi-2026-20260327190823-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 9
+      },
+      {
+        "id": "75847970",
+        "title": "Mashooqa (From “Cocktail 2”)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/465/Mashooqa-From-Cocktail-2-Hindi-2026-20260519130936-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 2
+      },
+      {
+        "id": "75735041",
+        "title": "Chand Mera Dil",
+        "artist": "",
+        "image": "https://c.saavncdn.com/549/Chand-Mera-Dil-Hindi-2026-20260518102642-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 8
+      },
+      {
+        "id": "76058692",
+        "title": "Tujhko (From “Cocktail 2”)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/979/Tujhko-From-Cocktail-2-Hindi-2026-20260525103018-500x500.jpg?bch=496638",
+        "year": null,
+        "songCount": 3
+      }
+    ]
+  },
+  {
+    "id": "charts",
+    "title": "Top Charts",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "1134543272",
+        "title": "Hindi: India Superhits Top 50",
+        "subtitle": "",
+        "image": "https://c.saavncdn.com/editorial/Hindi-IndiaSuperhitsTop50_20260821013947.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1134548194",
+        "title": "India Superhits Top 50",
+        "subtitle": "",
+        "image": "https://c.saavncdn.com/editorial/IndiaSuperhitsTop50_20260821042536.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "946682072",
+        "title": "Most Searched Songs - Hindi",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/MostSearchedSongsHindi_20260824093050.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1139074020",
+        "title": "Most Streamed Love Songs: Hindi",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/MostStreamedLoveSongs-Hindi_20260824045054.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "110858205",
+        "title": "Trending Today",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/charts_TrendingToday_134351_20230826113717.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1167751270",
+        "title": "Hindi 2000s",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/charts_Hindi2000s_156632_20240408061838.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1167751266",
+        "title": "Hindi 1990s",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/charts_Hindi1990s_136920_20240408061858.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1170578723",
+        "title": "Hindi 1980s",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/charts_Hindi1980s_174103_20240408061938.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "114107255",
+        "title": "Hindi 1970s",
+        "subtitle": "JioSaavn",
+        "image": "https://c.saavncdn.com/editorial/charts_Hindi1970s_199259_20240408061946.jpg",
+        "songCount": 0
+      }
+    ]
+  },
+  {
+    "id": "new_albums",
+    "title": "New Releases",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "PTNX7k-6",
+        "title": "Vaaroon Forever (From “Mirzapur The Movie”)",
+        "artist": "Anand Bhaskar, Ginny Diwan",
+        "album": "Vaaroon Forever (From “Mirzapur The Movie”)",
+        "albumId": "79342390",
+        "duration": 252,
+        "image": "https://c.saavncdn.com/381/Vaaroon-Forever-From-Mirzapur-The-Movie-Hindi-2026-20260817160523-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDylrNgNpI2/pTV1fKnxtKhTpOcRjiUInWHqGF29rODHIb/vN/QjIiotBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "hindi",
+        "hasLyrics": false
+      },
+      {
+        "id": "79228004",
+        "title": "Toxic (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/355/Toxic-Original-Motion-Picture-Soundtrack-Hindi-2026-20260818072032-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "79121261",
+        "title": "Awarapan 2",
+        "artist": "",
+        "image": "https://c.saavncdn.com/820/Awarapan-2-Hindi-2026-20260811181221-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "xNVbUezC",
+        "title": "Undi Bundi (From \"Prem Keetanu\")",
+        "artist": "Shashi",
+        "album": "Undi Bundi (From \"Prem Keetanu\")",
+        "albumId": "79519696",
+        "duration": 162,
+        "image": "https://c.saavncdn.com/737/Undi-Bundi-From-Prem-Keetanu-Hindi-2026-20260821163924-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyoo00cJEqzdNZJypbQeQaNyetyzWuVuCGRi0b5WChkaaO/sBFBkL6Ixw7tS9a8Gtq",
+        "year": "2026",
+        "language": "hindi",
+        "hasLyrics": false
+      },
+      {
+        "id": "m4ws-zs9",
+        "title": "Do Numbari (From “Mirzapur The Movie”)",
+        "artist": "Dhanda Nyoliwala",
+        "album": "Do Numbari (From “Mirzapur The Movie”)",
+        "albumId": "78837349",
+        "duration": 163,
+        "image": "https://c.saavncdn.com/064/Do-Numbari-From-Mirzapur-The-Movie-Hindi-2026-20260803172106-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDytpgl2dWKen6HVJqLyBeKdhlRAaMPWANda+JhfZkU2MXCi4UWKlnXhRw7tS9a8Gtq",
+        "year": "2026",
+        "language": "hindi",
+        "hasLyrics": false
+      },
+      {
+        "id": "CKm8Nx1-",
+        "title": "Mere Hero Hai Woh (From \"Haiwaan\")",
+        "artist": "Pritam, Javed Akhtar",
+        "album": "Mere Hero Hai Woh (From \"Haiwaan\")",
+        "albumId": "79415329",
+        "duration": 214,
+        "image": "https://c.saavncdn.com/584/Mere-Hero-Hai-Woh-From-Haiwaan-Hindi-2026-20260819124622-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy8P+Gy+1S8xy3fMj9iRFMCVK+tiUxxGdh3ZuVahqNJ+3fLX4c9w48WBw7tS9a8Gtq",
+        "year": "2026",
+        "language": "hindi",
+        "hasLyrics": false
+      },
+      {
+        "id": "wAdMh_n3",
+        "title": "Tumhare Liye - Duet (From \"Awarapan 2\")",
+        "artist": "Wasif Ahmad, Sachin Urmtosh",
+        "album": "Tumhare Liye - Duet (From \"Awarapan 2\")",
+        "albumId": "79569102",
+        "duration": 229,
+        "image": "https://c.saavncdn.com/104/Tumhare-Liye-Duet-From-Awarapan-2-Hindi-2026-20260822222100-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy87pBdxjz/4wkJCTQxiyBXGVeHSN74P9BJwdj8vsZ1LbV3NgGnA4wZhw7tS9a8Gtq",
+        "year": "2026",
+        "language": "hindi",
+        "hasLyrics": false
+      },
+      {
+        "id": "79148570",
+        "title": "Batwara 1947 (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/444/Batwara-1947-Original-Motion-Picture-Soundtrack-Hindi-2026-20260812005748-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "_-rb6qZa",
+        "title": "Dil Dhadkaye (From \"I'M Game\")",
+        "artist": "Jakes Bejoy, Numan Khoker",
+        "album": "Dil Dhadkaye (From \"I'M Game\")",
+        "albumId": "79074223",
+        "duration": 264,
+        "image": "https://c.saavncdn.com/878/Dil-Dhadkaye-From-I-M-Game-Hindi-2026-20260810103414-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyy+G/2PDbDVz4WdnX6Egv1fwjiVThM8QAkTq60kweQjUqEZW94TR+8hw7tS9a8Gtq",
+        "year": "2026",
+        "language": "hindi",
+        "hasLyrics": false
+      },
+      {
+        "id": "78591728",
+        "title": "Bhai Tera Star Hai",
+        "artist": "",
+        "image": "https://c.saavncdn.com/550/Bhai-Tera-Star-Hai-Hindi-2026-20260730045430-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "78797752",
+        "title": "Ohh My Dog",
+        "artist": "",
+        "image": "https://c.saavncdn.com/673/Ohh-My-Dog-Hindi-2026-20260802093850-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "78912258",
+        "title": "DC The Bloody Valentine (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/338/DC-The-Bloody-Valentine-Original-Motion-Picture-Soundtrack-Tamil-2026-20260805082031-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "77816561",
+        "title": "Dhamaal 4",
+        "artist": "",
+        "image": "https://c.saavncdn.com/948/Dhamaal-4-Hindi-2026-20260709171019-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "d_aK553q",
+        "title": "Dil Farzi (From \"Aryabhatt Ka Zero\")",
+        "artist": "Manan Bhardwaj",
+        "album": "Dil Farzi (From \"Aryabhatt Ka Zero\")",
+        "albumId": "78926382",
+        "duration": 189,
+        "image": "https://c.saavncdn.com/910/Dil-Farzi-From-Aryabhatt-Ka-Zero-Hindi-2026-20260805191101-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyI4ONqcEcn9/ijRtVq2deV+GbzWuc2brSoAGGH1kfIfbV7dQmZYqR7Bw7tS9a8Gtq",
+        "year": "2026",
+        "language": "hindi",
+        "hasLyrics": false
+      },
+      {
+        "id": "bASaumfL",
+        "title": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Hindi]",
+        "artist": "Sai Abhyankkar",
+        "album": "Alaakaa Loova (From \"OM Chapter 1: Udhiram  - The Blood Wood\") [Hindi]",
+        "albumId": "78585063",
+        "duration": 210,
+        "image": "https://c.saavncdn.com/666/Alaakaa-Loova-From-OM-Chapter-1-Udhiram-The-Blood-Wood-Hindi-Hindi-2026-20260730045423-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyoR2QaLosgiEIueEnrDH49bbCJNnRgfRAD3K4OTmZU3BmKFFVIV/G3xw7tS9a8Gtq",
+        "year": "2026",
+        "language": "hindi",
+        "hasLyrics": false
+      },
+      {
+        "id": "77550837",
+        "title": "Alpha",
+        "artist": "",
+        "image": "https://c.saavncdn.com/062/Alpha-Hindi-2026-20260701143201-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "0eofKCTB",
+        "title": "Ishq Kameena 2.0 (From \"Baby Do Die Do\")",
+        "artist": "Anu Malik, Lijo George, Sameer Anjaan, Mohsin Shaikh, Dee MC",
+        "album": "Ishq Kameena 2.0 (From \"Baby Do Die Do\")",
+        "albumId": "77396076",
+        "duration": 188,
+        "image": "https://c.saavncdn.com/669/Ishq-Kameena-2-0-From-Baby-Do-Die-Do-Hindi-2026-20260626145319-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyzd7USK//ThZ4NuErdiby2HTTHGZG+O8jxwKhaljMg/4F5Yeaia59Ixw7tS9a8Gtq",
+        "year": "2026",
+        "language": "hindi",
+        "hasLyrics": false
+      },
+      {
+        "id": "78561396",
+        "title": "Tera Yaar Hoon Main (Original Motion Picture Soundtrack)",
+        "artist": "",
+        "image": "https://c.saavncdn.com/225/Tera-Yaar-Hoon-Main-Original-Motion-Picture-Soundtrack-Hindi-2026-20260728042153-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "77370855",
+        "title": "Cocktail 2",
+        "artist": "",
+        "image": "https://c.saavncdn.com/689/Cocktail-2-Hindi-2026-20260629161048-500x500.jpg",
+        "year": null,
+        "songCount": 0
+      },
+      {
+        "id": "J0DOxVdI",
+        "title": "Yatree Samaan Ka (From \"Aryabhatt Ka Zero\")",
+        "artist": "Manan Bhardwaj",
+        "album": "Yatree Samaan Ka (From \"Aryabhatt Ka Zero\")",
+        "albumId": "78776592",
+        "duration": 203,
+        "image": "https://c.saavncdn.com/521/Yatree-Samaan-Ka-From-Aryabhatt-Ka-Zero-Hindi-2026-20260801171005-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyUlzPtE9AYU+AN4jq4NovgKoWKFoxueD2/ijAGE2sv/I5M+lPXz0iSRw7tS9a8Gtq",
+        "year": "2026",
+        "language": "hindi",
+        "hasLyrics": false
+      }
+    ]
+  },
+  {
+    "id": "top_playlists",
+    "title": "Editorial Picks",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "44107",
+        "title": "Rakhi Ka Bandhan",
+        "subtitle": "15.1K Followers",
+        "image": "https://c.saavncdn.com/editorial/RakhiKaBandhan_20260826055214.jpg",
+        "songCount": 32
+      },
+      {
+        "id": "1302009764",
+        "title": "Chartbusters 2026 - Hindi",
+        "subtitle": "3.5K Followers",
+        "image": "https://c.saavncdn.com/editorial/Chartbusters2026Hindi_20260706103842.jpg",
+        "songCount": 50
+      },
+      {
+        "id": "902306817",
+        "title": "Viral Nation",
+        "subtitle": "67.6K Followers",
+        "image": "https://c.saavncdn.com/editorial/ViralNation_20260824113119.jpg",
+        "songCount": 30
+      },
+      {
+        "id": "903166403",
+        "title": "Best Of Romance - Hindi",
+        "subtitle": "251.2K Followers",
+        "image": "https://c.saavncdn.com/editorial/BestOfRomanceHindi_20260622051616.jpg",
+        "songCount": 49
+      },
+      {
+        "id": "1302009985",
+        "title": "Pop Hits 2026 - Hindi",
+        "subtitle": "1.1K Followers",
+        "image": "https://c.saavncdn.com/editorial/PopHits2026Hindi_20260706104455.jpg",
+        "songCount": 20
+      },
+      {
+        "id": "1265890645",
+        "title": "ArtistOne Finds",
+        "subtitle": "2.7K Followers",
+        "image": "https://c.saavncdn.com/editorial/ArtistOneFinds_20260821102816.jpg",
+        "songCount": 50
+      },
+      {
+        "id": "3379491",
+        "title": "Best Of 90s - Hindi",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/BestOf90sHindi_20251125041813.jpg",
+        "songCount": 50
+      },
+      {
+        "id": "107977155",
+        "title": "Baarish Aur Chill",
+        "subtitle": "12.1K Followers",
+        "image": "https://c.saavncdn.com/editorial/BaarishAurChill_20240610053415.jpg",
+        "songCount": 28
+      },
+      {
+        "id": "1303407979",
+        "title": "Bandhan Bharose Ka",
+        "subtitle": "32 Songs",
+        "image": "https://c.saavncdn.com/editorial/BandhanBharoseKa_20260825085215.jpg",
+        "songCount": 32
+      },
+      {
+        "id": "1303294797",
+        "title": "Salty Vibes by Monaco",
+        "subtitle": "35 Songs",
+        "image": "https://c.saavncdn.com/editorial/SaltyVibesbyMonaco_20260821061958.jpg",
+        "songCount": 35
+      },
+      {
+        "id": "158221880",
+        "title": "Best Of Retro",
+        "subtitle": "45.5K Followers",
+        "image": "https://c.saavncdn.com/editorial/BestOfRetro_20260622051731.jpg",
+        "songCount": 35
+      },
+      {
+        "id": "1020129788",
+        "title": "Men In Pop",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/MenInPop_20260506065124.jpg",
+        "songCount": 40
+      }
+    ]
+  },
+  {
+    "id": "city_mod",
+    "title": "What's Hot In Kochi",
+    "subtitle": "Trending This Week",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "hv1H8MG_",
+        "title": "Pavazha Malli (From \"Think Indie\")",
+        "artist": "Vivek, Sai Abhyankkar, Shruti Haasan",
+        "album": "",
+        "albumId": "72970173",
+        "duration": 0,
+        "image": "https://c.saavncdn.com/984/Pavazha-Malli-From-Think-Indie-Tamil-2026-20260303084345-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyvx8KTC/HDfFwzS+c6F5VQafHvZW049L9cJyOrTJZ7coy6HXpol1hbRw7tS9a8Gtq",
+        "year": null,
+        "language": null,
+        "hasLyrics": false
+      },
+      {
+        "id": "589552",
+        "name": "Ariana Grande",
+        "image": "https://c.saavncdn.com/artists/Ariana_Grande_007_20260616180049_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "455663",
+        "name": "Anirudh Ravichander",
+        "image": "https://c.saavncdn.com/artists/Anirudh_Ravichander_003_20260121134149_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "455243",
+        "name": "Harris Jayaraj",
+        "image": "https://c.saavncdn.com/artists/Harris_Jayaraj_002_20230718071330_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "1026391929",
+        "title": "Most Searched Songs - Tamil",
+        "subtitle": "20.9K Followers",
+        "image": "https://c.saavncdn.com/editorial/MostSearchedSongsTamil_20260817103921.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "y-0pauOM",
+        "title": "KALYANI",
+        "artist": "ARJN, KDS, FIFTY4, ronn",
+        "album": "",
+        "albumId": "69609094",
+        "duration": 0,
+        "image": "https://c.saavncdn.com/534/KALYANI-Malayalam-2025-20251109053143-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyCbPKwfOisroCaaXWS4mAaP85ojUTlT73euUgfiB1+Vh5Gr55WmdQWhw7tS9a8Gtq",
+        "year": null,
+        "language": null,
+        "hasLyrics": false
+      },
+      {
+        "id": "592722547",
+        "title": "Malayalam Viral Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/MalayalamViralHits_20260814140714.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "IdQilHNR",
+        "title": "Bum Baa Diga Diga",
+        "artist": "Anirudh Ravichander, Vedan, Heisenberg",
+        "album": "",
+        "albumId": "78425642",
+        "duration": 0,
+        "image": "https://c.saavncdn.com/606/DC-Original-Motion-Picture-Soundtrack-Tamil-2026-20260727061230-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyC/dEruf8yUXv+bqMexFjuOk5e4r8kH4hqn+HEYozMCxpmkKhPPr10xw7tS9a8Gtq",
+        "year": null,
+        "language": null,
+        "hasLyrics": false
+      },
+      {
+        "id": "ZztxBKWf",
+        "title": "Hangova",
+        "artist": "Anirudh Ravichander, Heisenberg",
+        "album": "",
+        "albumId": "78425642",
+        "duration": 0,
+        "image": "https://c.saavncdn.com/606/DC-Original-Motion-Picture-Soundtrack-Tamil-2026-20260727061230-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy7gpidl3D4lMJxgXMbVAIVRNVby/o1VXPTv3gl0FG5WRS7NBJJ64B3hw7tS9a8Gtq",
+        "year": null,
+        "language": null,
+        "hasLyrics": false
+      },
+      {
+        "id": "VAvqkyAA",
+        "title": "Asalayavale",
+        "artist": "Jakes Bejoy, Sid Sriram, Mohammed Maqbool Mansoor, Muthu",
+        "album": "",
+        "albumId": "79136465",
+        "duration": 0,
+        "image": "https://c.saavncdn.com/060/Khalifa-Malayalam-2026-20260811192325-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyrEgqH0i1E6yS7cusZBmFbMnSCnWpD1voTEZW8m0gdkgGCS7yFierkRw7tS9a8Gtq",
+        "year": null,
+        "language": null,
+        "hasLyrics": false
+      },
+      {
+        "id": "14477737",
+        "name": "Sai Abhyankkar",
+        "image": "https://c.saavncdn.com/artists/Sai_Abhyankkar_003_20250707122433_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "663191",
+        "name": "Gopi Sunder",
+        "image": "https://c.saavncdn.com/artists/Gopi_Sundar_001_20190827112215_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "829477391",
+        "title": "Best of 2000s - Malayalam",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/Bestof2000sMalayalam_20251128141626.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "455144",
+        "name": "Kishore Kumar",
+        "image": "https://c.saavncdn.com/artists/Kishore_Kumar_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "638954318",
+        "title": "Marine Drive Mix",
+        "subtitle": "129 Followers",
+        "image": "https://c.saavncdn.com/editorial/logo/MarineDriveMix_20191119155215.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "WZ5FUQGs",
+        "title": "Raga of Revenge",
+        "artist": "Anirudh Ravichander",
+        "album": "",
+        "albumId": "78425642",
+        "duration": 0,
+        "image": "https://c.saavncdn.com/606/DC-Original-Motion-Picture-Soundtrack-Tamil-2026-20260727061230-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyuxr0iAJz8HSCCXPatrEQDCEXW3HJt3ETO70CjPqrbEdlOt+Rh8muohw7tS9a8Gtq",
+        "year": null,
+        "language": null,
+        "hasLyrics": false
+      },
+      {
+        "id": "469946",
+        "name": "Dileep",
+        "image": "https://c.saavncdn.com/artists/Dileep_002_20230418095720_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "sAFguicZ",
+        "title": "Amsham - അംശം",
+        "artist": "Aksomaniac, M.H.R, Bhumi, Circle Tone",
+        "album": "",
+        "albumId": "74025555",
+        "duration": 0,
+        "image": "https://c.saavncdn.com/355/Amsham-Malayalam-2026-20260331053539-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDycP8izCG0FSDT1MCM8JV4cuWEolXypI/R1LapHLi/Ee2iAbK4aN9+qBw7tS9a8Gtq",
+        "year": null,
+        "language": null,
+        "hasLyrics": false
+      },
+      {
+        "id": "1134651042",
+        "title": "Tamil: India Superhits Top 50",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/Tamil-IndiaSuperhitsTop50_20260814053619.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "758678",
+        "name": "Manu Manjith",
+        "image": "https://c.saavncdn.com/artists/Manu_Manjith_002_20230518094808_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "-RVaIJdW",
+        "title": "KALYANI (Remix)",
+        "artist": "ARJN, KDS, FIFTY4, Shreya Ghoshal",
+        "album": "",
+        "albumId": "78406223",
+        "duration": 0,
+        "image": "https://c.saavncdn.com/050/Hit-Songs-Malayalam-Malayalam-2026-20260724210707-500x500.jpg",
+        "encryptedMediaUrl": "ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDyOLvqdXYHPK3fibhEiee7Ps3ek4UdjPkXXvXajHRamKBKef3gQI37Vxw7tS9a8Gtq",
+        "year": null,
+        "language": null,
+        "hasLyrics": false
+      },
+      {
+        "id": "638958641",
+        "title": "Chill At Fort Kochi",
+        "subtitle": "118 Followers",
+        "image": "https://c.saavncdn.com/editorial/ChillAtFortKochi_20251118114602.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1139764479",
+        "title": "Most Streamed Love Songs: Malayalam",
+        "subtitle": "9.3K Followers",
+        "image": "https://c.saavncdn.com/editorial/MostStreamedLoveSongs-Malayalam_20260817102949.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "146675675",
+        "title": "Puthiya Tunes",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/PuthiyaTunes_20260810114916.jpg",
+        "songCount": 0
+      }
+    ]
+  },
+  {
+    "id": "promo:vx:data:68",
+    "title": "Fresh Hits",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "6689255",
+        "title": "Taaza Tunes",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/TaazaTunes_20260824111405.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "49",
+        "title": "Dumdaar Hits",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/DumdaarHits_20260828053201.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1219169738",
+        "title": "New Indie - Hindi",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/NewIndieHindi_20260819093337.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "5148894",
+        "title": "Nach Le",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/NachLe_20260803085110.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "50347113",
+        "title": "Tere Bina",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/TereBina_20260826064425.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1265890645",
+        "title": "ArtistOne Finds",
+        "subtitle": "2.7K Followers",
+        "image": "https://c.saavncdn.com/editorial/ArtistOneFinds_20260821102816.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "83421839",
+        "title": "Ishqiyaan",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/Ishqiyaan_20260828053400.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "158220028",
+        "title": "Hindi Viral Hits",
+        "subtitle": "336.7K Followers",
+        "image": "https://c.saavncdn.com/editorial/HindiViralHits_20260807065502.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "156473621",
+        "title": "Asli Pop",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/-fontdir-_auto_style-_verticalalign-inherit-_--fontdir-_auto_style-_verticalalign-inherit-_-AsliPop-_font--_font-_20260821014253.jpg",
+        "songCount": 0
+      }
+    ]
+  },
+  {
+    "id": "promo:vx:data:76",
+    "title": "Top Genres & Moods",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "153572365",
+        "title": "Josh Hi Josh",
+        "subtitle": "108.6K Followers",
+        "image": "https://c.saavncdn.com/editorial/JoshHiJosh_20260330062459.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "77076833",
+        "title": "Best Of Ghazals - Hindi",
+        "subtitle": "75.7K Followers",
+        "image": "https://c.saavncdn.com/editorial/BestOfGhazalsHindi_20260325065302.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "1021029897",
+        "title": "Best Of R&B - Hindi",
+        "subtitle": "36.4K Followers",
+        "image": "https://c.saavncdn.com/editorial/BestOfR_BHindi_20260325065238.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "932189657",
+        "title": "Best Of Dance - Hindi",
+        "subtitle": "155.1K Followers",
+        "image": "https://c.saavncdn.com/editorial/BestOfDanceHindi_20260820050802.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "903166403",
+        "title": "Best Of Romance - Hindi",
+        "subtitle": "251.2K Followers",
+        "image": "https://c.saavncdn.com/editorial/BestOfRomanceHindi_20260622051616.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "158224188",
+        "title": "Hip Hop Party",
+        "subtitle": "36.8K Followers",
+        "image": "https://c.saavncdn.com/editorial/HipHopParty_20251229110720.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "158223987",
+        "title": "Chill Maaro",
+        "subtitle": "58.7K Followers",
+        "image": "https://c.saavncdn.com/editorial/ChillMaaro_20260622051708.jpg",
+        "songCount": 0
+      }
+    ]
+  },
+  {
+    "id": "promo:vx:data:185",
+    "title": "Best Of 90s",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "3379491",
+        "title": "Best Of 90s - Hindi",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/BestOf90sHindi_20251125041813.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "159470188",
+        "title": "90s Duets - Hindi",
+        "subtitle": "211.9K Followers",
+        "image": "https://c.saavncdn.com/editorial/90sDuetsHindi_20240906030959.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "154546814",
+        "title": "90s Romance - Hindi",
+        "subtitle": "349.5K Followers",
+        "image": "https://c.saavncdn.com/editorial/90sRomanceHindi_20260302042658.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "158224184",
+        "title": "Best Of Sad Songs: 90s",
+        "subtitle": "Just Updated",
+        "image": "https://c.saavncdn.com/editorial/BestOfSadSongs-90s_20251125041857.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "154546827",
+        "title": "90s Dance Dhamaaka",
+        "subtitle": "187.3K Followers",
+        "image": "https://c.saavncdn.com/editorial/90sDanceDhamaaka_20250120074017.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "829466184",
+        "title": "Decade Of Heroes - 1990s",
+        "subtitle": "61K Followers",
+        "image": "https://c.saavncdn.com/editorial/DecadeOfHeroes1990s_20240903100210.jpg",
+        "songCount": 0
+      },
+      {
+        "id": "829470829",
+        "title": "Decade Of Heroines - 1990s",
+        "subtitle": "36K Followers",
+        "image": "https://c.saavncdn.com/editorial/DecadeOfHeroines1990s_20240903100205.jpg",
+        "songCount": 0
+      }
+    ]
+  },
+  {
+    "id": "artist_recos",
+    "title": "Recommended Artist Stations",
+    "subtitle": "",
+    "type": "mixed",
+    "items": [
+      {
+        "id": "459320",
+        "name": "Arijit Singh",
+        "image": "https://c.saavncdn.com/artists/Arijit_Singh_004_20241118063717_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "455663",
+        "name": "Anirudh Ravichander",
+        "image": "https://c.saavncdn.com/artists/Anirudh_Ravichander_003_20260121134149_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "483224",
+        "name": "K. S. Chithra",
+        "image": "https://c.saavncdn.com/artists/K_S_Chithra_002_20190906071921_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "455590",
+        "name": "Zubeen Garg",
+        "image": "https://c.saavncdn.com/artists/Zubeen_Garg_003_20201020081952_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "711881",
+        "name": "Humane Sagar",
+        "image": "https://c.saavncdn.com/artists/Humane_Sagar_002_20240521123429_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "456269",
+        "name": "A.R. Rahman",
+        "image": "https://c.saavncdn.com/artists/AR_Rahman_002_20210120084455_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "455130",
+        "name": "Shreya Ghoshal",
+        "image": "https://c.saavncdn.com/artists/Shreya_Ghoshal_007_20241101074144_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "458475",
+        "name": "K.J. Yesudas",
+        "image": "https://c.saavncdn.com/artists/KJ_Yesudas_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "455142",
+        "name": "Kumar Sanu",
+        "image": "https://c.saavncdn.com/artists/Kumar_Sanu_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "689580",
+        "name": "Sid Sriram",
+        "image": "https://c.saavncdn.com/artists/Sid_Sriram_005_20240425180600_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "881158",
+        "name": "Jubin Nautiyal",
+        "image": "https://c.saavncdn.com/artists/Jubin_Nautiyal_003_20231130204020_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "14477737",
+        "name": "Sai Abhyankkar",
+        "image": "https://c.saavncdn.com/artists/Sai_Abhyankkar_003_20250707122433_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "485956",
+        "name": "Yo Yo Honey Singh",
+        "image": "https://c.saavncdn.com/artists/Yo_Yo_Honey_Singh_004_20260811095253_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "460005",
+        "name": "Sujatha Mohan",
+        "image": "https://c.saavncdn.com/artists/Sujatha_Mohan_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "455127",
+        "name": "Udit Narayan",
+        "image": "https://c.saavncdn.com/artists/Udit_Narayan_004_20241029065120_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "14052201",
+        "name": "M.H.R",
+        "image": "https://c.saavncdn.com/artists/M_H_R_001_20260408185558_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "455120",
+        "name": "Alka Yagnik",
+        "image": "https://c.saavncdn.com/artists/Alka_Yagnik_002_20220314192930_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "467088",
+        "name": "Mohanlal",
+        "image": "https://c.saavncdn.com/artists/Mohanlal_004_20180706155810_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "505320",
+        "name": "Shweta Mohan",
+        "image": "https://c.saavncdn.com/artists/Shweta_Mohan_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      },
+      {
+        "id": "457536",
+        "name": "Ilaiyaraaja",
+        "image": "https://c.saavncdn.com/artists/Ilaiyaraaja_001_20251020081419_500x500.jpg",
+        "role": "Artist",
+        "followerCount": null
+      }
+    ]
+  }
+]
